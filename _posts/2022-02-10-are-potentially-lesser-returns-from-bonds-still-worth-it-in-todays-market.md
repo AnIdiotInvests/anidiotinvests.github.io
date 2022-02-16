@@ -7,7 +7,6 @@ permalink: are-potentially-lesser-returns-from-bonds-still-worth-it-in-todays-ma
 ---
 
 <img src="/assets/img/performance-of-BND.png" alt="IMG Not Found" width="100%"/>
-\
 - Link to where I generated the chart above: https://portfolioslab.com/tools/portfolio-analysis?d=95f5d31
 
 Bonds can be a controversial topic for some, and have historically been used as a defensive play for more standard portfolios. Something you may want to consider though is that there are several different types of bonds, and you can obtain exposure to most of them inside of popular Exchange Traded Funds (ETFs) and Mutual Funds.

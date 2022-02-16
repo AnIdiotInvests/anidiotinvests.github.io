@@ -7,7 +7,8 @@ permalink: banks-bonds-and-stocks-oh-my-what-to-do-with-my-money-in-2022
 ---
 
 <img src="/assets/img/S&P500-graph-one.png" alt="IMG Not Found" width="100%"/>
-\
+- image is a screenshot of S&P 500 graph on google search.
+
 Investing can be complicated. It is difficult to make decisions with so many different sources screaming what they think you should do and how you should do it. One of, if not the most commonly cited investment index is the Standard and Poor's 500 (S&P 500). As you can see from the chart above, recently the returns have been well worth it, but how do we know it will continue? And is it a terrible idea to start investing now?
 
 ## If I could go back in time and YOLO more money I would, but I can’t and won’t.
