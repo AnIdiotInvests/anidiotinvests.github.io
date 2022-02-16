@@ -3,6 +3,7 @@ layout: post
 title: "Best Investing Research Tools I Have Found so Far"
 date: 2022-02-14 19:41:52 -0500
 categories: investing
+permalink: best-investing-research-tools-i-have-found-so-far
 ---
 
 <img src="/assets/img/tools-one.png" alt="IMG Not Found" width="100%"/>
