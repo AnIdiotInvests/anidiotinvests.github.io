@@ -1,0 +1,108 @@
+.pageinator {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+}
+
+.sample-post-text {
+    font-size: 11pt;
+    line-height: normal;
+}
+
+.post-listing-card {
+    border: 2px solid #0c557a;
+    box-shadow: gray 1px 1px 10px;
+    border-radius: 4%;
+    position: relative;
+
+    max-width: 300px;
+    min-width: 275px;
+    height: 460px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    overflow: hidden;
+
+    background-color: #0c557a;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.post-listing-card img {
+    object-fit: cover;
+    vertical-align: middle;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 80%, transparent 100%);
+    height: 50%;
+    width: 100%;
+}
+
+.post-listing-card h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 16pt;
+    min-height: 70px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.date-posted-stamp {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.date-posted-stamp p {
+    padding: 1px;
+    margin: 0;
+    font-size: 11pt;
+}
+
+.posts-header {
+    width: 100%;
+    height: 50vh;
+    max-height: 1000px;
+    min-height: 290px;
+    box-shadow: grey 1px 1px 10px;
+    background: url('../img/front-page-edit2.png') no-repeat;
+
+    position: relative;
+    text-align: center;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.posts-header-title {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.posts-header-title h1 {
+    font-size: 44pt;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 2px 2px 1px black;
+}
+
+.posts-header-title h2 {
+    font-style: oblique;
+    font-size: 18pt;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 2px 2px 1px black;
+}
+
+.featured-posts-title {
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+}
