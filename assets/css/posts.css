@@ -9,13 +9,18 @@
     line-height: normal;
 }
 
+.sample-post-text p {
+    font-size: 11pt;
+    line-height: normal;
+}
+
 .post-listing-card {
     border: 2px solid #0c557a;
     box-shadow: gray 1px 1px 10px;
     border-radius: 4%;
     position: relative;
 
-    max-width: 300px;
+    max-width: 295px;
     min-width: 275px;
     height: 460px;
     margin-left: 10px;
@@ -38,24 +43,24 @@
 }
 
 .post-listing-card h2 {
-    padding: 0;
+    padding: 0px;
     margin: 0;
     font-size: 16pt;
-    min-height: 70px;
+    min-height: 90px;
     overflow: hidden;
     padding-bottom: 10px;
 }
 
 .date-posted-stamp {
     padding: 0;
-    margin: 0;
+    margin-bottom: 5px;
     position: absolute;
     bottom: 0;
 }
 
 .date-posted-stamp p {
-    padding: 1px;
-    margin: 0;
+    /* padding: 1px;
+    margin: 0; */
     font-size: 11pt;
 }
 

@@ -4,9 +4,9 @@ layout: primary
 
 <div class="blog-content">
 
-    <h1>{{ page.title }}</h1>
+    {% include header.html %}
+
     <article class="blog-post">
-        <p>Posted on {{ page.date |  date: date_format }}</p>
         {{ content }}
     </article>
 

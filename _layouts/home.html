@@ -23,15 +23,19 @@ layout: primary
 
         <div class="pageinator">
             <div class="post-listing-card">
-                <img src=" + f.imgUrl + " alt="Img Not Found">
+                <img src="{{ post.imgUrl }}" alt="Img Not Found">
 
                 <div class="container-fluid">
 
                     <h2> <a class="anc-hover" href="{{ post.url | absolute_url }}">{{ post.title }}</a> </h2>
-                    <p class="sample-post-text">...</p>
+
+                    <div class="sample-post-text">
+                        <p class="sample-post-text">{{ post.post_decription }}...</p>
+                    </div>
 
                     <div class="date-posted-stamp">
-                        <p>Date Posted: {{ post.date }} </p>
+                        {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+                        <p>Posted: {{ post.date | date: date_format }} </p>
                     </div>
 
                 </div>
