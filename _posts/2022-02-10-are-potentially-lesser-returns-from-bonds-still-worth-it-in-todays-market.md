@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Are Potentially Lesser Returns from Bonds still Worth it in Today's Market?"
-date:   2022-02-10 19:41:52 -0500
-categories: jekyll update
+title: "Are Potentially Lesser Returns from Bonds still Worth it in Today's Market?"
+date: 2022-02-10 19:41:52 -0500
+categories: investing
+permalink: are-potentially-lesser-returns-from-bonds-still-worth-it-in-todays-market
 ---
 
 <img src="/assets/img/performance-of-BND.png" alt="IMG Not Found" width="100%"/>

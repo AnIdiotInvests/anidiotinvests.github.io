@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Banks, Bonds, and Stocks, oh my! What to do With My Money in 2022?"
-date:   2022-02-10 19:41:52 -0500
-categories: jekyll update
+title: "Banks, Bonds, and Stocks, oh my! What to do With My Money in 2022?"
+date: 2022-02-10 19:41:52 -0500
+categories: investing
+permalink: banks-bonds-and-stocks-oh-my-what-to-do-with-my-money-in-2022
 ---
 
 <img src="/assets/img/S&P500-graph-one.png" alt="IMG Not Found" width="100%"/>
