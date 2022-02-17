@@ -1,11 +1,16 @@
 ---
 layout: post
 title: "Banks, Bonds, and Stocks, oh my! What to do With My Money in 2022?"
-date: 2022-02-10 19:41:52 -0500
+date: 2022-02-10 10:41:52
 categories: investing
 permalink: banks-bonds-and-stocks-oh-my-what-to-do-with-my-money-in-2022
 imgUrl: /assets/img/S&P500-graph-one.png
-post_decription: Investing can be complicated. It is difficult to make decisions with so many different sources screaming what they think you should do
+description: Investing can be complicated. It is difficult to make decisions with so many different sources screaming what they think you should do
+
+keywords:
+  - risk
+  - stock
+  - money
 ---
 
 <img src="/assets/img/S&P500-graph-one.png" alt="IMG Not Found" width="100%"/>

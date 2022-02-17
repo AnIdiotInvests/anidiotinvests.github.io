@@ -1,11 +1,16 @@
 ---
 layout: post
 title: "The Best Investing Research Tools I Have Found so Far"
-date: 2022-02-14 19:41:52 -0500
+date: 2022-02-14 19:41:52
 categories: investing
 permalink: the-best-investing-research-tools-i-have-found-so-far
 imgUrl: /assets/img/tools-one.png
-post_decription: As I have slowly progressed my investing knowledge over the years several online and mostly free tools that provide great value and
+description: As I have slowly progressed my investing knowledge over the years several online and mostly free tools that provide great value and
+
+keywords:
+  - research
+  - tools
+  - best
 ---
 
 <img src="/assets/img/tools-one.png" alt="IMG Not Found" width="100%"/>
