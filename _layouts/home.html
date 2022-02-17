@@ -11,21 +11,24 @@ layout: primary
     <!-- </div> -->
 </div>
 
-<div class="post-content">
-
-    <div class="featured-posts-title">
+<div class="featured-posts-title accent-color">
+    <div class="post-content">
         <h3>Featured Blog Posts</h3>
     </div>
+</div>
+
+<div class="post-content">
 
     <table id="postContainer" class="posts-pagination-table">
 
     {% for post in site.posts %}
 
+    
+
         <div class="pageinator">
             <div class="post-listing-card">
-                <img src="{{ post.imgUrl }}" alt="Img Not Found">
 
-                <!-- <div class="container-fluid"> -->
+                <img src="{{ post.imgUrl }}" alt="Img Not Found">
 
                     <h2> <a class="anc-hover" href="{{ post.url | absolute_url }}">{{ post.title }}</a> </h2>
 
@@ -38,9 +41,8 @@ layout: primary
                         <p class="sample-post-text">{{ post.description | default: post.title }}...</p>
                     </div>
 
-                <!-- </div> -->
-
             </div>
+
         </div>
 
     {% endfor %}

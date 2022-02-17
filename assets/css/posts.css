@@ -13,7 +13,6 @@
 }
 
 .post-listing-card {
-    /* box-shadow: gray 1px 1px 10px; */
     position: relative;
 
     max-width: 364px;
@@ -22,7 +21,6 @@
     margin: 0px 7px 40px 7px;
 
     overflow: hidden;
-    /* color: whitesmoke; */
     text-align: left;
 }
 
@@ -54,11 +52,12 @@
 }
 
 .posts-header {
+    z-index: 1;
     width: 100%;
     height: 50vh;
     max-height: 1000px;
     min-height: 290px;
-    box-shadow: grey 1px 1px 10px;
+    box-shadow: black 1px 1px 10px;
     background: url('../img/front-page-edit2.png') no-repeat;
 
     position: relative;
@@ -74,6 +73,8 @@
 .posts-header-title {
     text-align: center;
     position: absolute;
+    padding-bottom: 30px;
+
     bottom: 0;
     left: 0;
     right: 0;
@@ -89,14 +90,25 @@
 .posts-header-title h2 {
     font-style: oblique;
     font-size: 18pt;
-    padding-bottom: 10px;
     font-weight: bold;
     color: whitesmoke;
     text-shadow: 2px 2px 1px black;
 }
 
 .featured-posts-title {
+    height: 100px;
+    margin: 0 auto;
+    width: 100%;
     position: relative;
-    text-align: left;
-    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.featured-posts-title h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    color: whitesmoke;
 }

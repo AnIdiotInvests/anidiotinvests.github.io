@@ -26,17 +26,22 @@ p {
   flex: 1;
 }
 
+.accent-color {
+  /* background-color: #083f5c; */
+  background-color: #394c5c;
+}
+
 .theme-colors {
   background-color: #0c557a;
 }
 
 .post-content, .blog-content {
-  margin: 90px auto 32px;
   padding: 0 16px;
   overflow: hidden;
 }
 
 .blog-content {
+  margin: 90px auto 32px;
   max-width: 860px;
 }
 
@@ -46,6 +51,7 @@ p {
 }
 
 .post-content {
+  margin: 0px auto 0px auto;
   max-width: 1200px;
   text-align: center;
 }
@@ -115,8 +121,6 @@ a, a:link {
 }
 
 .navbar-brand img {
-  /* position: fixed;  */
-  /* all: unset; */
   height: 50px;
   margin: 0;
   padding: 0;
@@ -128,7 +132,6 @@ a, a:link {
   font-size: 8pt;
 }
 
-
 .page-fade-in {
   width: 100%;
   animation: fadeIn .5s;
@@ -136,13 +139,8 @@ a, a:link {
 
 @keyframes fadeIn {
   0% {
-    /* visibility: hidden; */
     opacity: 0;
   }
-
-  /* 100% {
-    visibility: visible;
-  } */
 
   100% {
     opacity: 1;
