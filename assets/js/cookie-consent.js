@@ -2,10 +2,9 @@
  * cookie-consent.js
  * An Idiot Invests (anidiotinvets.com)
  * JavaScript functions to check for cookie consent banner for site usage.
- * This 
  */
 
-const consentValue = "anidiotinvests-cookie-consent";
+const consentValue = "anidiotinvests-cookie-consent-02-18-2022";
 
 function checkConsent() {
     try {
