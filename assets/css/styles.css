@@ -146,3 +146,24 @@ a, a:link {
     opacity: 1;
   }
 }
+
+
+.show-consent-banner {
+  border-top: solid black 2px;
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  background-color: whitesmoke;
+  text-align: center;
+  color: black;
+}
+
+.hide-consent-banner {
+  position: relative;
+  display: none;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+}
