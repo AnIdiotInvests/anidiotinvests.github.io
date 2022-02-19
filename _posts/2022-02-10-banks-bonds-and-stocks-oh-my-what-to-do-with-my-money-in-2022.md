@@ -11,6 +11,7 @@ keywords:
   - risk
   - stock
   - money
+  - frugal
 ---
 
 <img src="/assets/img/S&P500-graph-one.png" alt="IMG Not Found" width="100%"/>

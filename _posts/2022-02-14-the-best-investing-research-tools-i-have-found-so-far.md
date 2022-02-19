@@ -5,7 +5,7 @@ date: 2022-02-14 19:41:52
 categories: investing
 permalink: the-best-investing-research-tools-i-have-found-so-far
 imgUrl: /assets/img/tools-one.png
-description: As I have slowly progressed my investing knowledge over the years several online and mostly free tools that provide great value and
+description: As I slowly progress my investing knowledge over the years several online and mostly free tools that provide great value and
 
 keywords:
   - research
@@ -14,9 +14,9 @@ keywords:
 ---
 
 <img src="/assets/img/tools-one.png" alt="IMG Not Found" width="100%"/>
-- Photo by cottonbro from Pexels
+- Photo by <a href="https://www.pexels.com/@cottonbro">cottonbro</a> from Pexels
 
-As I slowly progressed my investing knowledge over the years (which is still not much), several online and mostly free tools that provide great value and time savings have come to my attention. So I thought it would be a good idea to make a quick write up on my favorites thus far. Also, I am not affiliated with any of these sites and tools, but I do use some of them almost daily.
+As I slowly progress my investing knowledge over the years (which is still not much), several online and mostly free tools that provide great value and time savings have come to my attention. So I thought it would be a good idea to make a quick write up on my favorites thus far. Also, I am not affiliated with any of these sites and tools, but I do use some of them almost daily.
 
 As a disclaimer, I am not affiliated with any of these sites on this list specifically. I will NOT get a reward for any clicks. If you have not heard about any of these options or had bad experiences, just know I am not claiming they are the best ever created. They are the best I have personaly found, and the order I have them listed does not matter either.
 
