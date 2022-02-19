@@ -36,3 +36,13 @@ To start we first need to understand volatility. I will not use any math, I prom
 This means the more BND (or the combination of bonds in the index BND is following) you add to your portfolio the less volatile it becomes. I would highly recommend reading “The Intelligent Investor", It goes into serious depth on portfolio allocations that you just cannot get from a blog post.
 
 Overall if you are severely adverse to volatility and downside, then adding bonds to your portfolio might be a good idea. Assuming you are also ok with giving up the potential long-term and short-term upside in advance. That said, if you have an extremely long time horizon, you may look back on your 100% bond portfolio and severely regret it if the stock market and real estate continues to perform well for the next several decades. In other words, it is best to strike a balance between risky and less risky assets for a smoother ride based on your risk tolerance. 
+
+---
+
+### Sources:
+
+Fernando, Jason. “What Is a Bond?” Investopedia, Investopedia, 8 Feb. 2022, 
+https://www.investopedia.com/terms/b/bond.asp.
+
+Langager, Chad. “A Beginner's Guide to Stock Investing.” Investopedia, Investopedia, 8 Feb. 2022, 
+https://www.investopedia.com/articles/basics/06/invest1000.asp.

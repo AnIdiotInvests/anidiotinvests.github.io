@@ -44,4 +44,17 @@ For the average person, there is no good or perfect time to start saving and inv
 
 This is where the difficult investing choices and fears start pouring in. So you ask everybody and their grandmother for advice, and they know a guy that knows another guy who lost all their money in the stock market and they can’t give you good advice. Or they let their pet cat pick stocks and double their money monthly, which is not how you want to go about investing obviously.
 
-In reality, investing for the non fortune 500 CEO is simply putting your money in the place with the best odds of success and rate of return which has been tuned and tweaked to fit your risk tolerance. Nothing more, nothing less, otherwise it is simply glorified gambling. This includes all asset classes, not just stocks. 
+In reality, investing for the non fortune 500 CEO is simply putting your money in the place with the best odds of success and rate of return which has been tuned and tweaked to fit your risk tolerance. Nothing more, nothing less, otherwise it is simply glorified gambling. This includes all asset classes, not just stocks.
+
+---
+
+### Sources: 
+
+Fernando, Jason. “What Is a Bond?” Investopedia, Investopedia, 8 Feb. 2022, 
+https://www.investopedia.com/terms/b/bond.asp.
+
+Langager, Chad. “A Beginner's Guide to Stock Investing.” Investopedia, Investopedia, 8 Feb. 2022, 
+https://www.investopedia.com/articles/basics/06/invest1000.asp.
+
+Robert FarringtonRobert Farrington is America’s Millennial Money Expert® and America’s Student Loan Debt Expert™. “What Is a Boglehead and What Investing Lessons Can You Learn.” The College Investor, 23 May 2019, 
+https://thecollegeinvestor.com/4119/boglehead/.
