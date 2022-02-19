@@ -1,13 +1,11 @@
 ---
 layout: legal
-date: 02-18-2022
+title: "Privacy Policy"
+edit_date: 2022-02-18 19:41:52
+categories: legal
 ---
 
 #### We use cookies to enable you to have a better experience with our content.
-
-# Privacy Policy
-
-Last updated: February 18, 2022
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 

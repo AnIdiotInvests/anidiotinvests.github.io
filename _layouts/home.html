@@ -4,10 +4,10 @@ layout: primary
 
 <div class="posts-header">
     <!-- <div class="container"> -->
-        <div class="posts-header-title">
-            <h1>An Idiot Invests</h1>
-            <h2>Investing Lifestyle Finance</h2>
-        </div>
+    <div class="posts-header-title">
+        <h1>An Idiot Invests</h1>
+        <h2>Investing Lifestyle Finance</h2>
+    </div>
     <!-- </div> -->
 </div>
 
@@ -18,36 +18,30 @@ layout: primary
 </div>
 
 <div class="post-content">
-
     <table id="postContainer" class="posts-pagination-table">
 
-    {% for post in site.posts %}
-
-    
+        {% for post in site.posts %}
 
         <div class="pageinator">
             <div class="post-listing-card">
 
                 <img src="{{ post.imgUrl }}" alt="Img Not Found">
 
-                    <h2> <a class="anc-hover" href="{{ post.url | absolute_url }}">{{ post.title }}</a> </h2>
+                <h2> <a class="anc-hover" href="{{ post.url | absolute_url }}">{{ post.title }}</a> </h2>
 
-                    <div class="date-posted-stamp">
-                        {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-                        <p>Posted: {{ post.date | date: date_format }} </p>
-                    </div>
+                <div class="date-posted-stamp">
+                    {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+                    <p>Posted: {{ post.date | date: date_format }} </p>
+                </div>
 
-                    <div class="sample-post-text">
-                        <p class="sample-post-text">{{ post.description | default: post.title }}...</p>
-                    </div>
+                <div class="sample-post-text">
+                    <p class="sample-post-text">{{ post.description | default: post.title }}...</p>
+                </div>
 
             </div>
-
         </div>
 
-    {% endfor %}
+        {% endfor %}
 
     </table>
-
 </div>
-

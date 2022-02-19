@@ -7,18 +7,21 @@ primary-css:
 <!DOCTYPE html>
 <html lang="en" class="page-fade-in">
 
-{% include head.html %}
+  {% include head.html %}
 
-<body>
-  
-  {% include navbar.html %}
+  <body>
+    <header id="primary-top-nav-header-id">
+      {% include top-nav.html %}
+    </header>
 
-  {{ content }}
+    <main id="primary-main-content-footer-id">
+      {{ content }}
+    </main>
 
-  {% include footer.html %}
-
-  {% include cookie-consent.html %}
-
-</body>
+    <footer id="primary-bot-nav-footer-id">
+      {% include bottom-nav.html %}
+      {% include cookie-consent.html %}
+    </footer>
+  </body>
 
 </html>

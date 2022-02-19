@@ -3,11 +3,8 @@ layout: primary
 ---
 
 <div class="blog-content">
-
-    {% include header.html %}
-
-    <article class="blog-post">
+    <article id="blog-post-id">
+        {% include content-header.html %}
         {{ content }}
     </article>
-
 </div>

@@ -1,11 +1,9 @@
 ---
 layout: legal
-date: 02-18-2022
+title: "Terms and Conditions"
+edit_date: 2022-02-18 19:41:52
+categories: legal
 ---
-
-# Terms and Conditions
-
-Updated: 02-18-2022
 
 These terms and conditions outline the rules and regulations for the use of An Idiot Invests's Website, located at https://anidiotinvests.com.
 
