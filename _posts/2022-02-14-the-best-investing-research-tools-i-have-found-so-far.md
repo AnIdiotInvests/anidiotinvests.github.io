@@ -18,12 +18,12 @@ keywords:
 
 As I slowly progress my investing knowledge over the years (which is still not much), several online and mostly free tools that provide great value and time savings have come to my attention. So I thought it would be a good idea to make a quick write up on my favorites thus far. Also, I am not affiliated with any of these sites and tools, but I do use some of them almost daily.
 
-As a disclaimer, I am not affiliated with any of these sites on this list specifically. I will NOT get a reward for any clicks. If you have not heard about any of these options or had bad experiences, just know I am not claiming they are the best ever created. They are the best I have personaly found, and the order I have them listed does not matter either.
+As a disclaimer, I am not affiliated with any of these sites on this list specifically. I will NOT get a reward for any clicks. If you have not heard about any of these options or had bad experiences, just know I am not claiming they are the best ever created. They are the best I have personally found, and the order I have them listed does not matter either.
 
 ## PortfoliosLab.com
 - Link: <a href="https://portfolioslab.com/">https://portfolioslab.com/</a>
 
-Let me start by saying, this site great for newer investors who may not yet know exactly what they are looking for yet (AKA me) and want to familiarize themselves with some possibly lesser known aspects for investing in a visual way. But it is also great for more experienced investors who want an easy place to start backtesting their portfolio ideas. More specifically, its biggest strength is comparing different types of volatility and drawdown.
+Let me start by saying, this site is great for newer investors who may not yet know exactly what they are looking for yet (AKA me) and want to familiarize themselves with some possibly lesser known aspects for investing in a visual way. But it is also great for more experienced investors who want an easy place to start backtesting their portfolio ideas. More specifically, its biggest strength is comparing different types of volatility and drawdown.
 
 ## PortfolioVisualizer.com
 - Link: <a href="https://www.portfoliovisualizer.com/">https://www.portfoliovisualizer.com/</a>
