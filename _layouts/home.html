@@ -9,9 +9,11 @@ layout: primary
     </div>
 </header>
 
-<div class="featured-posts-title accent-color">
-    <div class="post-content">
-        <h3>Featured Blog Posts</h3>
+<div class="rotate-right">
+    <div class="featured-posts-title secondary-theme-color">
+        <div class="post-content">
+            <h2>Featured Blog Posts</h2>
+        </div>
     </div>
 </div>
 
@@ -21,7 +23,8 @@ layout: primary
         {% for post in site.posts %}
 
         <div class="pageinator">
-            <div class="post-listing-card">
+
+            <div class="post-listing-card tri-theme-color" onclick="goToPost('{{ post.url | absolute_url }}')">
 
                 <img src="{{ post.imgUrl }}" alt="Img Not Found">
 
@@ -43,3 +46,8 @@ layout: primary
 
     </table>
 </div>
+<script>
+    function goToPost(url) {
+        window.location.href = url;
+    }
+</script>
