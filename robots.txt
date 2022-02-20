@@ -2,6 +2,9 @@
 ---
 
 User-agent: *
-Disallow: /404$
+Disallow: /404
+Disallow: /legal/terms-and-conditions
+Disallow: /legal/privacy-policy
+Disallow: /about
 
 Sitemap: {{ "sitemap.xml" | absolute_url }}
