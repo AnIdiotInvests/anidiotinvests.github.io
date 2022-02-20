@@ -5,7 +5,7 @@ date: 2022-02-14 19:41:52
 categories: investing
 permalink: the-best-investing-research-tools-i-have-found-so-far
 imgUrl: /assets/img/tools-one.png
-description: As I slowly progress my investing knowledge over the years several online and mostly free tools that provide great value and
+description: As I slowly progress my investing knowledge over the years, several online and mostly free tools that provide great value and time savings have come to my attention.
 
 keywords:
   - research

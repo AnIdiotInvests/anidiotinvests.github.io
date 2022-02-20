@@ -5,7 +5,7 @@ date: 2022-02-10 10:41:52
 categories: investing
 permalink: banks-bonds-and-stocks-oh-my-what-to-do-with-my-money-in-2022
 imgUrl: /assets/img/S&P500-graph-one.png
-description: Investing can be complicated. It is difficult to make decisions with so many different sources screaming what they think you should do
+description: Investing can be complicated. It is difficult to make decisions with so many different sources screaming what they think you should do and how you should do it.
 
 keywords:
   - risk
