@@ -5,7 +5,7 @@ date: 2022-02-19 18:05:52
 categories: investing
 permalink: why-and-how-do-i-want-to-retire
 imgUrl: /assets/img/freedom-img.png
-description: I am 27, and it took me from 18 to 24 to even remotely consider saving for retirement. Let alone for it to be worthy of my time and effort to plan it out. The narrative
+description: I am 27, but it wasn't until I was 24 that I even remotely considered saving for retirement. Let alone for it to be worthy of my time and effort to plan it out. The narrative
 
 keywords:
   - retirement
@@ -18,11 +18,11 @@ keywords:
 <img src="/assets/img/freedom-img.png" alt="IMG Not Found" width="100%"/>
 - Photo by Pixabay from Pexels
 
-I am 27, and it took me from 18 to 24 to even remotely consider saving for retirement. Let alone for it to be worthy of my time and effort to plan it out. The narrative in my head went like “Why would I not just use the money now rather than when I am ancient?”
+I am 27, but it wasn't until I was 24 that I even remotely considered saving for retirement. Let alone for it to be worthy of my time and effort to plan it out. The narrative in my head went like “Why would I not just use the money now rather than when I am ancient?”
 
 I believe I am not alone on this, but I know now I should have started as soon as possible. The moment I realized retirement doesn't have to be when you're too old to do anything fun, I became obsessed. However, this is dependent on whether or not you start soon enough and contribute enough in the right places (something I am still heavily working on). Not only that, but with enough time horizon it does not have to destroy your lifestyle at the moment.
 
-After pondering for a while, I came to three pillar questions which are the base of my plans. These questions not only keep me motivated while people are trying to convince me it’s useless and uncool to save for retirement, but they also answer why the effort will be worth it to me in the end.
+After pondering for a while, I came to three pillar questions which are the base of my plans. These questions not only keep me motivated while people are trying to convince me it is useless and uncool to save for retirement, but they also answer why the effort will be worth it to me in the end.
 
 ## 1. Why do I Want to Retire?
 
