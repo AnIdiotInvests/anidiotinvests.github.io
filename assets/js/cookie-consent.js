@@ -8,7 +8,6 @@ const consentValue = "anidiotinvests-cookie-consent-02-18-2022";
 
 setTimeout(function checkConsent() {
     try {
-        document.getElementById("consent-banner-display").className = "hide-consent-banner";
         if (!hasLocalStorageConsent()) {
             askForConsent();
         }
@@ -34,3 +33,12 @@ function hideConsentBannerOnAccept() {
     localStorage.setItem(consentValue, true);
     document.getElementById("consent-banner-display").className = "hide-consent-banner";
 }
+
+function tempHideConsent() {
+    document.getElementById("consent-banner-display").className = "hide-consent-banner";
+}
+
+/**
+ * Invoke consent banner check on page load at window onload scope.
+ */
+window.onload = tempHideConsent();
