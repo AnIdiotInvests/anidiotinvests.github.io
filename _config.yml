@@ -18,7 +18,7 @@
 
 title: An Idiot Invests
 description: >- # this means to ignore newlines until "baseurl:"
-  Learning how to invest as I go and blogging about it along the way. Join me on a journy to financial success and freedom. 
+  Learning how to invest as I go and blogging about it along the way. Join me on a journey to financial success and freedom. 
   | Investing Lifestyle Finance 
   | An Idiot Invests
 
@@ -27,11 +27,6 @@ url: "https://anidiotinvests.com" # the base hostname & protocol for your site, 
 
 date_format: "%B %-d, %Y"
 excerpt_separator: "<!--excs-->"
-
-# Build settings
-# theme: minima
-plugins:
-  - jekyll-feed
 
 defaults:
   -
