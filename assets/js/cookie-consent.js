@@ -6,7 +6,7 @@
 
 const consentValue = "anidiotinvests-cookie-consent-02-18-2022";
 
-function checkConsent() {
+setTimeout(function checkConsent() {
     try {
         document.getElementById("consent-banner-display").className = "hide-consent-banner";
         if (!hasLocalStorageConsent()) {
@@ -15,7 +15,7 @@ function checkConsent() {
     } catch (error) {
         console.error(error);
     }
-}
+}, 5000 );
 
 function hasLocalStorageConsent() {
     return localStorage.getItem(consentValue);
