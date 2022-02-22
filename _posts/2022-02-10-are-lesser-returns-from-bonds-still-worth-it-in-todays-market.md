@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Are Potentially Lesser Returns from Bonds still Worth it in Today's Market?"
+title: "Are Lesser Returns from Bonds still Worth it in Today's Market?"
 date: 2022-02-10 19:41:52
 categories: investing
-permalink: are-potentially-lesser-returns-from-bonds-still-worth-it-in-todays-market
+permalink: are-lesser-returns-from-bonds-still-worth-it-in-todays-market
 imgUrl: /assets/img/performance-of-BND.png
 description: Bonds can be a controversial topic for some, and have historically been used as a defensive play for more standard portfolios.
 
@@ -11,6 +11,7 @@ keywords:
   - bonds
   - returns
   - market
+  - defensive
 ---
 
 <img src="/assets/img/performance-of-BND.png" alt="IMG Not Found" width="100%"/>

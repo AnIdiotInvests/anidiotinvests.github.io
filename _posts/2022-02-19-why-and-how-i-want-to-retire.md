@@ -5,7 +5,7 @@ date: 2022-02-19 18:05:52
 categories: investing
 permalink: why-and-how-do-i-want-to-retire
 imgUrl: /assets/img/freedom-img.png
-description: I am 27, but it wasn't until I was 24 that I even remotely considered saving for retirement. Let alone for it to be worthy of my time and effort to plan it out.
+description: If you are simply saving for retirement just because someone told you to, or out of fear, I would say you should reconsider your reasoning.
 
 keywords:
   - retirement

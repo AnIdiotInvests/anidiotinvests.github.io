@@ -124,6 +124,14 @@
     text-shadow: 2px 2px 1px #0c557a;
 }
 
+.posts-header-title p {
+    color: whitesmoke;
+    font-style: oblique;
+    font-size: 18pt;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px #0c557a;
+}
+
 .featured-posts-title {
     height: 100px;
     margin: 0 auto;
