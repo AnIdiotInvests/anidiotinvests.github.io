@@ -87,7 +87,7 @@
     max-height: 1000px;
     min-height: 290px;
     box-shadow: black 1px 1px 10px;
-    background: url('../img/graph-contrast.png') no-repeat;
+    background: url('../img/primary/graph-contrast.png') no-repeat;
 
     position: relative;
     text-align: center;

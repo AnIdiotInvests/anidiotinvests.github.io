@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="/assets/img/logo-two.png">
+    <link rel="icon" href="/assets/img/primary/logo-two.png">
 
     {% if site.title %}
     <title>{{ page.title | default: site.title }}</title>
@@ -32,16 +32,14 @@
     {% endif %}
 
     <meta property="og:type" content="{{ type }}" />
-    <meta property="og:url"
-        content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:description"
-        content="{% if page.excerpt %}{{ page.description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}" />
-    {% if page.imageUrl %}
-    <meta property="og:image"
-        content="{{ page.url | prepend: site.baseurl | prepend: site.url }}{{ page.imageUrl }}" />
-    <meta property="og:image:width" content="{{ page.image.width }}" />
-    <meta property="og:image:height" content="{{ page.image.height }}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}" />
+    
+    {% if page.imgUrl %}
+    <meta property="og:image" content="{{ page.imgUrl | absolute_url }}" />
+    {% else %}
+    <meta property="og:image" content="{{ '/assets/img/primary/graph-contrast.png' | absolute_url }}" />
     {% endif %}
 
     {% if page.is_post %}
