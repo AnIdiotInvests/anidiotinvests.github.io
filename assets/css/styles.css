@@ -34,6 +34,8 @@ p {
 .blog-content {
   margin: 90px auto 32px;
   max-width: 860px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .blog-content p {

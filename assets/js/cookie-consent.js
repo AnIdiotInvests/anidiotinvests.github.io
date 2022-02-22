@@ -34,8 +34,3 @@ function hideConsentBannerOnAccept() {
     localStorage.setItem(consentValue, true);
     document.getElementById("consent-banner-display").className = "hide-consent-banner";
 }
-
-/**
- * Invoke consent banner check on page load at window onload scope.
- */
-window.onload = checkConsent();
