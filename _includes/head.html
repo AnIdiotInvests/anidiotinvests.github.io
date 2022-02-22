@@ -5,27 +5,58 @@
     <link rel="icon" href="/assets/img/logo-two.png">
 
     {% if site.title %}
-        <title>{{ page.title | default: site.title }}</title>
+    <title>{{ page.title | default: site.title }}</title>
     {% endif %}
 
     {% if site.description %}
-        <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="description" content="{{ page.description | default: site.description }}">
     {% endif %}
 
     {% if site.author %}
-        <meta name="author" content="{{ site.author }}">
+    <meta name="author" content="{{ site.author }}">
     {% endif %}
 
     {% if page.keywords %}
-        <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
+    <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
     {% endif %}
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    {% if page.url %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    {% endif %}
+
+
+    {% if page.is_post %}
+        {% assign type = "article" %}
+    {% else %}
+        {% assign type = "website" %}
+    {% endif %}
+
+    <meta property="og:type" content="{{ type }}" />
+    <meta property="og:url"
+        content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:description"
+        content="{% if page.excerpt %}{{ page.description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}" />
+    {% if page.imageUrl %}
+    <meta property="og:image"
+        content="{{ page.url | prepend: site.baseurl | prepend: site.url }}{{ page.imageUrl }}" />
+    <meta property="og:image:width" content="{{ page.image.width }}" />
+    <meta property="og:image:height" content="{{ page.image.height }}" />
+    {% endif %}
+
+    {% if page.is_post %}
+    <meta property="og:site_name" content="{{ site.title }}" />
+    {% endif %}
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     {% if layout.primary-css %}
         {% for css in layout.primary-css %}
-            <link rel="stylesheet" href="{{ css | relative_url }}">
+        <link rel="stylesheet" href="{{ css | relative_url }}">
         {% endfor %}
     {% endif %}
 

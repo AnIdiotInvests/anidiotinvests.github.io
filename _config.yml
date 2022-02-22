@@ -18,7 +18,10 @@
 
 title: An Idiot Invests
 description: >- # this means to ignore newlines until "baseurl:"
-  Learning to invest as I go.
+  Learning how to invest as I go and blogging about it along the way. Join me on a journy to financial success and freedom. 
+  | Investing Lifestyle Finance 
+  | An Idiot Invests
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://anidiotinvests.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -29,6 +32,14 @@ excerpt_separator: "<!--excs-->"
 # theme: minima
 plugins:
   - jekyll-feed
+
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
 
 # Exclude from processing.
 # The following items will not be processed, by default.
