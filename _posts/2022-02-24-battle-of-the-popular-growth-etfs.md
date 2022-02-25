@@ -28,11 +28,11 @@ If we all say it three times it may reach our corporate overlords APLZ - GOOGZ -
 
 On a slightly more serious note, if you are not familiar with growth ETFs here is a simple explanation. Growth ETFs are funds that contain stocks that are expected to grow faster due to rapid company expansion and earnings. Emphasis on expected.
 
-People seem to think that just because it has ‘growth’ in the name that the fund is somehow better overall. Instead, please do your due diligence on what is happening under the hood before you add anything to your portfolio.
-
-At first I was only going to cover my top three, but that's not really fair to anyone. There are other juicyier options to look at other than SCHG and VUG. So I made a list based on AUM and set the cut off at about 3 Billion-ish to keep it more relevant. Also, don’t worry, I will use your precious QQQ, which follows the NASDAQ 100, as a benchmark for some of my comparisons.
+Please be aware that while all of these ETFs are centered around growth, many of them follow different underlying indexes which represent different fund goals. I am simply looking at raw performance and volatility. People seem to think that just because it has ‘growth’ in the name that the fund is somehow better overall. Instead, please do your due diligence on what is happening under the hood before you add anything to your portfolio.
 
 <img src="/assets/img/charts-2022/growth-etfs-by-aum.png" alt="IMG Not Found" width="100%"/>
+
+At first I was only going to cover my top three, but that's not really fair to anyone. There are other juicy growth options to look at other than SCHG and VUG, but I did make a list based on AUM and set the cut off at about 3 Billion-ish to keep it relevant. Also, don’t worry, I will use your precious QQQ, which follows the NASDAQ 100, as a benchmark for some of my comparisons.
 
 Let's weed through the under performers with simple vibe checks. EFG lost badly to S&P 500, Russell 2000, and NASDAQ 100. So I killed him right off the bat. (I realize that is not the purpose of that fund, we can come back to it another day if you want).
 
@@ -48,7 +48,7 @@ From this point on, everybody beats the S&P 500 in the five year chart. But what
 
 <img src="/assets/img/charts-2022/sp-500-comp-1-year-after.png" alt="IMG Not Found" width="100%"/>
 
-I'm not removing every loser on this chart under the S&P 500 because most have such a small difference in only a one year period. My only concerns are with VOT and IWP which are both under the goose egg return for the one year chart. Scary to think you could be sitting well above 10% with something else in this category. It could be a red flag for severe drawdowns in my opinion.
+I'm not removing every loser on this chart under the S&P 500 because most have a smaller difference in only a one year period. My only concerns are with VOT and IWP which are both under the goose egg return for the one year chart. Scary to think you could be sitting well above 10% with something else in this category. It could be a red flag for severe drawdowns in my opinion.
 
 Now on to the NASDAQ 100 comparisons, which turned out exactly like I would have expected, and the QQQ fans can cheer along with me. 
 
@@ -56,7 +56,7 @@ However, I want to bring up a major misconception floating around QQQ. It states
 
 <img src="/assets/img/charts-2022/first-nas-100-comp-rpg-iusg.png" alt="IMG Not Found" width="100%"/>
 
-I know what you are thinking, raw performance is not the only factor to consider, but RPG gets RPG’d in the face in comparison to its brethren. Then after removing RPG, you’ll find IUSG at the bottom in green with a bit less return, which is hard to overlook. 
+I know what you are thinking, raw performance is not the only factor to consider, but RPG gets RPG’d in the face in comparison to its brethren. Then after removing RPG, you will find IUSG at the bottom in green with a bit less return, which is hard to overlook. 
 
 On this next graph, I want you to look at how tightly correlated these options are. You almost can’t see anything to do with the overlap and I had to hover over the chart to bring up the exact value. This is why people say not to buy the same types of funds. It does not accomplish anything if all your funds have the same junk in it. It actually can hurt your portfolio by over concentrating your investment into a small selection of stocks in only a few volatile sectors.
 
@@ -100,4 +100,15 @@ For my main picks, I am a fan of SCHG and VUG, but my god, MGK and IWF have some
 - SLYG - SPDR S&P 600 Small Cap Growth ETF
 - VTWG - Vanguard Russell 2000 Growth ETF
 
-<br>
+---
+
+### Sources: 
+
+Dierking, David. “Value vs. Growth Etfs: How Do You Choose?” Investopedia, Investopedia, 3 Dec. 2021, 
+https://www.investopedia.com/articles/investing/011316/value-vs-growth-etfs-how-do-you-choose.asp.
+
+Langager, Chad. “A Beginner's Guide to Stock Investing.” Investopedia, Investopedia, 8 Feb. 2022, 
+https://www.investopedia.com/articles/basics/06/invest1000.asp.
+
+Reiff, Nathan. “Best Growth Etfs for Q1 2022.” Investopedia, Investopedia, 30 Dec. 2021, 
+https://www.investopedia.com/articles/etfs/top-growth-etfs/. 
