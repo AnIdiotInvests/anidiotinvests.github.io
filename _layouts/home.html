@@ -22,32 +22,9 @@ layout: primary
 
         {% for post in site.posts %}
 
-        <div class="pageinator">
-
-            <div class="post-listing-card tri-theme-color" onclick="goToPost('{{ post.url | absolute_url }}')">
-
-                <img src="{{ post.imgUrl }}" alt="Img Not Found">
-
-                <h2> <a class="anc-hover" href="{{ post.url | absolute_url }}">{{ post.title }}</a> </h2>
-
-                <div class="date-posted-stamp">
-                    {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-                    <p>Posted: {{ post.date | date: date_format }} </p>
-                </div>
-
-                <div class="sample-post-text">
-                    <p class="sample-post-text">{{ post.description | default: post.title }}</p>
-                </div>
-
-            </div>
-        </div>
+        {% include postination.html %}
 
         {% endfor %}
 
     </table>
 </div>
-<script>
-    function goToPost(url) {
-        window.location.href = url;
-    }
-</script>
