@@ -167,3 +167,23 @@
     box-shadow: black 1px 1px 10px;
     background: inherit;
 }
+
+.take-me-home-a-btn {
+    vertical-align: middle;
+    border-radius: 25px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #0c557a;
+    box-shadow: black 1px 1px 10px;
+}
+
+.take-me-home-a-btn a {
+    /* border-radius: 25%; */
+    font-size: 18pt;
+    padding: 25px;
+    display: block;
+    font-style: bold;
+    height: 100%;
+    width: 100%;
+}

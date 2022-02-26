@@ -8,3 +8,29 @@ layout: primary
         {{ content }}
     </article>
 </div>
+
+<div class="secondary-theme-color text-center">
+    <h2>Want More Content?</h2>
+</div>
+
+<div class="post-content">
+
+    <table id="postContainer" class="posts-pagination-table">
+        {% assign count = 0 %}
+        {% for post in site.posts limit: 4 %}
+            {% if post.title != page.title %}
+                {% if count != 3 %}
+                    {% include postination.html %}
+                    {% assign count = count|plus:1 %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </table>
+
+    <div class="p-5">
+        <div class="take-me-home-a-btn">
+            <a href="/">Take Me Home!</a>
+        </div>
+    </div>
+
+</div>
