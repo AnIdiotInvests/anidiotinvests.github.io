@@ -16,10 +16,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 15pt;
-  margin: 0;
-  line-height: 1.5;
+  line-height: 1.58;
 }
 
 .spacer {
@@ -28,7 +27,6 @@ p {
 
 .post-content, .blog-content {
   padding: 0 16px;
-  /* overflow: hidden; */
 }
 
 .blog-content {
@@ -39,8 +37,8 @@ p {
 }
 
 .blog-content p {
-  padding-bottom: 20px;
-  padding-top: 10px;
+  font-size: 20pt;
+  line-height: 1.58;
 }
 
 .post-content {
