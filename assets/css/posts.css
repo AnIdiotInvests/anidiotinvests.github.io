@@ -14,6 +14,7 @@
 
 .post-listing-card {
     position: relative;
+    color: whitesmoke;
 
     padding: 1px;
 
@@ -37,6 +38,9 @@
     transition: box-shadow 0.1s ease-in-out 0s;
 
     transform: scale(1.02);
+    border-bottom: solid #0dc200 2px;
+    border-top: solid #0dc200 2px;
+
     cursor: pointer;
 }
 
@@ -53,6 +57,7 @@
     object-fit: cover;
     vertical-align: middle;
     height: 55%;
+    margin-bottom: 5px;
     width: 100%;
 }
 
@@ -139,15 +144,17 @@
 }
 
 .featured-posts-title h2 {
+    /* text-shadow: 1px 1px 3px black; */
     margin: 0;
     padding: 0;
     text-align: center;
     position: absolute;
     bottom: 0;
     padding-bottom: 10px;
+    /* color: whitesmoke; */
 }
 
-/* .featured-posts-title:after {
+.featured-posts-title:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -159,7 +166,7 @@
     transform-origin: bottom left;
     box-shadow: black 1px 1px 10px;
     background: inherit;
-} */
+}
 
 .take-me-home-a-btn {
     vertical-align: middle;
@@ -172,6 +179,7 @@
 }
 
 .take-me-home-a-btn a {
+    /* border-radius: 25%; */
     font-size: 18pt;
     padding: 25px;
     display: block;

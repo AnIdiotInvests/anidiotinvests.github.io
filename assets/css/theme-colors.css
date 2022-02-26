@@ -3,7 +3,7 @@
 }
 
 .primary-theme-color {
-    /* background-color: #404040; */
+    background-color: #404040;
     /* color: whitesmoke; */
 }
 
@@ -20,8 +20,8 @@
 }
 
 .tri-theme-color {
-    /* background-color: whitesmoke; */
-    /* color: whitesmoke; */
+    background-color: #444444;
+    color: whitesmoke;
 }
 
 .accent-theme-color {
