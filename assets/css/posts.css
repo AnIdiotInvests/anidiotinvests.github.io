@@ -16,7 +16,8 @@
     position: relative;
     color: whitesmoke;
 
-    padding: 12px;
+    padding: 1px;
+
     max-width: 364px;
     min-width: 275px;
     height: 480px;
@@ -24,7 +25,6 @@
 
     overflow: hidden;
     text-align: left;
-
 }
 
 .post-listing-card:hover {
@@ -44,6 +44,10 @@
     cursor: pointer;
 }
 
+.post-listing-card-content {
+    padding: 8px;
+}
+
 .post-listing-card:hover a {
     color: #0dc200;
 }
@@ -52,8 +56,8 @@
     overflow: hidden;
     object-fit: cover;
     vertical-align: middle;
-    height: 51%;
-    margin-bottom: 10px;
+    height: 55%;
+    margin-bottom: 5px;
     width: 100%;
 }
 
@@ -61,7 +65,6 @@
     padding: 0;
     margin: 0;
     font-size: 17pt;
-    /* min-height: 20px; */
     overflow: hidden;
 }
 
