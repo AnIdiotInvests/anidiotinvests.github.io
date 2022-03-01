@@ -2,6 +2,7 @@
     display: inline-block;
     text-align: center;
     width: auto;
+    vertical-align: top;
 }
 
 .sample-post-text {
@@ -12,40 +13,35 @@
     font-size: 12pt;
 }
 
+.post-listing-card-container {
+    position: inline-block;
+    color: whitesmoke;
+    vertical-align: top;
+
+    padding: 1px;
+    min-height: 450px;
+    width: 364px;
+    margin: 0px 7px 5px 7px;
+}
+
 .post-listing-card {
+    /* position: inline-block; */
     position: relative;
     color: whitesmoke;
 
-    padding: 1px;
+    transition: transform .2s;
 
-    max-width: 364px;
-    min-width: 275px;
-    height: 500px;
-    margin: 0px 7px 40px 7px;
+    padding: 1px;
 
     overflow: hidden;
     text-align: left;
 }
 
 .post-listing-card:hover {
-    -moz-box-shadow: 1px 1px 10px #1e1e1e;
-    -webkit-box-shadow: 1px 1px 10px #1e1e1e;
-    box-shadow: 1px 1px 10px #1e1e1e;
-    -webkit-transition: box-shadow 0.1s ease-in-out 0s;
-    -moz-transition: box-shadow 0.1s ease-in-out 0s;
-    -o-transition: box-shadow 0.1s ease-in-out 0s;
-    -ms-transition: box-shadow 0.1s ease-in-out 0s;
-    transition: box-shadow 0.1s ease-in-out 0s;
-
-    transform: scale(1.02);
-    /* border-bottom: solid #0dc200 2px; */
+    transform: scale(1.03);
     border-top: solid #0dc200 2px;
 
     cursor: pointer;
-}
-
-.post-listing-card-content {
-    padding: 8px;
 }
 
 .post-listing-card:hover a {
@@ -56,8 +52,8 @@
     overflow: hidden;
     object-fit: cover;
     vertical-align: middle;
-    height: 55%;
-    /* margin-bottom: 5px; */
+    height: 240px;
+    margin-bottom: 5px;
     width: 100%;
 }
 
@@ -159,7 +155,7 @@
     left: 0;
     height: 400px;
     width: 100%;
-    transform: SkewY(4deg);
+    transform: SkewY(6deg);
     transform-origin: bottom left;
     box-shadow: black 1px 1px 10px;
     background: inherit;

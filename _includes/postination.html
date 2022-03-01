@@ -1,9 +1,9 @@
 <div class="pageinator">
-    <div class="post-listing-card tri-theme-color" onclick="goTo('{{ post.url | absolute_url }}')">
+    <div class="post-listing-card-container">
+        <div class="post-listing-card tri-theme-color" onclick="goTo('{{ post.url | absolute_url }}')">
 
-        <img src="{{ post.imgUrl }}" alt="Img Not Found">
+            <img src="{{ post.imgUrl }}" alt="Img Not Found">
 
-        <div class="post-listing-card-content">
             <h2><a class="anc-hover" href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
 
             <div class="date-posted-stamp">
@@ -14,7 +14,8 @@
             <div class="sample-post-text">
                 <p class="sample-post-text">{{ post.description | default: post.title }}</p>
             </div>
-        </div>
 
+        </div>
     </div>
+
 </div>
