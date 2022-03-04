@@ -32,11 +32,10 @@ p {
 
 .blog-content {
   margin: 90px auto 32px;
-  max-width: 900px;
+  max-width: 920px;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  box-shadow: rgba(0, 255, 13, 0.5) 1px 1px 15px;
-
+  /* box-shadow: rgba(0, 255, 13, 0.5) 1px 1px 15px; */
 }
 
 .blog-content p {
