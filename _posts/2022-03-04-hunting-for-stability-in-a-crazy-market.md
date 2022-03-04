@@ -29,17 +29,17 @@ Unless you are an extremely lucky gambler, or you and your fortune 500 buddies a
 
 ## Start by Being Realistic with your Money
 
-The first and most important step in a stable investment is you. If you sell low and buy high, you are manually losing value.
+The first and most important step in a stable investment is you. If you buy high and sell low, you are manually losing value.
 
-Before making any changes or moves with money or your portfolio, it would be wise to first work on a better mindset for investing. Figure out what your goal is first, and ask yourself if it’s realistic and if the process sounds outlandish. A good way to start is with something called the ‘cringe test’. If you write down your plan and reasoning on paper, and there is even a hint of cringe to the strategy, I would highly recommend reworking it.
+Before making any moves with money or your portfolio, it would be wise to first develop a better mindset for investing. Figure out what your goal is then ask yourself if the process sounds outlandish. A good way to start is with something called the ‘cringe test’. If you write down your plan and reasoning on paper, and there is even a hint of cringe to the strategy, I would highly recommend reworking it.
 
 Here are some examples of cringe testing:
 
-__Example 1:__ “I plan to use a large portion of my savings into a 3x leveraged fund with the hopes that I will double my money in the next 2 years. Also I will have to sell portions of it along the way to pay rent.” 
+__Example 1:__ “I plan to put a large portion of my savings into a 3x leveraged fund with the hopes that I will double my money in a few months. Also I will have to sell portions of it along the way to pay rent.”
 
-__Example 2:__ “I plan to dollar cost average into QQQ over the next two years with a time horizon in which I do not need this money for 15+ years.”
+__Example 2:__ “I plan to dollar cost average a portion of my income into QQQM over the next few years with a 15+ year time horizon in which I will not need this money.”
 
-__Example 3:__ “I have made a lot of money from my job and small business and want a stable place to park money and retire. I also do not mind losing some money to inflation because I am 62. I'm considering bonds and large-cap value ETFs.”
+__Example 3:__ “I have made a lot of money from my job and small business and want a stable place to park money and retire. I also do not mind losing some value to inflation because I am 62. I'm considering bonds and large-cap value ETFs.”
 
 If you cannot tell which one smells the most cringy, you may want to rethink investing in the first place. If you are thinking to yourself this is a ridiculous example, then I must inform you there truly are people who cannot determine the differences here.
 
@@ -81,7 +81,7 @@ If you spread your investments out a little bit globally, then you are less expo
 
 It is also a good idea to put a portion of your portfolio into different asset types. Some examples would be commodities (like gold), physical Real Estate, bonds, and crypto.
 
-While there are still correlations in performance between these classes, they are not always directly correlated. This can make it much easier to weather economic downturns. If the real estate market crashes, then a globally diversified stock portfolio may still be doing alright so you are not exposed to as much drawdown. 
+While there are still correlations in performance between these classes, they are not always directly correlated. This can make it much easier to weather economic downturns. If the real estate market crashes, then a globally diversified stock portfolio may still be doing alright so you are not exposed to as much drawdown.
 
 ## Strategies and Simple Tricks
 
@@ -99,7 +99,7 @@ If you are investing in companies that you know have a lot of money it is easier
 
 ### Set and forget
 
-If you are investing in single stocks, this may not apply to you, because you will probably need to be actively managing said portfolio whether you want to or not at that point. 
+If you are investing in single stocks, this may not apply to you, because you will probably need to be actively managing said portfolio whether you want to or not at that point.
 
 After you have done your due diligence and have built a portfolio to your liking, try not to obsess about it all day every day. While you still need to check up on it occasionally, having the mental fortitude to continue buying whale prices go down every day or week is not easy long term.
 
@@ -107,13 +107,13 @@ If you stare at it all day, you are more likely to sell it at the wrong time. De
 
 ---
 
-### Sources: 
+### Sources:
 
-Dierking, David. “Value vs. Growth Etfs: How Do You Choose?” Investopedia, Investopedia, 3 Dec. 2021, 
-https://www.investopedia.com/articles/investing/011316/value-vs-growth-etfs-how-do-you-choose.asp.
+Caplinger, Dan. “Stock Market Sectors: 11 Official GICS Groups.” The Motley Fool,
+https://www.fool.com/investing/stock-market/market-sectors/.
 
-Langager, Chad. “A Beginner's Guide to Stock Investing.” Investopedia, Investopedia, 8 Feb. 2022, 
+Langager, Chad. “A Beginner's Guide to Stock Investing.” Investopedia, Investopedia, 8 Feb. 2022,
 https://www.investopedia.com/articles/basics/06/invest1000.asp.
 
-Reiff, Nathan. “Best Growth Etfs for Q1 2022.” Investopedia, Investopedia, 30 Dec. 2021, 
-https://www.investopedia.com/articles/etfs/top-growth-etfs/. 
+Reiff, Nathan. “Best Growth Etfs for Q1 2022.” Investopedia, Investopedia, 30 Dec. 2021,
+https://www.investopedia.com/articles/etfs/top-growth-etfs/.
