@@ -42,6 +42,7 @@
     transform: scale(1.03);
     border-top: solid #0dc200 2px;
 
+
     cursor: pointer;
 }
 
@@ -86,7 +87,7 @@
     height: 60vh;
     max-height: 1100px;
     min-height: 400px;
-    background: url('../img/primary/graph-contrast.png') no-repeat;
+    background: url('../assets/img/primary/graph-contrast.png') no-repeat;
 
     position: relative;
     text-align: center;
@@ -106,6 +107,8 @@
     bottom: 0;
     left: 0;
     right: 0;
+
+    animation: ghostHover 5s infinite;
 }
 
 .posts-header-title h1 {
@@ -186,3 +189,15 @@
     height: 100%;
     width: 100%;
 }
+
+@keyframes ghostHover {
+    0% {
+      transform: translatey(0px);
+      }
+      50% {
+      transform: translatey(-20px);
+      }
+      100% {
+      transform: translatey(0px);
+      }
+  }

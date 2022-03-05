@@ -1,3 +1,6 @@
+---
+---
+
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
 
 * {
@@ -157,4 +160,61 @@ a, a:link {
   overflow: hidden;
   visibility: hidden;
   height: 0;
+}
+
+.test-ani-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.test-ani {
+
+  background-image: url('../assets/img/primary/dollar-falling-anim-pic.png');
+  background-size: cover;
+  position: absolute;
+
+  width: var(--width);
+  height: var(--height);
+  background-color: green;
+  margin: auto;
+  padding: 0;
+}
+
+// .dollar-center {
+//   position: absolute;
+
+//   top: 0;
+//   bottom: 0;
+
+//   left: 0;
+//   right: 0;
+
+//   margin: auto;
+//   padding: 0;
+//   width: 30%;
+//   height: 40%;
+//   background-color: darkgreen;
+//   border-radius: 60%;
+// }
+
+@keyframes falling {
+  0% {
+      transform: translate3d(var(--left-ini), 0, 0) rotate(random(300)+deg);
+  }
+  100% {
+      transform: translate3d(var(--left-end), 60vh, 0);
+  }
+}
+
+@for $i from 1 through 16 {
+  .test-ani:nth-child(#{$i}) {
+    --width: 2.5vw;
+    --height: #{random(1) + 0.2}vw;
+    --left-ini: #{random(20) - 10}vw;
+    --left-end: #{random(20) - 10}vw;
+    left: #{random(100)}vw;
+    animation: falling #{5 + random(10)}s linear infinite;
+    animation-duration: -#{random(10)}s;
+  }
 }
