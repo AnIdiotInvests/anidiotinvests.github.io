@@ -2,6 +2,7 @@
 layout: post
 title: "Are Lesser Returns from Bonds Still Worth it in Today's Market?"
 date: 2022-02-10 19:41:52
+edit_date: 2022-03-04 18:41:52
 categories: investing
 permalink: are-lesser-returns-from-bonds-still-worth-it-in-todays-market
 imgUrl: /assets/img/performance-of-BND.png
@@ -47,11 +48,11 @@ Let’s take a look at what is inside BND, and hopefully gain a slightly better 
 | D       | Junk        |   Highest     |
 {:.posts-tables}
 
-I am focusing on the ‘Distribution by credit quality’ because I feel this is the most important at the stat. Simply put, credit quality of a bond refers to the odds of collecting the yield from the bond issuer. In other words, this is a loose way to judge the risk of the underlying bond. Where the AAA rating being the lowest risk and the highest credit quality, while D represents the highest risk with the lowest credit quality. 
+I am focusing on the ‘Distribution by credit quality’ because I feel this is the most important at the start. Simply put, credit quality of a bond refers to the odds of collecting the yield from the bond issuer. In other words, this is a loose way to judge the risk of the underlying bond. Where the AAA rating being the lowest risk and the highest credit quality, while D represents the highest risk with the lowest credit quality.
 
-When considering bonds with lower ratings and higher risk, they can sometimes be rewarded with higher potential returns. Also on a side note, When you are at or lower than BB rating, that is considered a ‘junk bond’. This is not to be insulting to the bond, it just the commonly used jargon.
+When considering bonds with lower ratings and higher risk, they can sometimes be rewarded with higher potential returns. Also on a side note, When you are at or lower than BB rating, that is considered a ‘junk bond’. This is not to be insulting to the bond, it’s only the commonly used jargon.
 
-Another consideration to keep in mind, you could hypothetically create your own portfolio of only AAA and Treasury rated bonds for the lowest risk possible. In this case your returns would likely be much smaller in contrast to somthing like the S&P 500. Although If your time horizon is very short, this may not matter to you.
+Another consideration to keep in mind, you could hypothetically create your own portfolio of only AAA and Treasury rated bonds for the lowest risk possible. In this case your returns would likely be much smaller in contrast to something like the S&P 500. Although If your time horizon is very short, this may not matter to you.
 
 ## Short Answer, Even in Today's Market Bonds Are Useful For Some People.
 
