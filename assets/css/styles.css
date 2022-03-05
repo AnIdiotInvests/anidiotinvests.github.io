@@ -25,6 +25,12 @@ p {
   word-wrap: break-word;
 }
 
+blockquote {
+  border-left: solid green 3px;
+  padding-left: 15px;
+  margin-left: 15px;
+}
+
 .post-content, .blog-content {
   padding: 8px;
   /* overflow: hidden; */
