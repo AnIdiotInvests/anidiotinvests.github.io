@@ -25,6 +25,16 @@ p {
   word-wrap: break-word;
 }
 
+.posts-tables {
+  margin: 15px;
+  float: left;
+}
+
+.posts-tables td, .posts-tables th {
+  padding: 6px;
+  border: whitesmoke solid 2px;
+}
+
 blockquote {
   border-left: solid green 3px;
   padding-left: 15px;
