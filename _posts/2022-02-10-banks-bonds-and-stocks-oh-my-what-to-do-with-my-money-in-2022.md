@@ -77,7 +77,7 @@ Decent Books To Start With: (Not Affiliated)
 
 Investing for the non fortune 500 CEO is simply putting your money in the place with the best odds of success and rate of return which has been tuned and tweaked to fit your risk tolerance. Nothing more, nothing less, otherwise it is simply glorified gambling. This includes all asset classes, not just stocks.
 
-This trick is that this can be much more complicated than it sounds. So start early, ignore the hoards of idiots, and read read read!
+The trick is this can be much more complicated than it sounds. So start early, ignore the hoards of idiots, and read read read!
 
 ---
 
