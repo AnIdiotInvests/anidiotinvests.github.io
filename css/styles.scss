@@ -159,9 +159,11 @@ a, a:link {
   overflow: hidden;
   visibility: hidden;
   height: 0;
+  text-align: center;
 }
 
 .test-ani-container {
+  position: relative;
   padding: 0;
   margin: 0;
   padding: 30px;
@@ -204,7 +206,7 @@ a, a:link {
       transform: translate3d(var(--left-ini), 0, 0) rotate(random(300)+deg);
   }
   100% {
-      transform: translate3d(var(--left-end), 60vh, 0);
+      transform: translate3d(var(--left-end), 100vh, 0);
   }
 }
 
