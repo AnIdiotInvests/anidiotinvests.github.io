@@ -82,7 +82,7 @@ You can easily use online tools and resources to see how tightly or loosely corr
 
 For example, consumer staples, utilities, and healthcare tend to be more recession resistant, while financials, consumer discretionary, and information technology tend to not be as stable during downturns.
 
-### Invest in different countries
+### Invest in Different Countries
 
 If you pile all your cash into one location and there happens to be a natural disaster like earthquakes or tsunamis, or a war breaks out, an entire country based economy can be subject to extremely sharp and prolonged downturns.
 
@@ -106,9 +106,7 @@ Back testing is the process of using tools and graphs to research historical per
 
 This is not done often enough in my opinion. Back in the day this was not very easy, but now there are tons of free tools that allow you to compare assets and investment vehicles years ago to when they were created to now.
 
-Check out my other post about useful tools here: [Useful Tools]()
-
-### Value investing
+### Value Investing
 
 The premise behind value investing involves looking for individual companies or funds that contain companies which have good balance sheets, revenue, and historical evidence of success.
 
@@ -116,7 +114,7 @@ If you are investing in companies that you know have a lot of current assets, st
 
 Knowing your investments have a better chance of survival in downturns means you are less likely to sell at the wrong time as well.
 
-### Set and forget
+### Set and Forget
 
 If you are investing in single stocks, forgetting about your money may not apply to you. Because You will probably be actively watching and researching the companies in your portfolio whether you want to or not at that point.
 
