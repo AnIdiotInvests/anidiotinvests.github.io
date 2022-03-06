@@ -2,10 +2,11 @@
 layout: post
 title: "Hunting For Stability in a Crazy Market"
 date: 2022-03-04 13:21:50
+edit_date: 2022-03-05 19:50:30
 categories: investing
 permalink: hunting-for-stability-in-a-crazy-market
 imgUrl: /assets/img/hunting-for-stability.png
-description: There are strategies you could implement to lower your chances of permanent losses and decrease your downside potential short and long-term.
+description: There are strategies you can implement to lower your chances of permanent losses and decrease your downside potential short and long-term.
 
 keywords:
   - stability
@@ -13,41 +14,51 @@ keywords:
   - return
   - volatility
   - diversification
+  - tactic
 ---
 
 <img src="/assets/img/hunting-for-stability.png" alt="IMG Not Found" width="100%"/>
 -  Photo by <a href="https://www.pexels.com/@harrisonhaines?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Harrison Haines</a> from Pexels
 
-
 Looking for a safe place to park your money outside of a bank? Yeah, same here.
 
-I don’ t mean to burst any bubbles, (no market pun intended), but guaranteed gain does not exist and the reliability of an investment is 100% dependent on the environment in which you are investing. Not all markets and assets are created equal for volatility or risk, and it is an ever changing playing field.
+I don’ t mean to burst any bubbles, (no market pun intended), but guaranteed gains do not exist and the reliability of any returns is 100% dependent on the environment in which you are investing. Not all markets and assets are created equal for volatility or risk, and it is an ever changing playing field.
 
-However, there are strategies you could implement to lower your chances of permanent losses and decrease your downside potential short and long-term. Don’t be fooled though, there is no realistic way to avoid all risk and volatility while still maintaining average or higher returns over the long haul, it just does not exist.
+However, there are strategies you can implement to lower your chances of permanent losses and decrease your downside potential short and long-term. Don’t be fooled though, there is no realistic way to avoid all risk and volatility while still maintaining average or higher returns over the long haul, it just does not exist.
 
 Unless you are an extremely lucky gambler, or you and your fortune 500 buddies are insider trading that is.
 
 ## Start by Being Realistic with your Money
 
-The first and most important step in a stable investment is you. If you buy high and sell low, you are manually losing value.
+The first and most important step in a stable investment is you. If you buy high and sell low out of fear, you are manually throwing away future potential and magnifying your losses.
 
-Before making any moves with money or your portfolio, it would be wise to first develop a better mindset for investing. Figure out what your goal is then ask yourself if the process sounds outlandish. A good way to start is with something called the ‘cringe test’. If you write down your plan and reasoning on paper, and there is even a hint of cringe to the strategy, I would highly recommend reworking it.
+Before making any moves with money or your portfolio, it would be wise to first develop a better mindset for investing. Figure out what your goal is then ask yourself if the process sounds outlandish. 
+
+A good way to start is with something called the ‘cringe test’. If you write down your plan and reasoning on paper, and there is even a hint of cringe to the strategy, I would highly recommend reworking it.
 
 Here are some examples of cringe testing:
 
-__Example 1:__ “I plan to put a large portion of my savings into a 3x leveraged fund with the hopes that I will double my money in a few months. Also I will have to sell portions of it along the way to pay rent.”
+__Example 1:__ “I plan to put a large portion of my savings into a 3x leveraged fund with the hopes that I will double my money in a few months. Also I will have to sell portions of my investment along the way to pay rent.”
 
 __Example 2:__ “I plan to dollar cost average a portion of my income into QQQM over the next few years with a 15+ year time horizon in which I will not need this money.”
 
 __Example 3:__ “I have made a lot of money from my job and small business and want a stable place to park money and retire. I also do not mind losing some value to inflation because I am 62. I'm considering bonds and large-cap value ETFs.”
 
-If you cannot tell which one smells the most cringy, you may want to rethink investing in the first place. If you are thinking to yourself this is a ridiculous example, then I must inform you there truly are people who cannot determine the differences here.
+If you cannot tell which one smells the most cringy, you may want to rethink why you are investing in the first place. If you are thinking to yourself this is a ridiculous example, then I must inform you there truly are people who cannot determine the differences here.
 
 ## Diversification, Yes I am Using the D Word
 
-Diversification is your best bet to protect your portfolio from dumb mistakes. It is easy to take diversification way too far though, or not take it far enough. If you get on Reddit for finance content often and have been investing for a while then you probably know what I mean.
+Diversification is your best bet to protect your portfolio from dumb mistakes. Be careful though, It is easy to take diversification way too far, or not take it far enough. If you get on Reddit for finance content often and have been investing for a while then you probably know what I mean.
 
-You cannot focus solely on buying multiple companies just because you like them, it is about diversification as far out as possible to mitigate as much risk as humanly possible without losing the original intent and expected return of the portfolio.
+If not, then here is a quick overview. 
+
+If you don’t have the time to FULLY understand and keep track of the investments and companies you are investing in, you should not focus solely on buying multiple companies just because you like them.
+
+It’s about diversification as far out as possible to mitigate as much risk as possible without losing the original intent and expected return of the portfolio. The reasoning for this is so you don’t make stupid mistakes or have to worry about reading corporate financial reports all day.
+
+Unless that is your hobby then have at it! It’s addicting and fun! Just don’t form a gambling habit.
+
+Again, If you understand the risk of throwing your money in a single or a handful of stocks then go for it (even though I cannot recommend it). But if you cannot keep up with the news on those companies, then diversification is your best friend.
 
 ### Invest in Different Market Sectors
 
@@ -67,9 +78,9 @@ Here is the list:
 10. Communication Services
 11. Real Estate
 
-You can easily use online tools and resources to see how tightly or loosely correlated each sector is to one another. You can also use historical data to see which has the least exposure to market risk using a metric like Beta.
+You can easily use online tools and resources to see how tightly or loosely correlated each sector is to one another. You can also use historical data to see which has the least exposure to market risk using metrics like Beta and rolling volatility.
 
-For example, Consumer Staples and healthcare tend to be more recession resistant, while Financials and Real Estate are not. Don’t take my word for it, look at some astrology charts to see what I mean here: (blah blah blah)
+For example, consumer staples, utilities, and healthcare tend to be more recession resistant, while financials, consumer discretionary, and information technology tend to not be as stable during downturns.
 
 ### Invest in different countries
 
@@ -77,33 +88,43 @@ If you pile all your cash into one location and there happens to be a natural di
 
 If you spread your investments out a little bit globally, then you are less exposed to the risk of a single location, especially if the county you are investing in is smaller, or an Island for example and potentially more susceptible to natural events.
 
-### Invest in Different Asset Types, not just Stonks.
+### Invest in Different Asset Types, Not Just Stocks.
 
 It is also a good idea to put a portion of your portfolio into different asset types. Some examples would be commodities (like gold), physical Real Estate, bonds, and crypto.
 
-While there are still correlations in performance between these classes, they are not always directly correlated. This can make it much easier to weather economic downturns. If the real estate market crashes, then a globally diversified stock portfolio may still be doing alright so you are not exposed to as much drawdown.
+While there are still correlations in performance between these classes, they are not always directly correlated. This can make it much easier to weather economic downturns if only a portion of your portfolio is doing poorly.
+
+For example, If the real estate market crashes, then a globally diversified stock portfolio may still be doing fine. So you are not exposed to as much drawdown.
 
 ## Strategies and Simple Tricks
 
 There are some tactics you can use to aid in your overall strategy that could help keep you from self sabotaging your portfolio as well.
 
-### Looking for Low Volatility while back testing
+### Looking for Low Volatility While Back Testing
+
+Back testing is the process of using tools and graphs to research historical performance and metrics of an existing or hypothetical portfolio. This process can be extremely useful to review and make changes before any money is actually invested. My favorite tool to use is Portfolioslab.com.
 
 This is not done often enough in my opinion. Back in the day this was not very easy, but now there are tons of free tools that allow you to compare assets and investment vehicles years ago to when they were created to now.
 
+Check out my other post about useful tools here: [Useful Tools]()
+
 ### Value investing
 
-Looking for companies, and funds that have companies in them with great balance sheets, revenue, and historical evidence of success.
+The premise behind value investing involves looking for individual companies or funds that contain companies which have good balance sheets, revenue, and historical evidence of success.
 
-If you are investing in companies that you know have a lot of money it is easier to sleep an night knowing they have a better chance of survival in downturns.
+If you are investing in companies that you know have a lot of current assets, strong management, and a long history of success, it is much easier to sleep at night.
+
+Knowing your investments have a better chance of survival in downturns means you are less likely to sell at the wrong time as well.
 
 ### Set and forget
 
-If you are investing in single stocks, this may not apply to you, because you will probably need to be actively managing said portfolio whether you want to or not at that point.
+If you are investing in single stocks, forgetting about your money may not apply to you. Because You will probably be actively watching and researching the companies in your portfolio whether you want to or not at that point.
 
-After you have done your due diligence and have built a portfolio to your liking, try not to obsess about it all day every day. While you still need to check up on it occasionally, having the mental fortitude to continue buying whale prices go down every day or week is not easy long term.
+After you have done your due diligence and have built a passive portfolio to your liking, try not to obsess about it all day every day. While you still need to check up on it occasionally, having the mental fortitude to continue buying while prices are fluctuating wildly is not easy long term.
 
-If you stare at it all day, you are more likely to sell it at the wrong time. Definitely before you planned to start withdrawals.
+Worrying about your portfolio over time will make you more likely to sell it out of fear before you reach your goal.
+
+A good first step to escaping the anxiety is to automate it away. You can use one of the major online brokers to automatically purchase your favorite funds and stocks monthly, weekly, and even daily. I am an active user of M1 Finance and Fidelity. (Not Affiliated).
 
 ---
 
@@ -117,3 +138,4 @@ https://www.investopedia.com/articles/basics/06/invest1000.asp.
 
 Reiff, Nathan. “Best Growth Etfs for Q1 2022.” Investopedia, Investopedia, 30 Dec. 2021,
 https://www.investopedia.com/articles/etfs/top-growth-etfs/.
+
