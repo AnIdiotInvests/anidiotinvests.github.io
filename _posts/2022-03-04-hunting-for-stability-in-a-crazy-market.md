@@ -28,7 +28,7 @@ However, there are strategies you can implement to lower your chances of permane
 
 Unless you are an extremely lucky gambler, or you and your fortune 500 buddies are insider trading that is.
 
-## Start by Being Realistic with your Money
+## Start Being Realistic With Your Money
 
 The first and most important step in a stable investment is you. If you buy high and sell low out of fear, you are manually throwing away future potential and magnifying your losses.
 
@@ -46,7 +46,7 @@ __Example 3:__ “I have made a lot of money from my job and small business and 
 
 If you cannot tell which one smells the most cringy, you may want to rethink why you are investing in the first place. If you are thinking to yourself this is a ridiculous example, then I must inform you there truly are people who cannot determine the differences here.
 
-## Diversification, Yes I am Using the D Word
+## Diversification, Yes I Used the D Word
 
 Diversification is your best bet to protect your portfolio from dumb mistakes. Be careful though, It is easy to take diversification way too far, or not take it far enough. If you get on Reddit for finance content often and have been investing for a while then you probably know what I mean.
 
@@ -90,23 +90,25 @@ If you spread your investments out a little bit globally, then you are less expo
 
 ### Invest in Different Asset Types, Not Just Stocks.
 
-It is also a good idea to put a portion of your portfolio into different asset types. Some examples would be commodities (like gold), physical Real Estate, bonds, and crypto.
+It is also a good idea to put a portion of your portfolio into different asset types. Some examples would be commodities (like gold), physical real estate, bonds, and crypto.
 
 While there are still correlations in performance between these classes, they are not always directly correlated. This can make it much easier to weather economic downturns if only a portion of your portfolio is doing poorly.
 
 For example, If the real estate market crashes, then a globally diversified stock portfolio may still be doing fine. So you are not exposed to as much drawdown.
 
-## Strategies and Simple Tricks
+## 3 Strategies and Simple Tricks
 
-There are some tactics you can use to aid in your overall strategy that could help keep you from self sabotaging your portfolio as well.
+Here are some tactics that you can use to aid in your overall strategy. These topcs could also help keep you from self sabotaging your portfolio as well.
 
-### Looking for Low Volatility While Back Testing
+I personally have a hard time with the third option.
+
+### 1. Looking for Low Volatility While Back Testing
 
 Back testing is the process of using tools and graphs to research historical performance and metrics of an existing or hypothetical portfolio. This process can be extremely useful to review and make changes before any money is actually invested. My favorite tool to use is Portfolioslab.com.
 
 This is not done often enough in my opinion. Back in the day this was not very easy, but now there are tons of free tools that allow you to compare assets and investment vehicles years ago to when they were created to now.
 
-### Value Investing
+### 2. Value Investing
 
 The premise behind value investing involves looking for individual companies or funds that contain companies which have good balance sheets, revenue, and historical evidence of success.
 
@@ -114,7 +116,7 @@ If you are investing in companies that you know have a lot of current assets, st
 
 Knowing your investments have a better chance of survival in downturns means you are less likely to sell at the wrong time as well.
 
-### Set and Forget
+### 3. Set and Forget
 
 If you are investing in single stocks, forgetting about your money may not apply to you. Because You will probably be actively watching and researching the companies in your portfolio whether you want to or not at that point.
 
