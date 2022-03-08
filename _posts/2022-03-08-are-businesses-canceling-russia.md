@@ -4,7 +4,7 @@ title: "Are Businesses Canceling Russia?"
 date: 2022-03-08 10:21:50
 categories: investing
 permalink: are-businesses-canceling-russia
-imgUrl: /assets/img/close-business-img.png
+imgUrl: /assets/img/close-business-img-2.png
 description: A few companies you might be familiar with; Visa, Mastercard, Netflix, Samsung, TikTok, Nike, BP, GM, Ford, Toyota, Volkswagen, Disney, Spotify, Apple, Microsoft, McDonalds, Pepsi, and even Coca-Cola!
 
 keywords:
@@ -15,7 +15,7 @@ keywords:
   - coca-cola
 ---
 
-<img src="/assets/img/close-business-img.png" alt="IMG Not Found" width="100%"/>
+<img src="/assets/img/close-business-img-2.png" alt="IMG Not Found" width="100%"/>
 -  Photo by <a href="https://www.pexels.com/@shvetsa?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Anna Shvets</a> from Pexels
 
 I think just about everyone is familiar with what is happening in Ukraine at this point.
