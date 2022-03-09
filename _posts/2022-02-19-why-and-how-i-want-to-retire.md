@@ -79,7 +79,7 @@ In the image above, you can see I plan to start my hypothetical retirement in th
 
 In this situation since I am not completely dependent on my job for lifestyle stability, I can switch between income sources freely. In other words, working for fun.
 
-(Keep in mind, I will be contributing as much as possible to my 401k and ROTH IRA as humanly possible at the same time).
+(Keep in mind, I will be contributing as much as possible to my 401k and ROTH IRA the entire time).
 
 Obviously this will not work for some as the accumulation phase would take so long that the start phase would overlap the end phase. The point is however, that I have a plan, and I plan to execute it without mercy.
 
