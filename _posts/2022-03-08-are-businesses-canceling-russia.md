@@ -36,7 +36,6 @@ We are not just talking about slowing down business, I mean all out we are done 
 
 I think it’s obvious when you pile the effects of sanction on top of this, the effects would be devastating to any economy. Just take a look at the Russian Ruble for reference. It’s been in a bit of a decline for a while but has had roughly a -50% drop in a short period of time.
 
-
 {% include image-caption.html 
 imageLocation="/assets/img/ruble-graph.png" 
 caption="Screenshot of google Ruble to USD conversion graph" %}

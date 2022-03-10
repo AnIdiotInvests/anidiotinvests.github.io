@@ -74,7 +74,9 @@ This is where a lot of misconceptions will start to creep up on people. Like inv
 
 Don’t fall for the traps, do your due diligence and find what works for you.
 
-<img src="/assets/img/retire-plan-drawing.png" alt="IMG Not Found" width="100%"/>
+{% include image-caption.html
+imageLocation="/assets/img/retire-plan-drawing.png"
+caption="My child level drawing and plan for retirment" %}
 
 In the image above, you can see I plan to start my hypothetical retirement in the passive income 'Start Phase'. I hope to be generating enough income on my own that I would not have to work if I did not desire to. I plan to continue working during this time to supplement my 'End Phase' further though.
 
