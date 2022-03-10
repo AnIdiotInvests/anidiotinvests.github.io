@@ -16,11 +16,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: An Idiot Invests
+title: An Idiot Invests - Learn From My Mistakes
 description: >- # this means to ignore newlines until "baseurl:"
   Learning how to invest as I go and blogging about it along the way. Join me on a journey to financial success and freedom. 
   | Investing Lifestyle Finance 
   | An Idiot Invests
+  | anidiotinvests.com
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://anidiotinvests.com" # the base hostname & protocol for your site, e.g. http://example.com

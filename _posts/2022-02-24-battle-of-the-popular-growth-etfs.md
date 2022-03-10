@@ -15,8 +15,9 @@ keywords:
   - comparison
 ---
 
-<img src="/assets/img/growth-etf-battle-title.png" alt="IMG Not Found" width="100%"/>
-- Base Photo by Anna Tarazevich from Pexels
+{% include image-caption.html
+imageLocation="/assets/img/growth-etf-battle-title.png"
+caption="Base Photo by Anna <a href='https://www.pexels.com/@anntarazevich'>Tarazevich</a> from Pexels" %}
 
 I spent some time learning about popular growth ETFs and thought I would share it with whoever is interested. For starters, when you say any of these ETF names fast enough, it’s almost like an incantation to the investing stock gods. 
 
@@ -30,7 +31,9 @@ On a slightly more serious note, if you are not familiar with growth ETFs here i
 
 Please be aware that while all of these ETFs are centered around growth, many of them follow different underlying indexes which represent different fund goals. I am simply looking at raw performance and volatility. People seem to think that just because it has ‘growth’ in the name that the fund is somehow better overall. Instead, please do your due diligence on what is happening under the hood before you add anything to your portfolio.
 
-<img src="/assets/img/charts-2022/growth-etfs-by-aum.png" alt="IMG Not Found" width="100%"/>
+{% include image-caption.html 
+imageLocation="/assets/img/charts-2022/growth-etfs-by-aum.png" 
+caption="Etfdb.com screenshot of all ETFs on my list" %}
 
 At first I was only going to cover my top three, but that's not really fair to anyone. There are other juicy growth options to look at other than SCHG and VUG, but I did make a list based on AUM and set the cut off at about 3 Billion-ish to keep it relevant. Also, don’t worry, I will use your precious QQQ, which follows the NASDAQ 100, as a benchmark for some of my comparisons.
 

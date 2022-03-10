@@ -74,6 +74,23 @@ blockquote {
   font-size: 20pt;
 }
 
+.img-caption-include {
+  width: 100%;
+  text-align: center;
+}
+
+.img-caption-include figcaption {
+  margin: 5px;
+  font-style: italic;
+}
+
+.img-caption-include img {
+  border: solid green 1px;
+  background-color: rgb(107, 107, 107);
+  width: 100%;
+  height: auto;
+}
+
 .post-content {
   margin: 0px auto 0px auto;
   max-width: 1250px;

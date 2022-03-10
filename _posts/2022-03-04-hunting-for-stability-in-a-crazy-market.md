@@ -17,8 +17,9 @@ keywords:
   - tactic
 ---
 
-<img src="/assets/img/hunting-for-stability.png" alt="IMG Not Found" width="100%"/>
--  Photo by <a href="https://www.pexels.com/@harrisonhaines?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Harrison Haines</a> from Pexels
+{% include image-caption.html
+imageLocation="/assets/img/hunting-for-stability.png"
+caption="Base photo by <a href='https://www.pexels.com/@harrisonhaines'>Harrison Haines</a> from Pexels" %}
 
 Looking for a safe place to park your money outside of a bank? Yeah, same here.
 
