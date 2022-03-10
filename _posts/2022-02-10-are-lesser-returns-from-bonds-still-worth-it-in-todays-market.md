@@ -16,7 +16,6 @@ keywords:
   - safe
 ---
 
-
 {% include image-caption.html 
 imageLocation="/assets/img/performance-of-BND.png" 
 caption="BND and S&P 500 chart above was created using <a href='https://portfolioslab.com/tools/portfolio-analysis?d=95f5d31'>PortfoliosLab.com</a>" %}
@@ -29,11 +28,11 @@ Something you may want to consider though is that there are several different ty
 
 I used a popular ETF called [Vanguard Total Bond Market ETF (BND)](https://investor.vanguard.com/etf/profile/overview/bnd) which follows the Vanguard Total Bond Market Index to represent bonds in comparison to the Standard and Poor's 500 (S&P 500). This is not meant to deter the use of or argue the validity of bonds, but to give a visual for long term performance.
 
-
 Let’s take a look at what is inside BND, and hopefully gain a slightly better understanding of bonds and the different forms they can take.
 
-<img src="/assets/img/bnd-etf-components.png" alt="IMG Not Found" width="100%"/>
-- (You can view all this information yourself on the BND page on Vanguard’s Website)
+{% include image-caption.html 
+imageLocation="/assets/img/bnd-etf-components.png" 
+caption="More info on BND's contents; This information available on <a href='https://investor.vanguard.com/etf/profile/BND'>Vanguard’s Website</a>" %}
 
 | Rate | Grade      | Risk    |
 | :--- | :--------- | :------ |
