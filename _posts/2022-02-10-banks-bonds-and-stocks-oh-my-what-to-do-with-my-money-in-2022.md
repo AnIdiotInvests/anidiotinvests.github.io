@@ -15,8 +15,9 @@ keywords:
   - frugal
 ---
 
-<img src="/assets/img/S&P500-graph-one.png" alt="IMG Not Found" width="100%"/>
-- image is a screenshot of S&P 500 graph on google search.
+{% include image-caption.html
+imageLocation="/assets/img/S&P500-graph-one.png"
+caption="Screenshot of S&P 500 graph on google search" %}
 
 Investing can be complicated. It is difficult to make critical decisions with many different investing sources screaming what they think you should do and how you should do it.
 

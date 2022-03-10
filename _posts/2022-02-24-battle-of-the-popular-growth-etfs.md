@@ -15,8 +15,9 @@ keywords:
   - comparison
 ---
 
-<img src="/assets/img/growth-etf-battle-title.png" alt="IMG Not Found" width="100%"/>
-- Base Photo by Anna Tarazevich from Pexels
+{% include image-caption.html
+imageLocation="/assets/img/growth-etf-battle-title.png"
+caption="Base Photo by Anna <a href='https://www.pexels.com/@anntarazevich'>Tarazevich</a> from Pexels" %}
 
 I spent some time learning about popular growth ETFs and thought I would share it with whoever is interested. For starters, when you say any of these ETF names fast enough, it’s almost like an incantation to the investing stock gods. 
 

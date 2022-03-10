@@ -6,7 +6,14 @@
     <link rel="icon" href="/assets/img/primary/logo-two.png">
 
     {% if site.title %}
-    <title>{{ page.title | default: site.title }}</title>
+    <title>
+        {{ page.title | default: site.title }}
+
+        {% if page.categories %} 
+            | {{ page.categories | join: ' - ' | append: '| An Idiot Invests' }}  
+        {% endif %}
+
+    </title>
     {% endif %}
 
     {% if site.description %}
@@ -24,7 +31,6 @@
     {% if page.url %}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     {% endif %}
-
 
     {% if page.is_post %}
     {% assign type = "article" %}

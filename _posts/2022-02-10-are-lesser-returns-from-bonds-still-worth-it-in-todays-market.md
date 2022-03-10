@@ -16,9 +16,10 @@ keywords:
   - safe
 ---
 
-<img src="/assets/img/performance-of-BND.png" alt="IMG Not Found" width="100%"/>
-- Link to where I generated the chart above:
-<a href="https://portfolioslab.com/tools/portfolio-analysis?d=95f5d31">https://portfolioslab.com/tools/portfolio-analysis?d=95f5d31</a>
+
+{% include image-caption.html 
+imageLocation="/assets/img/performance-of-BND.png" 
+caption="BND and S&P 500 chart above was created using <a href='https://portfolioslab.com/tools/portfolio-analysis?d=95f5d31'>PortfoliosLab.com</a>" %}
 
 Bonds can be a controversial topic for some, and have historically been used as a defensive play for more standard portfolios. However, a common question that I have seen (and asked myself) is whether or not bonds are worth owning in more modern portfolios, especially if you are younger.
 
@@ -34,18 +35,18 @@ Let’s take a look at what is inside BND, and hopefully gain a slightly better 
 <img src="/assets/img/bnd-etf-components.png" alt="IMG Not Found" width="100%"/>
 - (You can view all this information yourself on the BND page on Vanguard’s Website)
 
-| Rate    | Grade       | Risk          |
-| :---    |    :---     |         :---  |
-| AAA     | Investment  |   Lowest      |
-| AA      | Investment  |               |
-| A       | Investment  |               |
-| BBB     | Investment  |   Medium      |
-| BB      | Junk        |               |
-| B       | Junk        |               |
-| CCC     | Junk        |               |
-| CC      | Junk        |               |
-| C       | Junk        |               |
-| D       | Junk        |   Highest     |
+| Rate | Grade      | Risk    |
+| :--- | :--------- | :------ |
+| AAA  | Investment | Lowest  |
+| AA   | Investment |         |
+| A    | Investment |         |
+| BBB  | Investment | Medium  |
+| BB   | Junk       |         |
+| B    | Junk       |         |
+| CCC  | Junk       |         |
+| CC   | Junk       |         |
+| C    | Junk       |         |
+| D    | Junk       | Highest |
 {:.posts-tables}
 
 I am focusing on the ‘Distribution by credit quality’ because I feel this is the most important at the start. Simply put, credit quality of a bond refers to the odds of collecting the yield from the bond issuer. In other words, this is a loose way to judge the risk of the underlying bond. Where the AAA rating being the lowest risk and the highest credit quality, while D represents the highest risk with the lowest credit quality.

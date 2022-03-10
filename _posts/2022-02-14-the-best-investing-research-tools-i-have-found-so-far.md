@@ -14,8 +14,9 @@ keywords:
   - best
 ---
 
-<img src="/assets/img/tools-one.png" alt="IMG Not Found" width="100%"/>
-- Photo by <a href="https://www.pexels.com/@cottonbro">cottonbro</a> from Pexels
+{% include image-caption.html
+imageLocation="/assets/img/tools-one.png"
+caption="Photo by <a href='https://www.pexels.com/@cottonbro'>cottonbro</a> from Pexels" %}
 
 As I slowly progress my investing knowledge over the years (which is still not much), several online and mostly free tools that provide great value and time savings have come to my attention. So I thought it would be a good idea to make a quick write up on my favorites thus far. Also, I am not affiliated with any of these sites and tools, but I do use some of them almost daily.
 

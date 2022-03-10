@@ -16,8 +16,9 @@ keywords:
  - long-term
 ---
 
-<img src="/assets/img/freedom-img.png" alt="IMG Not Found" width="100%"/>
-- Photo by Pixabay from Pexels
+{% include image-caption.html
+imageLocation="/assets/img/freedom-img.png"
+caption="Photo by <a href='https://www.pexels.com/@pixabay'>Pixabay</a> from Pexels" %}
 
 It wasn't until I was 24 that I even remotely considered saving for retirement. Let alone for it to be worthy of my time and effort to plan it out in detail. The narrative in my head went like “Why would I not just use the money now rather than when I am ancient?”
 
