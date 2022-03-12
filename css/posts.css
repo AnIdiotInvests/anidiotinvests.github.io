@@ -30,8 +30,6 @@
     position: relative;
     color: whitesmoke;
 
-    transition: transform .2s;
-
     padding: 1px;
 
     overflow: hidden;
@@ -39,10 +37,8 @@
 }
 
 .post-listing-card:hover {
-    transform: scale(1.03);
+    animation: scaledGhostHover 3s infinite;
     border-top: solid #0dc200 2px;
-
-
     cursor: pointer;
 }
 
@@ -60,6 +56,7 @@
 }
 
 .post-listing-card h2 {
+    min-height: 57px;
     padding: 0;
     margin: 0;
     font-size: 17pt;
@@ -67,6 +64,7 @@
 }
 
 .date-posted-stamp {
+    bottom: 0;
     padding: 0;
     margin: 5px 0px 10px 0px;
     font-style: oblique;
@@ -189,6 +187,19 @@
     height: 100%;
     width: 100%;
 }
+
+@keyframes scaledGhostHover {
+    0% {
+      transform: translatey(0px) scale(1.03);
+      }
+      50% {
+      transform: translatey(-9px) scale(1.06);
+      }
+      100% {
+      transform: translatey(0px) scale(1.03);
+      }
+  }
+
 
 @keyframes ghostHover {
     0% {

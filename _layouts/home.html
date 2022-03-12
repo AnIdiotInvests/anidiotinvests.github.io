@@ -2,27 +2,7 @@
 layout: primary
 ---
 
-<header class="posts-header" id="posts-home-header-id">
-
-    <div class="test-ani-container">
-        <div class="test-ani"></div>
-        <div class="test-ani"></div>
-        <div class="test-ani"></div>
-        <div class="test-ani"></div>
-        <div class="test-ani"></div>
-        <div class="test-ani"></div>
-        <div class="test-ani"></div>
-        <div class="test-ani"></div>
-        <div class="test-ani"></div>
-        <div class="test-ani"></div>
-    </div>
-
-    <div class="posts-header-title">
-        <h1>An Idiot Invests</h1>
-        <h2>Investing Lifestyle Finance</h2>
-    </div>
-</header>
-
+{% include page-header.html %}
 
 <div class="featured-posts-title secondary-theme-color">
     <div class="post-content">
@@ -30,15 +10,12 @@ layout: primary
     </div>
 </div>
 
-
 <div class="post-content">
     <table id="postContainer" class="posts-pagination-table">
-
         {% for post in site.posts %}
 
         {% include postination.html %}
 
         {% endfor %}
-
     </table>
 </div>

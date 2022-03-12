@@ -10,8 +10,7 @@ categories:
 
 permalink: are-businesses-canceling-russia
 imgUrl: /assets/img/close-business-img-2.png
-description: A few companies you might be familiar with; Visa, Mastercard, Netflix, Samsung, TikTok, Nike, BP, GM, Ford, Toyota, Volkswagen, Disney, Spotify, Apple, Microsoft, McDonalds, Pepsi, and even Coca-Cola!
-
+description: Some might not be aware of just how much money and business is being pulled out of Russia as we speak.
 keywords:
   - Russia
   - canceling
