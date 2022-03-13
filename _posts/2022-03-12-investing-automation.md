@@ -7,7 +7,7 @@ categories: investing
 
 permalink: automating-your-investments
 imgUrl: /assets/img/investing-automation.png
-description: Some might not be aware of just how much money and business is being pulled out of Russia as we speak.
+description:  have found that many people (myself included for a long time) are not aware that investing automation even exists.
 keywords:
   - automation
   - investing
