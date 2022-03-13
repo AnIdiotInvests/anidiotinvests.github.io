@@ -95,11 +95,11 @@ The pies and reballaning are quite obvious to understand, granted the first time
 
 I personally avoid the ‘professionally’ created pies, but please keep in mind I am a degenerate that donates his cash to wall street regularly.
 
-Also, a lot of brokers do not allow automatic investments into Extrange Traded Funds (ETFs) and instead only allow mutual funds. This is not a huge issue for some because many people don't really care about the differences between ETFs and Mutual funds.
+Also, a lot of brokers do not allow automatic investments into Extrange Traded Funds (ETFs) and instead only allow mutual funds. This is not a huge issue for some because many people don't really care about the differences between ETFs and mutual funds.
 
 But this is one of the biggest reasons I moved from Ally Invest over to M1 Finance. I know that the Robo Investing for Ally has ETFs, but the way it’s implemented is a bit too restrictive for me personally.
 
-I invest in both, but I like some of the benefits of ETFs over Mutual funds in specific situations. In contrast however, you cannot invest in mutual funds on M1 Finance. On top of that, you cannot choose what time of day to purchase your investments, its either 9am for the free account or  optionally 3pm for the M1+ account.
+I invest in both, but I like some of the benefits of ETFs over mutual funds in specific situations. In contrast however, you cannot invest in mutual funds on M1 Finance. On top of that, you cannot choose what time of day to purchase your investments, its either 9am for the free account or  optionally 3pm for the M1+ account.
 
 ### 2. Fidelity
 
@@ -107,7 +107,7 @@ Fidelity was the first brokerage I ever used, but not because I chose to. My job
 
 For Fidelity, the UI is weird for me at times, but overall it is easy to use. The biggest drawback for me though is that you cannot auto invest in ETFs or individual stocks outside of robo advising (kinda) and mutual funds. It just bums me out.
 
-Honestly have not tried the robo advisor ‘Fidelity Go’ and I don’t plan to based on the way I use Fidelity. I manually buy my speculative investments then automate with DRIP.
+Honestly, I have not tried the robo advisor ‘Fidelity Go’ and I don’t plan to based on the way I use Fidelity. I manually buy my speculative investments then automate with DRIP.
 
 ## My Future Plans For Automation
 
