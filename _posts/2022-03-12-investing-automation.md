@@ -49,7 +49,7 @@ If you have multiple platforms, and you are investing in small chunks daily, the
 
 I know you could download an investing application on your phone, and simply click a few buttons and be done with it. This might only take you one minute a day.
 
-Personally I don’t like having direct access to my assets though my smart phone, but this is a good point. If you like to have fine tune control on a day to day basis then automation may not be for you.
+While this is a good point, personally I don’t like having direct access to my assets through my smart phone. But if you like to have fine tune control on a day to day basis then automation may not be for you.
 
 ### 2. Reduce Anxiety
 
@@ -93,7 +93,7 @@ M1 Finance is easy to use, and you can build what is called a ‘Pie’. Which i
 
 The pies and reballaning are quite obvious to understand, granted the first time you set up a pie it may feel overwhelming because there are so many different ETFs to choose from.
 
-I personally avoid the ‘professionally’ created pies, But please keep in mind I am a degenerate that donates his cash to wall street regularly.
+I personally avoid the ‘professionally’ created pies, but please keep in mind I am a degenerate that donates his cash to wall street regularly.
 
 Also, a lot of brokers do not allow automatic investments into Extrange Traded Funds (ETFs) and instead only allow mutual funds. This is not a huge issue for some because many people don't really care about the differences between ETFs and Mutual funds.
 
