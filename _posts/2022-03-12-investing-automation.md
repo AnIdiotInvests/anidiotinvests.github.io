@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Investing Automation"
+title: "Automating Your Investments"
 date: 2022-03-12 10:21:50
 
 categories: investing
 
-permalink: investing-automation
+permalink: automating-your-investments
 imgUrl: /assets/img/investing-automation.png
 description: Some might not be aware of just how much money and business is being pulled out of Russia as we speak.
 keywords:
