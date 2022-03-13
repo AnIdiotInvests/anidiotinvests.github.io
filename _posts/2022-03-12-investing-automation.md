@@ -19,7 +19,7 @@ keywords:
 
 {% include image-caption.html
 imageLocation="/assets/img/investing-automation.png"
-caption="Base Photo by <a href='https://www.pexels.com/@tara-winstead'>Tara Winstead</a> from Pexels. I added the meme images." %}
+caption="Base Photo by <a href='https://www.pexels.com/@tara-winstead'>Tara Winstead</a> from Pexels." %}
 
 I have found that many people (myself included for a long time) are not aware that investing automation even exists, let alone in the form it does today for self directed portfolios.
 
