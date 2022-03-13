@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Automating Your Investments"
-date: 2022-03-12 10:21:50
+date: 2022-03-12 18:21:50
 
 categories: investing
 
@@ -39,13 +39,13 @@ Fidelity and Vanguard are examples of platforms that will not allow automated in
 
 ## Why Automate Investing?
 
-Automating your investing strategy has many benefits, but there are the two main reasons I personally do this.
+Automating your investing strategy has many benefits, but there are two main reasons I personally use automation.
 
 ### 1. Save Time
 
 If you have multiple platforms, and you are investing in small chunks daily, the time it takes to login and purchase can add up over time.
 
-5min a day X 5 days a week X 52 weeks a year = roughly 21.66 hrs (exclude holidays obviously)
+5 min a day X 5 days a wk X 52 wks a yr = roughly 21.66 hrs (exclude holidays obviously)
 
 I know you could download an investing application on your phone, and simply click a few buttons and be done with it. This might only take you one minute a day.
 
@@ -83,7 +83,7 @@ When your investments pay you, if you don’t need that money now it’s heavily
 
 Some platforms don’t let you automate this at all, which is a shame. While some platforms allow DRIP, but then you also cannot choose where the drip goes, they only allow you to invest in the same asset that the returns came from.
 
-## My Fav Tools to automate my investing
+## My Fav Apps to Automate My Investments
 
 There are a ton of different investing apps, and I have not had nearly enough time to try them all. Of the apps I have tried, only three of them had the ability to automate to the level that I wanted, and I only liked two of them honestly.
 
@@ -109,7 +109,7 @@ For Fidelity, the UI is weird for me at times, but overall it is easy to use. Th
 
 Honestly have not tried the robo advisor ‘Fidelity Go’ and I don’t plan to based on the way I use Fidelity. I manually buy my speculative investments then automate with DRIP.
 
-## My Future Plans And Recommendations For Automation
+## My Future Plans For Automation
 
 At the moment I use M1 Finance for my more automated investments and use Fidelity for my more speculative investing which are purchased manually and use a DRIP.
 
