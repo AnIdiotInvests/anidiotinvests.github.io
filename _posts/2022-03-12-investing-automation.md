@@ -21,13 +21,13 @@ keywords:
 imageLocation="/assets/img/investing-automation.png"
 caption="Base Photo by <a href='https://www.pexels.com/@tara-winstead'>Tara Winstead</a> from Pexels. I added the meme images." %}
 
-## What Is Investing Automation?
-
-Investing automation is exactly what it sounds like. Beyond the obvious though, there are different ways you can automate your investments which some platforms and apps do not support while others thrive on.
-
 I have found that many people (myself included for a long time) are not aware that investing automation even exists, let alone in the form it does today for self directed portfolios.
 
 If you are not aware, you can have most if not all of your investments fully automated down to the specific day you want to move your money in and out of brokerage accounts. There are limitations if you don’t know where to go or what you are looking for though.
+
+## What Is Investing Automation?
+
+Investing automation is exactly what it sounds like. Beyond the obvious though, there are different ways you can automate your investments which some platforms and apps do not support while others thrive on.
 
 For example, let’s say you have some money saved up and you want to invest $50 into Google stock every week, but Google stock costs well over 1,000, so how is this possible?
 
@@ -37,7 +37,7 @@ Sadly, several popular investing platforms do not allow automated investing into
 
 Fidelity and Vanguard are examples of platforms that will not allow automated investments into individual stocks or ETFs and only allow mutual fund automation for investments outside of robo advisors. There is nothing objectively wrong with this, but it could hinder your ability to automate depending on your strategy.
 
-## Why Would Anyone Want To Automate Their Investing?
+## Why Automate Investing?
 
 Automating your investing strategy has many benefits, but there are the two main reasons I personally do this.
 
@@ -59,15 +59,15 @@ I already have enough stress to deal with in the world. So the act of having an 
 
 It also saves me the heartache of potentially forgetting to invest, or having to login and worry about money during a vacation.
 
-## What You Might Want Look For
+## What You Might Look For
 
 ### Time To Purchase The Investment
 
 The most obvious thing to consider is the continual purchasing and repurchasing of the investments you like.
 
-If the platform you use does not allow you to invest virtually every day the stock market is open, or charges any weird fees for the automation, then I would recommend moving somewhere else that is less restrictive.
+Some apps will only purchase the investments when the market opens, while others when it closes. Some will let you choose when, but not all.
 
-That’s just ridiculous in today’s world.
+This can reduce the liquidity of your investments and I would recommend double checking before dumping your money in.
 
 ### Rebalancing
 
