@@ -111,7 +111,7 @@ Honestly have not tried the robo advisor ‘Fidelity Go’ and I don’t plan to
 
 ## My Future Plans For Automation
 
-At the moment I use M1 Finance for my more automated investments and use Fidelity for my more speculative investing which are purchased manually and use a DRIP.
+At the moment I use M1 Finance for my automated investments and use Fidelity for my more speculative gambelin... *cough* *cough* I mean investments which are purchased manually then I use a DRIP.
 
 I am possibly leaving Fidelity in the near future for something else. Not sure yet, because I can’t really contribute more to my 401k and my job dictates what I can and cannot invest in there.
 
