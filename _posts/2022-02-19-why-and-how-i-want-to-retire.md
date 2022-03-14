@@ -5,7 +5,7 @@ date: 2022-02-19 18:05:52
 edit_date: 2022-03-08 18:50:40
 categories: investing
 permalink: why-and-how-do-i-want-to-retire
-imgUrl: /assets/img/freedom-img.png
+imgUrl: freedom-img.png
 description: If you are simply saving for retirement just because someone told you to, or out of fear, I would say you should reconsider your reasoning.
 
 keywords:
@@ -16,8 +16,7 @@ keywords:
  - long-term
 ---
 
-{% include image-caption.html
-imageLocation="/assets/img/freedom-img.png"
+{% include image-caption.html image="freedom-img.png"
 caption="Photo by <a href='https://www.pexels.com/@pixabay'>Pixabay</a> from Pexels" %}
 
 It wasn't until I was 24 that I even remotely considered saving for retirement. Let alone for it to be worthy of my time and effort to plan it out in detail. The narrative in my head went like “Why would I not just use the money now rather than when I am ancient?”
@@ -74,8 +73,7 @@ This is where a lot of misconceptions will start to creep up on people. Like inv
 
 Don’t fall for the traps, do your due diligence and find what works for you.
 
-{% include image-caption.html
-imageLocation="/assets/img/retire-plan-drawing.png"
+{% include image-caption.html image="retire-plan-drawing.png"
 caption="My child level drawing and plan for retirment" %}
 
 In the image above, you can see I plan to start my hypothetical retirement in the passive income 'Start Phase'. I hope to be generating enough income on my own that I would not have to work if I did not desire to. I plan to continue working during this time to supplement my 'End Phase' further though.

@@ -5,7 +5,7 @@ date: 2022-03-04 13:21:50
 edit_date: 2022-03-05 19:50:30
 categories: investing
 permalink: hunting-for-stability-in-a-crazy-market
-imgUrl: /assets/img/hunting-for-stability.png
+imgUrl: hunting-for-stability.png
 description: There are strategies you can implement to lower your chances of permanent losses and decrease your downside potential short and long-term.
 
 keywords:
@@ -18,7 +18,7 @@ keywords:
 ---
 
 {% include image-caption.html
-imageLocation="/assets/img/hunting-for-stability.png"
+image="hunting-for-stability.png"
 caption="Base photo by <a href='https://www.pexels.com/@harrisonhaines'>Harrison Haines</a> from Pexels" %}
 
 Looking for a safe place to park your money outside of a bank? Yeah, same here.

@@ -9,7 +9,7 @@ categories:
   - news
 
 permalink: are-businesses-canceling-russia
-imgUrl: /assets/img/close-business-img-2.png
+imgUrl: close-business-img-2.png
 description: Some might not be aware of just how much money and business is being pulled out of Russia as we speak.
 keywords:
   - Russia
@@ -19,8 +19,7 @@ keywords:
   - coca-cola
 ---
 
-{% include image-caption.html 
-imageLocation="/assets/img/close-business-img-2.png" 
+{% include image-caption.html image="close-business-img-2.png" 
 caption="Photo by <a href='https://www.pexels.com/@shvetsa'>Anna Shvets</a> from Pexels" %}
 
 I think just about everyone is familiar with what is happening in Ukraine at this point. So I won’t bore you with the details.
@@ -35,9 +34,7 @@ We are not just talking about slowing down business, I mean all out we are done 
 
 I think it’s obvious when you pile the effects of sanction on top of this, the effects would be devastating to any economy. Just take a look at the Russian Ruble for reference. It’s been in a bit of a decline for a while but has had roughly a -50% drop in a short period of time.
 
-{% include image-caption.html 
-imageLocation="/assets/img/ruble-graph.png" 
-caption="Screenshot of google Ruble to USD conversion graph" %}
+{% include image-caption.html image="ruble-graph.png" caption="Screenshot of google Ruble to USD conversion graph" %}
 
 With all this noise I'm sure those who follow the stock market closely also noticed the sharp drop in prices. While it could have been a good ‘buy the dip’ opportunity, I think the biggest fear right now is from rising oil prices and potential recession from inflation, or worse.
 

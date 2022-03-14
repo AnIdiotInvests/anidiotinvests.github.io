@@ -2,11 +2,12 @@
 layout: post
 title: "Automating Your Investments"
 date: 2022-03-12 18:21:50
+edit_date: 2022-03-13 18:20:51
 
 categories: investing
 
 permalink: automating-your-investments
-imgUrl: /assets/img/investing-automation.png
+imgUrl: investing-automation.png
 description: I have found that many people (myself included for a long time) are not aware that investing automation even exists.
 keywords:
   - automation
@@ -17,8 +18,7 @@ keywords:
   - Fidelity
 ---
 
-{% include image-caption.html
-imageLocation="/assets/img/investing-automation.png"
+{% include image-caption.html image="investing-automation.png"
 caption="Base Photo by <a href='https://www.pexels.com/@tara-winstead'>Tara Winstead</a> from Pexels." %}
 
 I have found that many people (myself included for a long time) are not aware that investing automation even exists, let alone in the form it does today for self directed portfolios.

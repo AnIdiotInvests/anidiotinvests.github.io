@@ -5,7 +5,7 @@ date: 2022-02-10 10:41:52
 edit_date: 2022-03-04 15:41:52
 categories: investing
 permalink: banks-bonds-and-stocks-oh-my-what-to-do-with-my-money-in-2022
-imgUrl: /assets/img/S&P500-graph-one.png
+imgUrl: S&P500-graph-one.png
 description: Investing can be complicated. It is difficult to make critical decisions with many different investing sources screaming what they think you should do.
 
 keywords:
@@ -15,9 +15,7 @@ keywords:
   - frugal
 ---
 
-{% include image-caption.html
-imageLocation="/assets/img/S&P500-graph-one.png"
-caption="Screenshot of S&P 500 graph on google search" %}
+{% include image-caption.html image="S&P500-graph-one.png" caption="Screenshot of S&P 500 graph on google search" %}
 
 Investing can be complicated. It is difficult to make critical decisions with many different investing sources screaming what they think you should do and how you should do it.
 

@@ -4,7 +4,7 @@ title: "The Best Investing Research Tools I Have Found so Far"
 date: 2022-02-14 19:41:52
 categories: investing
 permalink: the-best-investing-research-tools-i-have-found-so-far
-imgUrl: /assets/img/tools-one.png
+imgUrl: tools-one.png
 description: Several online and mostly free tools that provide great value and time savings have come to my attention.
 
 keywords:
@@ -15,7 +15,7 @@ keywords:
 ---
 
 {% include image-caption.html
-imageLocation="/assets/img/tools-one.png"
+image="tools-one.png"
 caption="Photo by <a href='https://www.pexels.com/@cottonbro'>cottonbro</a> from Pexels" %}
 
 As I slowly progress my investing knowledge over the years (which is still not much), several online and mostly free tools that provide great value and time savings have come to my attention. So I thought it would be a good idea to make a quick write up on my favorites thus far. Also, I am not affiliated with any of these sites and tools, but I do use some of them almost daily.

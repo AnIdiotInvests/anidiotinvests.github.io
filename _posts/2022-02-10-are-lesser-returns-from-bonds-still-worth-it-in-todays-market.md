@@ -5,7 +5,7 @@ date: 2022-02-10 19:41:52
 edit_date: 2022-03-04 18:41:52
 categories: investing
 permalink: are-lesser-returns-from-bonds-still-worth-it-in-todays-market
-imgUrl: /assets/img/performance-of-BND.png
+imgUrl: performance-of-BND.png
 description: Bonds can be a controversial topic for some, and have historically been used as a defensive play for more standard portfolios.
 
 keywords:
@@ -16,8 +16,7 @@ keywords:
   - safe
 ---
 
-{% include image-caption.html 
-imageLocation="/assets/img/performance-of-BND.png" 
+{% include image-caption.html image="performance-of-BND.png" 
 caption="BND and S&P 500 chart above was created using <a href='https://portfolioslab.com/tools/portfolio-analysis?d=95f5d31'>PortfoliosLab.com</a>" %}
 
 Bonds can be a controversial topic for some, and have historically been used as a defensive play for more standard portfolios. However, a common question that I have seen (and asked myself) is whether or not bonds are worth owning in more modern portfolios, especially if you are younger.
@@ -30,8 +29,7 @@ I used a popular ETF called [Vanguard Total Bond Market ETF (BND)](https://inves
 
 Let’s take a look at what is inside BND, and hopefully gain a slightly better understanding of bonds and the different forms they can take.
 
-{% include image-caption.html 
-imageLocation="/assets/img/bnd-etf-components.png" 
+{% include image-caption.html image="bnd-etf-components.png" 
 caption="More info on BND's contents; This information available on <a href='https://investor.vanguard.com/etf/profile/BND'>Vanguard’s Website</a>" %}
 
 | Rate | Grade      | Risk    |

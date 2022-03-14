@@ -2,7 +2,7 @@
     <div class="post-listing-card-container">
         <div class="post-listing-card tri-theme-color" onclick="goTo('{{ post.url | absolute_url }}')">
 
-            <img src="{{ post.imgUrl }}" alt="Img Not Found">
+            <img src='/assets/img/{{ post.date | date: "%Y-%m" }}/{{ post.imgUrl }}' alt="Img Not Found">
 
             <h2><a class="anc-hover" href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
 
