@@ -28,6 +28,13 @@ p {
   word-wrap: break-word;
 }
 
+.no-select-txt {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .posts-tables {
   margin: 15px;
   float: left;
@@ -46,7 +53,6 @@ blockquote {
 
 .post-content, .blog-content {
   padding: 8px;
-  /* overflow: hidden; */
 }
 
 .blog-content {
@@ -54,7 +60,6 @@ blockquote {
   max-width: 920px;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  /* box-shadow: rgba(0, 255, 13, 0.5) 1px 1px 15px; */
 }
 
 .blog-content p {
@@ -143,35 +148,26 @@ a, a:link {
 }
 
 .navbar-brand {
+  position: absolute;
   margin: 0;
   padding: 0;
   height: auto;
 }
 
 .navbar-brand img {
-  height: 50px;
-  margin: 0;
+  height: 70px;
+  margin-top: 19px;
   padding: 0;
+}
+
+.navbar-brand img:hover {
+  animation: twitching 2s infinite;
 }
 
 /* footer */
 
 .footer-disclaimer {
   font-size: 9pt;
-}
-
-.page-fade-in {
-  width: 100%;
-  animation: fadeIn .5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .show-consent-banner {
@@ -193,47 +189,4 @@ a, a:link {
   visibility: hidden;
   height: 0;
   text-align: center;
-}
-
-.test-ani-container {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  padding: 30px;
-  max-width: 100vw;
-  height: 100%;
-  overflow: hidden;
-}
-
-.test-ani {
-  background-image: url('../assets/img/primary/dollar-falling-anim-pic.png');
-  background-size: cover;
-  position: absolute;
-
-  width: var(--width);
-  height: var(--height);
-  background-color: green;
-  margin: auto;
-  padding: 0;
-}
-
-@keyframes falling {
-  0% {
-      transform: translate3d(var(--left-ini), 0, 0) rotate(random(300)+deg);
-  }
-  100% {
-      transform: translate3d(var(--left-end), 100vh, 0);
-  }
-}
-
-@for $i from 1 through 10 {
-  .test-ani:nth-child(#{$i}) {
-    --width: 2.5vw;
-    --height: #{random(1) + 0.2}vw;
-    --left-ini: #{random(20) - 10}vw;
-    --left-end: #{random(20) - 10}vw;
-    left: #{random(100)}vw;
-    animation: falling #{5 + random(10)}s linear infinite;
-    animation-duration: -#{random(10)}s;
-  }
 }

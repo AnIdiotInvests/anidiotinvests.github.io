@@ -1,0 +1,105 @@
+---
+---
+
+/* All Page Fade In */
+
+.page-fade-in {
+    width: 100%;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Page Header Falling Animation */
+
+.test-ani-container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding: 30px;
+    max-width: 100vw;
+    height: 100%;
+    overflow: hidden;
+}
+
+.test-ani {
+    background-image: url("../assets/img/primary/dollar-falling-anim-pic.png");
+    background-size: cover;
+    position: absolute;
+
+    width: var(--width);
+    height: var(--height);
+
+    background-color: green;
+    margin: auto;
+    padding: 0;
+}
+
+@keyframes falling {
+    0% {
+        transform: translate3d(var(--left-ini), 0, 0) rotate(random(900) + 10 + deg);
+    }
+    100% {
+        transform: translate3d(var(--left-end), 100vh, 0);
+    }
+}
+
+@for $i from 1 through 10 {
+    .test-ani:nth-child(#{$i}) {
+        --width: 2.5vw;
+        --height: #{random(1) + 0.2}vw;
+        --left-ini: #{random(20) - 10}vw;
+        --left-end: #{random(20) - 10}vw;
+        left: #{random(100)}vw;
+        animation: falling #{5 + random(10)}s linear infinite;
+        animation-duration: -#{random(10)}s;
+    }
+}
+
+@keyframes twitching {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(9deg);
+    }
+    75% {
+        transform: rotate(-9deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Levitation */
+
+@keyframes scaledGhostHover {
+    0% {
+        transform: translatey(0px) scale(1.03);
+    }
+    50% {
+        transform: translatey(-9px) scale(1.06);
+    }
+    100% {
+        transform: translatey(0px) scale(1.03);
+    }
+}
+
+@keyframes ghostHover {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}

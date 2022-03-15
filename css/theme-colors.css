@@ -1,31 +1,19 @@
-.theme-colors {
-    background-color: #0c557a;
-}
-
 .primary-theme-color {
     background-color: #404040;
-    /* color: whitesmoke; */
+    color: whitesmoke;
 }
 
 .secondary-theme-color {
     background-color: #0c557a;
     color: whitesmoke;
-    outline: 1px solid transparent;
-
-    /* Smooth Edges */
-    -webkit-backface-visibility: hidden;
-    transform: translateZ(0);
-    will-change: transform;
-    -webkit-perspective: 1000;
 }
 
 .tri-theme-color {
-    /* background-color: #444444; */
     background-color: #404040;
     color: whitesmoke;
 }
 
 .accent-theme-color {
-    /* background-color: #083f5c; */
     background-color: #078b00;
+    color: whitesmoke;
 }
