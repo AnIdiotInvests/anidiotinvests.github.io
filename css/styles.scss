@@ -9,7 +9,6 @@
 }
 
 html {
-  height: 100vh;
   overflow-y: scroll;
 }
 
@@ -113,13 +112,6 @@ a, a:link {
   text-decoration: none;
 }
 
-.align-page-controls {
-  margin-left: 0;
-  margin-right: 0;
-  align-items: center;
-  text-align: center;
-}
-
 .posts-pagination-table {
   width: 100%;
 }
@@ -136,6 +128,7 @@ a, a:link {
 
 .navbar {
   border-bottom: solid rgb(39, 39, 39) 1px;
+  min-height: 70px;
 }
 
 .navbar-dark .nav-link {
@@ -149,15 +142,17 @@ a, a:link {
 }
 
 .navbar-brand {
-  position: absolute;
-  margin: 0;
-  padding: 0;
+  // position: relative;
+  margin: 0px;
+  padding: 5px;
   height: auto;
 }
 
 .navbar-brand img {
+  position: absolute;
   height: 70px;
-  margin-top: 19px;
+  top: 0;
+  margin: 10px;
   padding: 0;
 }
 
