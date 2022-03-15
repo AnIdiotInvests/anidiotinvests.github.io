@@ -70,7 +70,7 @@
 }
 
 .posts-header {
-    z-index: 1;
+    /* z-index: -1; */
     width: 100%;
     height: 100vh;
     max-height: 1000px;
@@ -90,7 +90,7 @@
     z-index: -1;
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
 }
 
 .posts-header-title {

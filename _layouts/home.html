@@ -4,18 +4,20 @@ layout: primary
 
 {% include page-header.html %}
 
-<div class="featured-posts-title no-select-txt secondary-theme-color">
-    <div class="post-content">
-        <h2>Featured Blog Posts</h2>
+<div class="primary-theme-color">
+    <div class="featured-posts-title no-select-txt secondary-theme-color">
+        <div class="post-content">
+            <h2>Featured Blog Posts</h2>
+        </div>
     </div>
-</div>
-
-<div class="post-content no-select-txt">
-    <table id="postContainer" class="posts-pagination-table">
-        {% for post in site.posts %}
-
-        {% include postination.html %}
-
-        {% endfor %}
-    </table>
+    
+    <div class="post-content no-select-txt">
+        <table id="postContainer" class="posts-pagination-table">
+            {% for post in site.posts %}
+    
+            {% include postination.html %}
+    
+            {% endfor %}
+        </table>
+    </div>
 </div>
