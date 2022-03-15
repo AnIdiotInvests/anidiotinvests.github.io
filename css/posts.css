@@ -75,15 +75,22 @@
     height: 100vh;
     max-height: 1000px;
     min-height: 400px;
-    background: url('../assets/img/primary/graph-contrast.png') no-repeat;
+    /* background: url('../assets/img/primary/graph-contrast.png') no-repeat; */
 
     position: relative;
-    text-align: center;
+    /* text-align: center; */
 
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+}
+
+.posts-header img {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .posts-header-title {
