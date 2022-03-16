@@ -9,21 +9,22 @@ imgUrl: S&P500-graph-one.png
 description: Investing can be complicated. It is difficult to make critical decisions with many different investing sources screaming what they think you should do.
 
 keywords:
-  - risk
-  - stock
-  - money
-  - frugal
+ - risk
+ - stock
+ - money
+ - frugal
+ - life
 ---
 
 {% include image-caption.html image="S&P500-graph-one.png" caption="Screenshot of S&P 500 graph on google search" %}
 
 Investing can be complicated. It is difficult to make critical decisions with many different investing sources screaming what they think you should do and how you should do it.
 
-One of, if not the most commonly cited investment index is the Standard and Poor's 500 (S&P 500). As you can see from the chart above, recently the returns have been well worth it, but how do we know it will continue? And is it a terrible idea to start investing now? 
+One of, if not the most commonly cited investment index is the Standard and Poor's 500 (S&P 500). As you can see from the chart above, recently the returns have been well worth it, but how do we know it will continue? And is it a terrible idea to start investing now?
 
-This article is meant for newcomers to the investing space. Hopefully I can shed some light on what investing actually is, and what it is not by writing about my life experiences.
+This article is meant for newcomers to the investing space. Hopefully, I can shed some light on what investing is, and what it is not by writing about my life experiences.
 
-## If I Could go Back in Time and YOLO More Money I Would, but I Can’t and Won’t.
+## If I Could go Back in Time and YOLO More Money I Would, BUT I Can’t.
 
 Hindsight is 2020. On a serious note though, the bottom of 2020 is a sore topic for me to think about. Not for the obvious reasons surrounding the pandemic, but the failed potential for serious monetary gains.
 
@@ -37,9 +38,9 @@ That brings me to the first lesson the world taught me about investing.
 
 If I had simply dollar cost averaged into the market while people freaked out during the stock market crash, it would have been easier on my mental health, and at least I would have gotten SOMETHING out of it.
 
-I don’t mean to sound like a Boglehead, I can’t stand the extreme boredom of the Bogle people, but it’s hard to deny the historical results over not investing at all. If you could dedicate a good chunk of your portfolio to this mindset, not all having to do with Vanguard S&P 500, but something similar with average gains, then statistically and historically there is the potential for a portion of your investments to return back to the average market return. Even if you mess up with riskier investments in the long run.
+I don’t mean to sound like a Boglehead, I can’t stand the extreme boredom of the Bogle people, but it’s hard to deny the historical results over not investing at all. If you could dedicate a good chunk of your portfolio to this mindset, not all having to do with Vanguard S&P 500, but something similar with average gains, then statistically and historically there is the potential for a portion of your investments to return to the average market return. Even if you mess up with riskier investments in the long run.
 
-It sounds counterintuitive to say you should ignore what the majority of investors are doing and then recommend a Boglehead strategy with a portion of your portfolio, which represents a large portion of investors. However, the majority of people cannot maintain a steadfast investing mindset at all let alone using a simple strategy like this. If the majority of people did, then (at least up to this point) gains would have been likely given a long enough time horizon.
+It sounds counterintuitive to say you should ignore what the majority of investors are doing and then recommend a Boglehead strategy with a portion of your portfolio, which represents a large portion of investors. However, the majority of people cannot maintain a steadfast investing mindset at all let alone use a simple strategy like this. If the majority of people did, then (at least up to this point) gains would have been likely given a long enough time horizon.
 
 ## Being Frugal is Hard, but Potentially Worth it.
 
@@ -47,13 +48,13 @@ The pain does not stop after missing an opportunity in a single year, oh no! If 
 
 Not just for the extra money I would have saved and potentially made in the stock market, but also for how much further along in my learning about investing I could have been.
 
-It's not like I had a five star resort life back then anyway, I tutored classmates in basic programming skills for minimum wage, ate way too much Chick-fil-A, then played Skyrim the rest of the day.
+It's not like I had a five-star resort life back then anyway, I tutored classmates in basic programming skills for minimum wage, ate way too much Chick-fil-A, then played Skyrim the rest of the day.
 
-Which brings me into the other lesson I learned.
+This brings me to the other lesson I learned.
 
 > __"The sooner you start, the better."__
 
-There is no good or perfect time to start saving and investing. You start sooner and have more money in the future, or don’t start and regret it later. It is that simple.
+There is no perfect time to start saving and investing. You start sooner and have more money in the future, or don’t start and regret it later. It is that simple.
 
 ## Where and How Should I Start Investing?
 
@@ -67,14 +68,14 @@ This is where the difficult investing choices and fears start pouring in. So you
 
 Or they let their pet cat pick stocks and double their money monthly, which is not how you want to go about investing obviously.
 
-In reality, if you are serious about investing, before you even think about putting a single cent into any investment, the goal should be to read every book and listen to every podcast you can get your hands on. Once you have a decent working knowledge only then can you proceed to comparing different investments.
+In reality, if you are serious about investing before you even think about dropping a single cent, the goal should be to read every book and listen to every podcast you can get your hands on. Once you have a decent working knowledge only then can you proceed to compare different investments.
 
 Decent Books To Start With: (Not Affiliated)
 - The Intelligent Investor
 - The Little Book of Common Sense Investing
 - A Random Walk Down Wall Street
 
-Investing for the non fortune 500 CEO is simply putting your money in the place with the best odds of success and rate of return which has been tuned and tweaked to fit your risk tolerance. Nothing more, nothing less, otherwise it is simply glorified gambling. This includes all asset classes, not just stocks.
+Investing for the non-fortune 500 CEO is simply putting your money in the place with the best odds of success and rate of return which has been tuned and tweaked to fit your risk tolerance. Nothing more, nothing less, otherwise it is simply glorified gambling. This includes all asset classes, not just stocks.
 
 The trick is this can be much more complicated than it sounds. So start early, ignore the hoards of idiots, and read read read!
 
