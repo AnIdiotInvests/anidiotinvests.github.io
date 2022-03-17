@@ -2,19 +2,19 @@
 layout: post
 title: "Hunting For Stability in a Crazy Market"
 date: 2022-03-04 13:21:50
-edit_date: 2022-03-05 19:50:30
+edit_date: 2022-03-16 19:50:30
 categories: investing
 permalink: hunting-for-stability-in-a-crazy-market
 imgUrl: hunting-for-stability.png
 description: There are strategies you can implement to lower your chances of permanent losses and decrease your downside potential short and long-term.
 
 keywords:
-  - stability
-  - reliability
-  - return
-  - volatility
-  - diversification
-  - tactic
+ - stability
+ - reliability
+ - return
+ - volatility
+ - diversification
+ - tactic
 ---
 
 {% include image-caption.html
@@ -23,7 +23,7 @@ caption="Base photo by <a href='https://www.pexels.com/@harrisonhaines'>Harrison
 
 Looking for a safe place to park your money outside of a bank? Yeah, same here.
 
-I don’ t mean to burst any bubbles, (no market pun intended), but guaranteed gains do not exist and the reliability of any returns is 100% dependent on the environment in which you are investing. Not all markets and assets are created equal for volatility or risk, and it is an ever changing playing field.
+I don’t mean to burst any bubbles, (no market pun intended), but guaranteed gains do not exist and the reliability of any returns is 100% dependent on the environment in which you are investing. Not all markets and assets are created equal for volatility or risk, and it is an ever-changing playing field.
 
 However, there are strategies you can implement to lower your chances of permanent losses and decrease your downside potential short and long-term. Don’t be fooled though, there is no realistic way to avoid all risk and volatility while still maintaining average or higher returns over the long haul, it just does not exist.
 
@@ -33,13 +33,13 @@ Unless you are an extremely lucky gambler, or you and your fortune 500 buddies a
 
 The first and most important step in a stable investment is you. If you buy high and sell low out of fear, you are manually throwing away future potential and magnifying your losses.
 
-Before making any moves with money or your portfolio, it would be wise to first develop a better mindset for investing. Figure out what your goal is then ask yourself if the process sounds outlandish. 
+Before making any moves with money or your portfolio, it would be wise to first develop a better mindset for investing. Figure out what your goal is then ask yourself if the process sounds outlandish.
 
 A good way to start is with something called the ‘cringe test’. If you write down your plan and reasoning on paper, and there is even a hint of cringe to the strategy, I would highly recommend reworking it.
 
 Here are some examples of cringe testing:
 
-__Example 1:__ “I plan to put a large portion of my savings into a 3x leveraged fund with the hopes that I will double my money in a few months. Also I will have to sell portions of my investment along the way to pay rent.”
+__Example 1:__ “I plan to put a large portion of my savings into a 3x leveraged fund with the hopes that I will double my money in a few months. Also, I will have to sell portions of my investment along the way to pay rent.”
 
 __Example 2:__ “I plan to dollar cost average a portion of my income into QQQM over the next few years with a 15+ year time horizon in which I will not need this money.”
 
@@ -51,7 +51,7 @@ If you cannot tell which one smells the most cringy, you may want to rethink why
 
 Diversification is your best bet to protect your portfolio from dumb mistakes. Be careful though, It is easy to take diversification way too far, or not take it far enough. If you get on Reddit for finance content often and have been investing for a while then you probably know what I mean.
 
-If not, then here is a quick overview. 
+If not, then here is a quick overview.
 
 If you don’t have the time to FULLY understand and keep track of the investments and companies you are investing in, you should not focus solely on buying multiple companies just because you like them.
 
@@ -81,13 +81,13 @@ Here is the list:
 
 You can easily use online tools and resources to see how tightly or loosely correlated each sector is to one another. You can also use historical data to see which has the least exposure to market risk using metrics like Beta and rolling volatility.
 
-For example, consumer staples, utilities, and healthcare tend to be more recession resistant, while financials, consumer discretionary, and information technology tend to not be as stable during downturns.
+For example, consumer staples, utilities, and healthcare tend to be more recession-resistant, while financials, consumer discretionary, and information technology tend to not be as stable during downturns.
 
 ### Invest in Different Countries
 
-If you pile all your cash into one location and there happens to be a natural disaster like earthquakes or tsunamis, or a war breaks out, an entire country based economy can be subject to extremely sharp and prolonged downturns.
+If you pile all your cash into one location and there happens to be a natural disaster like earthquakes or tsunamis, or a war breaks out, an entire country-based economy can be subject to extremely sharp and prolonged downturns.
 
-If you spread your investments out a little bit globally, then you are less exposed to the risk of a single location, especially if the county you are investing in is smaller, or an Island for example and potentially more susceptible to natural events.
+If you spread your investments out a little bit globally, then you are less exposed to the risk of a single location, especially if the county you are investing in is smaller, or an Island for example, and potentially more susceptible to natural events.
 
 ### Invest in Different Asset Types, Not Just Stocks.
 
@@ -99,19 +99,19 @@ For example, If the real estate market crashes, then a globally diversified stoc
 
 ## 3 Strategies and Simple Tricks
 
-Here are some tactics that you can use to aid in your overall strategy. These topcs could also help keep you from self sabotaging your portfolio as well.
+Here are some tactics that you can use to aid in your overall strategy. These topics could also help keep you from self-sabotaging your portfolio as well.
 
-I personally have a hard time with the third option.
+I have a hard time with the third option.
 
 ### 1. Looking for Low Volatility While Back Testing
 
-Back testing is the process of using tools and graphs to research historical performance and metrics of an existing or hypothetical portfolio. This process can be extremely useful to review and make changes before any money is actually invested. My favorite tool to use is Portfolioslab.com.
+Backtesting is the process of using tools and graphs to research the historical performance and metrics of an existing or hypothetical portfolio. This process can be extremely useful to review and make changes before any money is invested. My favorite tool to use is Portfolioslab.com.
 
-This is not done often enough in my opinion. Back in the day this was not very easy, but now there are tons of free tools that allow you to compare assets and investment vehicles years ago to when they were created to now.
+This is not done often enough in my opinion. Several years ago before free tools were readily available, this was not as easy, but now there are tons of free tools that allow you to compare assets and investment vehicles years ago to when they were created to now.
 
 ### 2. Value Investing
 
-The premise behind value investing involves looking for individual companies or funds that contain companies which have good balance sheets, revenue, and historical evidence of success.
+The premise behind value investing involves looking for individual companies or funds that contain companies that have good balance sheets, revenue, and historical evidence of success.
 
 If you are investing in companies that you know have a lot of current assets, strong management, and a long history of success, it is much easier to sleep at night.
 
@@ -139,4 +139,3 @@ https://www.investopedia.com/articles/basics/06/invest1000.asp.
 
 Reiff, Nathan. “Best Growth Etfs for Q1 2022.” Investopedia, Investopedia, 30 Dec. 2021,
 https://www.investopedia.com/articles/etfs/top-growth-etfs/.
-
