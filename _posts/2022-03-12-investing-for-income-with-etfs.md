@@ -74,6 +74,7 @@ Please do NOT go out and buy anything listed here just because you read about it
 {% include image-caption.html image="income-portfolio-allocation.png"
 caption="PortfoliosLab Income Portfolio Allocations Pie Chart" %}
 
+Currently the overall yeild of sits at about about 5% yearly. I would like to rotate into higher yeilding funds, but I am still heavily in the research phase for this portfolio.
 
 The reason NUSI, JEPI, and SCHZ get so much allocation currently is because of the lower volatility. Also, I am still actively looking for other income ETFs that meet my criteria:
 
