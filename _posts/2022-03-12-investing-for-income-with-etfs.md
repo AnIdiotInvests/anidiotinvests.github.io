@@ -87,6 +87,8 @@ caption="PortfoliosLab portfolio drawdowns Chart" %}
 {% include image-caption.html image="volatility-income-chart.png"
 caption="PortfoliosLab portfolio volatility Chart" %}
 
+To look at the portfolio yourself: [https://portfolioslab.com/tools/portfolio-analysis?d=84499d0](https://portfolioslab.com/tools/portfolio-analysis?d=84499d0)
+
 ## What Are Covered Calls?
 
 As you may have noticed, a portion of this portfolio has ‘Covered Calls’ in the ETF titles. These are options ETFs.
