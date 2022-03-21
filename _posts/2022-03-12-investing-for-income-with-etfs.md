@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Investing For Income With ETFs"
-date: 2022-03-20 17:21:51
+date: 2022-03-20 18:21:51
 
 categories: investing
 
-permalink: investing-for-income-with-etfs
+permalink: investing-for-income-with-option-etfs
 imgUrl: money-question.png
 description: My goal is not to live off of income investments as soon as possible indefinitely. Instead, the goal is to increase my current cashflow.
 
@@ -19,11 +19,11 @@ keywords:
 ---
 
 {% include image-caption.html image="money-question.png"
-caption="Base photo by <a href='https://www.pexels.com/@rodnae-prod'>Rodnae Prod</a> from Pexels." %}
+caption="Base Photo by <a href='https://www.pexels.com/@rodnae-prod'>Rodnae Prod</a> from Pexels." %}
 
 A major internal conflict has dawned on me lately, a bit of an existential crisis really.
 
-I was watching a YouTube video about millennial money. It was CNBC Millennial Money specifically, and they featured Graham Stephen.
+I was watching a YouTube video about millennial money. It was CNBC Millennial Money specifically, and they featured [Graham Stephen](https://www.youtube.com/c/GrahamStephan).
 
 It said that he made 6.1 million dollars a year! If you don’t know who Graham is I would highly recommend checking him out on YouTube for his real estate content.
 
@@ -31,7 +31,7 @@ I'm pretty sure that's net income too, so he's obviously grossing much more than
 
 I mean, 6.1 million is an obscene amount of money right? And it suddenly dawned on me that no matter how hard I work or how much time I put into my current job it would be virtually irrelevant in comparison.
 
-> With my current situation, It’s mathematically impossible to make as much money in my life as he makes in one year.
+> In my current situation, It’s mathematically impossible to make as much money in my life as Graham makes in one year.
 
 Even if I dropped every cent into low-cost index funds and waited until I was 59 ½, it would hardly make a dent.
 
@@ -53,7 +53,7 @@ Then I can invest in more long-term wealth by starting businesses or shooting fo
 
 > I simply want to free up time to pursue other opportunities.
 
-That doesn't take away from the fact that many income investments are extremely volatile and unpredictable. So there is a lot of risks involved.
+That doesn't take away from the fact that many income investments are extremely volatile and unpredictable. So there are a lot of risks involved.
 
 In the end, I think a well-diversified portfolio for income that shoots for around 5 to 6% yearly yields is not an unreasonable objective. So if I had a reasonable amount of money invested, the returns would be comparable to a side hustle. At least on paper.
 
@@ -72,13 +72,26 @@ Keep in mind any funds listed here may be actively managed and what's going on u
 Please do NOT go out and buy anything listed here just because you read about it online.
 
 {% include image-caption.html image="income-portfolio-allocation.png"
-caption="Income portfolio allocations pie chart" %}
+caption="PortfoliosLab Income Portfolio Allocations Pie Chart" %}
 
-The reason NUSI, JEPI, and SCHZ get so much allocation currently is because of the lower volatility. Also, I am still actively looking for other income ETFs that meet my criteria.
 
-##  What Are Options?
+The reason NUSI, JEPI, and SCHZ get so much allocation currently is because of the lower volatility. Also, I am still actively looking for other income ETFs that meet my criteria:
 
-As you may have noticed, a large portion of this portfolio is made up of options ETFs.
+1. No excessive drawdowns in comparison to underlying index
+2. No excessive volatility in comparison to underlying index
+3. No excessive expense ratio (above 0.80%)
+
+{% include image-caption.html image="drawdowns-chart-income.png"
+caption="PortfoliosLab portfolio drawdowns Chart" %}
+
+{% include image-caption.html image="volatility-income-chart.png"
+caption="PortfoliosLab portfolio volatility Chart" %}
+
+## What Are Covered Calls?
+
+As you may have noticed, a portion of this portfolio has ‘Covered Calls’ in the ETF titles. These are options ETFs.
+
+More specifically they are [Buy-Write](https://www.investopedia.com/terms/b/buy-write.asp) (Covered Call) Options ETFs.
 
 Options are a way for people who don’t know what they are doing, and professionals who think they know what they are doing to lose lots of cash.
 
