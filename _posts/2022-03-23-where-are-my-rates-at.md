@@ -18,7 +18,7 @@ keywords:
 ---
 
 {% include image-caption.html image="savings-punched.png"
-caption="Base Photo by <a href='https://www.pexels.com/@musaortac'>Musa Ortaç</a> from Pexels." %}
+caption="Base photo by <a href='https://www.pexels.com/@musaortac'>Musa Ortaç</a> from Pexels." %}
 
 Does anyone remember when we were yielding more than treasury bonds by simply putting our money in high yield savings accounts?
 
