@@ -68,6 +68,6 @@ My primary hobbies nowadays are junk food from WholeFoods, craft beer, Webtoons,
 
 Even though I would not be surprised if rates did go back up, I also wouldn't be surprised if it took five years for the changes to have enough effect that our savings accounts change in accordance.
 
-If you are looking for an alternative, you might try [I-Bonds](https://www.treasurydirect.gov/indiv/research/indepth/ibonds/res_ibonds.htm) (NOT AFFILIATED). But if inflation goes down, then you have cash stuck in a stupid bond.
+If you are looking for an alternative, you might try [I-Bonds](https://www.treasurydirect.gov/indiv/research/indepth/ibonds/res_ibonds.htm). But if inflation goes down, then you have cash stuck in a stupid bond.
 
 That would put your finances in a real bond with bonds… bummer.
