@@ -16,7 +16,7 @@
 .post-listing-card-container {
     color: whitesmoke;
     padding: 1px;
-    min-height: 450px;
+    min-height: 475px;
     max-width: 364px;
     min-width: 290px;
     margin: 0px 7px 5px 7px;
@@ -44,8 +44,7 @@
 .post-listing-card img {
     overflow: hidden;
     object-fit: cover;
-    vertical-align: middle;
-    height: 240px;
+    height: 280px;
     margin-bottom: 5px;
     width: 100%;
 }
@@ -61,7 +60,7 @@
 .date-posted-stamp {
     bottom: 0;
     padding: 0;
-    margin: 5px 0px 10px 0px;
+    margin: 5px 0px 7px 0px;
     font-style: oblique;
 }
 

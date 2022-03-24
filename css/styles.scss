@@ -79,6 +79,22 @@ blockquote {
   font-size: 20pt;
 }
 
+.img-caption-include-dynamic {
+  float: left;
+  margin: 10px;
+  width: 40%;
+  height: auto;
+  text-align: center;
+}
+
+.img-caption-include-dynamic img {
+  border: solid green 1px;
+  background-color: rgb(107, 107, 107);
+  width: 100%;
+  height: auto;
+}
+
+
 .img-caption-include {
   width: 100%;
   text-align: center;
