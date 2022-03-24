@@ -44,7 +44,7 @@
         content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}" />
 
     {% if page.imgUrl %}
-    <meta property="og:image" content='/assets/img/{{ page.date | date: "%Y-%m" }}/{{ page.imgUrl }}' />
+    <meta property="og:image" content='https://anidiotinvests.com/assets/img/{{ page.date | date: "%Y-%m" }}/{{ page.imgUrl }}' />
     {% else %}
     <meta property="og:image" content="{{ '/assets/img/primary/graph-contrast.png' | absolute_url }}" />
     {% endif %}
