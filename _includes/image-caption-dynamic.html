@@ -1,4 +1,11 @@
-<figure class="img-caption-include-dynamic">
+
+
+{% if include.left %}
+<figure class="img-caption-include-dynamic-left">
+{% else %}
+<figure class="img-caption-include-dynamic-right">
+{% endif %}
+
     <a href='/assets/img/{{ page.date | date: "%Y-%m" }}/{{ include.image }}'>
         <img src='/assets/img/{{ page.date | date: "%Y-%m" }}/{{ include.image }}' alt="IMG Not Found">
     </a>

@@ -24,9 +24,9 @@ I am heavily considering quitting my job as of late. It is a terrifying thought,
 
 I have been watching some [Gary Vee](https://www.youtube.com/c/garyvee) on YouTube.
 
-Maybe you have heard the name. I can tell he is either very smart or completely insane. Or both.  If not, I strongly consider checking him out.
+Maybe you have heard the name. I can tell he is either very smart or completely insane. Or both.
 
-But I love his points about pursuing happiness over immense wealth.
+If you have not heard of him, I strongly consider checking him out. I love his points about pursuing happiness over immense wealth.
 
 His advice for people in their twenties is to take more risks while you can and figure out who you are because you only get to do that a few times in your life.
 
@@ -89,7 +89,7 @@ At least for me, (excluding when I play creative mode with friends) after a few 
 Do what's required so you can pursue your dragon, not an empty castle.
 
 {% include image-caption-dynamic.html image="minecraft-swords.png"
-caption="Minecraft diamond swords" float="left" %}
+caption="Minecraft diamond swords" left="true" %}
 
 Do this with grace though. There is a balance to be struck when taking on a boss. You can't fight a damn dragon if you're not at least wearing some diamond armor and have a nice sword.
 
