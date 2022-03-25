@@ -38,15 +38,15 @@ You can make life changes without reverting to knee-jerk reactions to emotional 
 
 The catch is you need to be in a stable situation first. And that can be insanely hard to do.
 
-I want to go buy a house, a car, a better computer, have subscriptions to every streaming service, go on ten vacations, and eat out at Fish City Grill every damn day.
+I want to go buy a house, a new car, a better computer, have subscriptions to every streaming service, go on ten vacations, and eat out at Fish City Grill every damn day.
 
-Although I might be able to afford to pay for such a lifestyle as a privileged white dude in the US, in the long run, I cannot afford to.
+Although I might be able to afford to pay for such a lifestyle as a privileged white dude in the US. In the long run, I cannot afford to.
 
 I don't drop lots of cash on useless stuff unless I have to.
 
-(I can't deny that I go buy a lot of potato chips and craft beer so I can't say I'm perfect. I try to keep this to a minimum though.)
+(I can't deny that I go buy a lot of potato chips and craft beer, so I am not perfect. I try to keep this to a minimum though.)
 
-I want my future ambition to be matched by enough liquid assets. This way I can pursue opportunities while still having a humble and patient mindset.
+I want my future ambition to be matched by enough liquid assets to fule it. This way I can pursue opportunities while still having a humble and patient mindset.
 
 I think the takeaway is saving enough money that you can afford to make stupid mistakes.
 
