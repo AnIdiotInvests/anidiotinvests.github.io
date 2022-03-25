@@ -1,8 +1,15 @@
-.pageinator {
+.pagez {
     display: inline-block;
     text-align: center;
     width: auto;
     vertical-align: top;
+}
+
+.pagination {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .sample-post-text {

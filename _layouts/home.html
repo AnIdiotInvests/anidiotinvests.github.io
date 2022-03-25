@@ -7,17 +7,42 @@ layout: primary
 <div class="primary-theme-color">
     <div class="featured-posts-title no-select-txt secondary-theme-color">
         <div class="post-content">
-            <h2>Featured Blog Posts</h2>
+            <h2 id="load-here">Featured Blog Posts</h2>
         </div>
     </div>
-    
+
     <div class="post-content no-select-txt">
         <table id="postContainer" class="posts-pagination-table">
-            {% for post in site.posts %}
-    
+
+            {% for post in paginator.posts %}
+
             {% include postination.html %}
-    
+
             {% endfor %}
+
+
+            <!-- Pagination links -->
+            <div class="pagination">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}#load-here" class="previous">Previous</a>
+
+                {% else %}
+                <span class="previous">Previous</span>
+                {% endif %}
+
+                <span class="page_number ">
+                    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+                </span>
+
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}/#load-here" class="next">Next</a>
+
+                {% else %}
+                <span class="next">Next</span>
+                {% endif %}
+            </div>
         </table>
+
+
     </div>
 </div>
