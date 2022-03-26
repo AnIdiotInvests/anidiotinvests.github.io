@@ -6,8 +6,14 @@
 <figure class="img-caption-include-dynamic-right">
 {% endif %}
 
+{% if page.is_post %}
     <a href='/assets/img/{{ page.date | date: "%Y-%m" }}/{{ include.image }}'>
         <img src='/assets/img/{{ page.date | date: "%Y-%m" }}/{{ include.image }}' alt="IMG Not Found">
     </a>
+{% else %}
+    <a href='/assets/img/primary/{{ include.image }}'>
+        <img src='/assets/img/primary/{{ include.image }}' alt="IMG Not Found">
+    </a>
+{% endif %}
     <figcaption>{{ include.caption }}</figcaption>
 </figure>
