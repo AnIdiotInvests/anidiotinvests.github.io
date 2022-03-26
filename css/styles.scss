@@ -81,7 +81,6 @@ blockquote {
 
 .img-caption-include-dynamic-left, .img-caption-include-dynamic-right, .img-caption-include  {
   font-size: 14pt;
-  max-height: 860px;
 }
 
 .img-caption-include-dynamic-left, .img-caption-include-dynamic-right {
@@ -119,6 +118,7 @@ blockquote {
 }
 
 .img-caption-include img {
+  // max-height: 860px;
   border: solid green 1px;
   background-color: rgb(107, 107, 107);
   width: 100%;
