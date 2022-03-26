@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15pt;
+  font-size: 16pt;
   margin: 0;
   line-height: 1.5;
   word-break: break-word;
@@ -79,6 +79,11 @@ blockquote {
   font-size: 20pt;
 }
 
+.img-caption-include-dynamic-left, .img-caption-include-dynamic-right, .img-caption-include  {
+  font-size: 14pt;
+  max-height: 860px;
+}
+
 .img-caption-include-dynamic-left, .img-caption-include-dynamic-right {
   margin: 10px;
   width: 40%;
@@ -104,6 +109,7 @@ blockquote {
 
 .img-caption-include {
   width: 100%;
+  overflow: hidden;
   text-align: center;
 }
 
