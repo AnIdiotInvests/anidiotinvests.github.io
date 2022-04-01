@@ -36,7 +36,7 @@ Deep down I do not want to take risks. I do not believe in the ‘you only live 
 
 You can make life changes without reverting to knee-jerk reactions to emotional situations. The catch is you need to be in a stable situation first, and that can be insanely hard to do.
 
-I want to go buy a house, a new car, a better computer, have subscriptions to every streaming service, go on ten vacations, and eat out at Fish City Grill every damn day. Although I might be able to afford to pay for such a lifestyle as a privileged white dude in the US. In the long run, I cannot afford to.
+I want to go buy a house, a new car, a better computer, have subscriptions to every streaming service, go on ten vacations, and eat out at Fish City Grill every day. Although I might be able to afford to pay for such a lifestyle as a privileged white dude in the US. In the long run, I cannot afford to.
 
 I don't drop cash on useless stuff unless I have to. I want to keep things humble.
 
