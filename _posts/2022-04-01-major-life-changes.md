@@ -32,7 +32,7 @@ His advice for people in their twenties is to take more risks while you can and 
 
 Especially when you have enough time to fix your mistakes if you fail.
 
-Deep down I do not want to take risks. I do not believe in the ‘you only live once (YOLO) philosophy. Even though I have joked about it several times.
+Deep down I do not want to take risks. I do not believe in the 'you only live once (YOLO)' philosophy. Even though I have joked about it several times.
 
 You can make life changes without reverting to knee-jerk reactions to emotional situations. The catch is you need to be in a stable situation first, and that can be insanely hard to do.
 
@@ -56,7 +56,7 @@ In contrast, an abusive situation, disease, or something horrible would justify 
 
 # Get Your Whys In Alignment With Reality
 
-I am not happy with my current job situation. It’s not a bad job by any means. I owe my entire career to this company, and the people who work there are as nice as can be.
+I am not happy with my current job situation, but I will always be grateful for it. It’s not a bad job by any means. I owe my entire career to this company, and the people who work there are as nice as can be.
 
 I have been working here for nearly four years. I feel like it’s time to move on though.
 
