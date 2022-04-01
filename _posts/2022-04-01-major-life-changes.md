@@ -52,6 +52,8 @@ Jumping ship while being paycheck to paycheck would be ludicrous unless absolute
 
 In contrast, an abusive situation, disease, or something horrible would justify changing it regardless of money in my opinion!
 
+(Not saying that is easy, it may very well be the most difficult topic in life to change.)
+
 # Get Your Whys In Alignment With Reality
 
 I am not happy with my current job situation. It’s not a bad job by any means. I owe my entire career to this company, and the people who work there are as nice as can be.
