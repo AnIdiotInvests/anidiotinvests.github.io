@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Major Life Changes"
-date: 2022-04-28 15:00:51
+date: 2022-04-01 10:00:51
 
 categories: lifestyle
 
@@ -20,7 +20,7 @@ keywords:
 {% include image-caption.html image="pursue-a-dragon.png"
 caption="Photo by <a href='https://www.pexels.com/@timmossholder'>Tim Mossholder</a> from Pexels." %}
 
-I am heavily considering quitting my job as of late. It is a terrifying thought, the idea of losing my primary stream of income and finding another.
+I have been feeling burnt out at my job lately. Not having this job is a terrifying thought, the idea of losing my primary stream of income and having to find another.
 
 I have been watching some [Gary Vee](https://www.youtube.com/c/garyvee) on YouTube.
 
@@ -34,17 +34,13 @@ Especially when you have enough time to fix your mistakes if you fail.
 
 Deep down I do not want to take risks. I do not believe in the ‘you only live once (YOLO) philosophy. Even though I have joked about it several times.
 
-You can make life changes without reverting to knee-jerk reactions to emotional situations.
+You can make life changes without reverting to knee-jerk reactions to emotional situations. The catch is you need to be in a stable situation first, and that can be insanely hard to do.
 
-The catch is you need to be in a stable situation first. And that can be insanely hard to do.
+I want to go buy a house, a new car, a better computer, have subscriptions to every streaming service, go on ten vacations, and eat out at Fish City Grill every damn day. Although I might be able to afford to pay for such a lifestyle as a privileged white dude in the US. In the long run, I cannot afford to.
 
-I want to go buy a house, a new car, a better computer, have subscriptions to every streaming service, go on ten vacations, and eat out at Fish City Grill every damn day.
+I don't drop cash on useless stuff unless I have to. I want to keep things humble.
 
-Although I might be able to afford to pay for such a lifestyle as a privileged white dude in the US. In the long run, I cannot afford to.
-
-I don't drop lots of cash on useless stuff unless I have to.
-
-(I can't deny that I go buy a lot of potato chips and craft beer, so I am not perfect. I try to keep this to a minimum though.)
+(I can't deny that I do go buy a lot of potato chips and craft beer, so I am not perfect. I try to keep this to a minimum though. Its my guilty pleasure.)
 
 I want my future ambition to be matched by enough liquid assets to fule it. This way I can pursue opportunities while still having a humble and patient mindset.
 
@@ -52,7 +48,9 @@ I think the takeaway is saving enough money that you can afford to make stupid m
 
 Having an emergency fund and a frugal-ish lifestyle affords people the ability to take some chances and look for opportunities in new places.
 
-Jumping ship while being paycheck to paycheck would be ludicrous unless absolutely necessary. An abusive situation, disease, or something horrible would justify changing it regardless of money in my opinion!
+Jumping ship while being paycheck to paycheck would be ludicrous unless absolutely necessary.
+
+In contrast, an abusive situation, disease, or something horrible would justify changing it regardless of money in my opinion!
 
 # Get Your Whys In Alignment With Reality
 
@@ -93,9 +91,9 @@ caption="Minecraft diamond swords" left="true" %}
 
 Do this with grace though. There is a balance to be struck when taking on a boss. You can't fight a damn dragon if you're not at least wearing some diamond armor and have a nice sword.
 
-In the real world, its the pursuite of happiness, not castles that we should care about.
+In the real world, it is the pursuit of happiness, not castles that we should care about.
 
-I hope anyone who reads this and is going through a similar job situation, please realize you are not crazy. You are simply discovering that what you are doing is not right for you and is not personal against your company and colleagues.
+I hope anyone who reads this and is going through a similar job situation, please realize you are not crazy. You are simply discovering that what you are doing as a career may not be right for you, and it is not personal against your company and colleagues.
 
 I want to go out and learn how to be my own person, and understand myself more. Gain some self-awareness as they say.
 
