@@ -8,8 +8,8 @@
     <title>
         {{ page.title | default: site.title }}
 
-        {% if page.categories %} 
-            | {{ page.categories | join: ' - ' | append: ' | An Idiot Invests' }}  
+        {% if page.categories %}
+        | {{ page.categories | join: ' - ' | append: ' | An Idiot Invests' }}
         {% endif %}
 
     </title>
@@ -40,16 +40,18 @@
     <meta property="og:type" content="{{ type }}" />
     <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+
     <meta property="og:description"
         content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}" />
 
-    <!-- <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@flickr" /> -->
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:image" content='{{ site.url }}/assets/img/{{ page.date | date: "%Y-%m" }}/{{ page.imgUrl }}' />
+
+    <meta name="twitter:description"
+        content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}" />
 
     {% if page.imgUrl %}
+    <meta name="twitter:image" content='{{ site.url }}/assets/img/{{ page.date | date: "%Y-%m" }}/{{ page.imgUrl }}' />
     <meta property="og:image" content='{{ site.url }}/assets/img/{{ page.date | date: "%Y-%m" }}/{{ page.imgUrl }}' />
     {% else %}
     <meta property="og:image" content="{{ '/assets/img/primary/graph-contrast.png' | absolute_url }}" />
