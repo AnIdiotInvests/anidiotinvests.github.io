@@ -35,7 +35,7 @@ plugins:
   - jekyll-sitemap
 
 paginate: 9
-paginate_path: "/page:num"
+paginate_path: "/page-posts:num"
 
 defaults:
   -
