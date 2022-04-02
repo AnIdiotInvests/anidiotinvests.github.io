@@ -7,5 +7,7 @@ Disallow: /legal/terms-and-conditions
 Disallow: /legal/privacy-policy
 Disallow: /about
 Disallow: /*page-
+Disallow: /*bio-
+
 
 Sitemap: {{ "sitemap.xml" | absolute_url }}
