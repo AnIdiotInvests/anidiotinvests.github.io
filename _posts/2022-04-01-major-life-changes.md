@@ -20,13 +20,21 @@ keywords:
 {% include image-caption.html image="pursue-a-dragon.png"
 caption="Photo by <a href='https://www.pexels.com/@timmossholder'>Tim Mossholder</a> from Pexels." %}
 
-I have been feeling burnt out at my job lately. Not having this job is a terrifying thought, the idea of losing my primary stream of income and having to find another.
+I am feeling burnt out with my job lately.
+
+Not having a job is a terrifying thought though, the idea of losing my primary stream of income and having to find another.
+
+When anyone brings this topic up, the most common response is to take a vacation and tough it out, or that if you feel this way you have a crap work ethic.
+
+In reality however, I like working and putting my best foot forward. I have put in my fair share of 10hr+ days, and I enjoy giving it my all. The problem is I do not want to put in that level of effort where I currently reside anymore.
+
+This might seem a bit odd for some, and I do not believe everyone should feel the way I do about work either. It is simply the way my brain is wired.
 
 I have been watching some [Gary Vee](https://www.youtube.com/c/garyvee) on YouTube.
 
 Maybe you have heard the name. I can tell he is either very smart or completely insane. Or both.
 
-If you have not heard of him, I strongly consider checking him out. I love his points about pursuing happiness over immense wealth.
+If you have not heard of him, I strongly consider checking him out. I love his points about pursuing happiness over immense wealth. I do not belive the perfect job exists, and I know for a fact there is not such thing as easy money, but there are options.
 
 His advice for people in their twenties is to take more risks while you can and figure out who you are because you only get to do that a few times in your life.
 
@@ -36,15 +44,15 @@ Deep down I do not want to take risks. I do not believe in the 'you only live on
 
 You can make life changes without reverting to knee-jerk reactions to emotional situations. The catch is you need to be in a stable situation first, and that can be insanely hard to do.
 
-I want to go buy a house, a new car, a better computer, have subscriptions to every streaming service, go on ten vacations, and eat out at Fish City Grill every day. Although I might be able to afford to pay for such a lifestyle, the long run I cannot afford to.
+I want to go buy a house, a new car, a better computer, have subscriptions to every streaming service, go on ten vacations, and eat out at Fish City Grill every day. Although I might be able to  pay for such a lifestyle, but in the long run I cannot truly afford to.
 
 I don't drop cash on useless stuff unless I have to. I want to keep things humble.
 
 (I can't deny that I do go buy a lot of potato chips and craft beer, so I am not perfect. I try to keep this to a minimum though. Its my guilty pleasure.)
 
-I want my future ambition to be matched by enough liquid assets to fule it. This way I can pursue opportunities while still having a humble and patient mindset.
+Hopefully my future ambition can be matched by enough liquid assets to fule it. This way I can pursue opportunities while still having a humble and patient mindset.
 
-I think the takeaway is saving enough money that you can afford to make stupid mistakes.
+The takeaway is saving enough money that you can afford to make stupid mistakes. I have made a few to say the least.
 
 Having an emergency fund and a frugal-ish lifestyle affords people the ability to take some chances and look for opportunities in new places.
 
@@ -78,7 +86,7 @@ So nothing in common to stay in touch over I guess.
 
 # Final Thoughts
 
-As a parting thought, A good analogy for what's pushing me to feel this way. Maybe even a good analogy for life, in general, would be Minecraft.
+As a parting thought, a good analogy for what's pushing me to feel this way. Maybe even a good analogy for life, in general, would be Minecraft.
 
 Ridiculous, I know.
 
@@ -102,3 +110,7 @@ I want to go out and learn how to be my own person, and understand myself more. 
 (Not sure who ‘they’ is, but I will roll with it.)
 
 If I'm lucky and have some entrepreneurial talent, perhaps I can build something that generates income that I could claim as my own.
+
+
+
+
