@@ -24,9 +24,9 @@ I am feeling burnt out with my job lately.
 
 Not having a job is a terrifying thought though, the idea of losing my primary stream of income and having to find another.
 
-When I bring this up the most common response is to take a vacation and tough it out, or that I have a crap work ethic.
+When anyone brings this topic up, the most common response is to take a vacation and tough it out, or that if you feel this way you have a crap work ethic.
 
-In reality however, I like working and putting my best foot forward. I have put in my fair share of 10hr+ days, and I enjoy giving it my all. The problem is I don’t want to do that where I am now anymore.
+In reality however, I like working and putting my best foot forward. I have put in my fair share of 10hr+ days, and I enjoy giving it my all. The problem is I do not want to put in that level of effort where I currently reside anymore.
 
 This might seem a bit odd for some, and I do not believe everyone should feel the way I do about work either. It is simply the way my brain is wired.
 
@@ -34,7 +34,7 @@ I have been watching some [Gary Vee](https://www.youtube.com/c/garyvee) on YouTu
 
 Maybe you have heard the name. I can tell he is either very smart or completely insane. Or both.
 
-If you have not heard of him, I strongly consider checking him out. I love his points about pursuing happiness over immense wealth.
+If you have not heard of him, I strongly consider checking him out. I love his points about pursuing happiness over immense wealth. I do not belive the perfect job exists, and I know for a fact there is not such thing as easy money, but there are options.
 
 His advice for people in their twenties is to take more risks while you can and figure out who you are because you only get to do that a few times in your life.
 
@@ -86,7 +86,7 @@ So nothing in common to stay in touch over I guess.
 
 # Final Thoughts
 
-As a parting thought, A good analogy for what's pushing me to feel this way. Maybe even a good analogy for life, in general, would be Minecraft.
+As a parting thought, a good analogy for what's pushing me to feel this way. Maybe even a good analogy for life, in general, would be Minecraft.
 
 Ridiculous, I know.
 

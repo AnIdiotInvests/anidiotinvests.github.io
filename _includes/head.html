@@ -1,22 +1,13 @@
 <head>
-    <meta charset="utf-8">
+    <!-- Primary Meta Tags -->
+    <!-- <meta charset="utf-8"> -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
-    <link rel="icon" href="/assets/img/primary/logo-two.png">
-
-    {% if site.title %}
-    <title>
-        {{ page.title | default: site.title }}
-
-        {% if page.categories %}
-        | {{ page.categories | join: ' - ' | append: ' | An Idiot Invests' }}
-        {% endif %}
-
-    </title>
-    {% endif %}
 
     {% if site.description %}
     <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}" />
+    <meta name="twitter:description" content="{{ page.description | default: site.description }}" />
     {% endif %}
 
     {% if site.author %}
@@ -31,6 +22,16 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     {% endif %}
 
+    {% if page.imgUrl %}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content='{{ site.url }}/assets/img/{{ page.date | date: "%Y-%m" }}/{{ page.imgUrl }}' />
+    <meta property="og:image" content='{{ site.url }}/assets/img/{{ page.date | date: "%Y-%m" }}/{{ page.imgUrl }}' />
+    {% else %}
+    <meta name="twitter:card"  content="summary">
+    <meta property="og:image" content='{{ "/assets/img/primary/graph-contrast.png" | absolute_url }}' />
+    <meta name="twitter:image" content='{{ "/assets/img/primary/graph-contrast.png" | absolute_url }}' />
+    {% endif %}
+
     {% if page.is_post %}
     {% assign type = "article" %}
     {% else %}
@@ -39,31 +40,32 @@
 
     <meta property="og:type" content="{{ type }}" />
     <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 
-    <meta property="og:description"
-        content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-
-    <meta name="twitter:description"
-        content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}" />
-
-    {% if page.imgUrl %}
-    <meta name="twitter:image" content='{{ site.url }}/assets/img/{{ page.date | date: "%Y-%m" }}/{{ page.imgUrl }}' />
-    <meta property="og:image" content='{{ site.url }}/assets/img/{{ page.date | date: "%Y-%m" }}/{{ page.imgUrl }}' />
-    {% else %}
-    <meta property="og:image" content="{{ '/assets/img/primary/graph-contrast.png' | absolute_url }}" />
-    {% endif %}
+    <meta name="twitter:site" content="@anidiotinvests">
 
     {% if page.is_post %}
+    <meta name="robots" content="index, follow">
+    <meta name="twitter:creator" content="@anidiotinvests">
     <meta property="og:site_name" content="{{ site.title }}" />
+    {% endif %}
+
+    <!-- Title -->
+    {% if site.title %}
+    <meta name="twitter:title" content="{{ page.title | default: site.title }}" />
+    <meta property="og:title" content="{{ page.title | default: site.title }}" />
+    <title>
+        {{ page.title | default: site.title }}
+        {% if page.categories %}
+        | {{ page.categories | join: ' - ' | append: ' | An Idiot Invests' }}
+        {% endif %}
+    </title>
     {% endif %}
 
     <!-- Claim Pintreset -->
     <meta name="p:domain_verify" content="1c39c58eaf89e2b1c59bfdd83e398250" />
 
+    <!-- Page Links and Script -->
+    <link rel="icon" href="/assets/img/primary/logo-two.png">
     <link href="/css/boostrap/bootstrap.min.css" rel="stylesheet">
 
     {% if layout.primary-css %}
