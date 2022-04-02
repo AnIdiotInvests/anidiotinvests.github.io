@@ -2,18 +2,26 @@
 layout: primary
 ---
 
-<div class="primary-theme-color">
-    <div class="featured-posts-title no-select-txt secondary-theme-color">
-        <div class="post-content">
-            <h2>About Me</h2>
+<!--googleoff: all-->
+<div class="profile-container no-select-txt primary-theme-color" data-nosnippet="true">
+
+    <div class="profile-header">
+        <div class="row profile-header-title">
+            <div class="col-sm">
+                <img src="/assets/img/profile/raccoon.png">
+            </div>
+            <div class="col-sm">
+                <h2>Name: {{ page.username }}</h2>
+            </div>
         </div>
     </div>
 
-    <div class="blog-content no-select-txt">
-        <article id="blog-post-id">
-            {% include content-header.html %}
+    <div class="row">
+        <article id="bio-post-id">
+            <h2>Bio</h2>
             {{ content }}
         </article>
     </div>
 
 </div>
+<!--googleon: all-->

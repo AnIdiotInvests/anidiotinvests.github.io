@@ -1,0 +1,33 @@
+
+.profile-container {
+    max-width: 700px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-header {
+    margin-top: 120px;
+    height: auto;
+}
+
+.profile-header-title {
+    text-align: center;
+    animation: ghostHover 5s infinite;
+}
+
+.profile-header-title img {
+    text-align: center;
+    width: 220px;
+    border: solid white 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.profile-header-title h1 {
+    font-weight: bold;
+    font-size: 50pt;
+    color: white;
+    text-shadow: 3px 3px 10px black;
+}

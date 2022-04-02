@@ -4,6 +4,8 @@
     {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
     {% if page.date %}
     <p>
+        Author: <a href="/bio-{{ page.author | default: site.author | downcase  }}">{{ page.author | default: site.author }}</a>
+        <br>
         Posted on {{ page.date | date: date_format }}
         {% if page.edit_date %}
         <br>
