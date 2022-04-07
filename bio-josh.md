@@ -7,4 +7,4 @@ username: Josh
 
 ---
 
-Just learning as I go.
+Professional wiki reading and googler. Just learning as I go. 

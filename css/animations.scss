@@ -5,7 +5,7 @@
 
 .page-fade-in {
     width: 100%;
-    animation: fadeIn 0.5s;
+    animation: fadeIn 0.6s;
 }
 
 @keyframes fadeIn {
@@ -40,6 +40,9 @@
 
     width: var(--width);
     height: var(--height);
+
+    min-width: 40px;
+    min-height: 18px;
 
     background-color: green;
     margin: auto;
