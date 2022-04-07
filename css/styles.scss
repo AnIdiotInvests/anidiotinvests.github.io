@@ -57,7 +57,7 @@ blockquote {
 
 .blog-content {
   margin: 90px auto 32px;
-  max-width: 920px;
+  max-width: 880px;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -68,7 +68,7 @@ blockquote {
 }
 
 .blog-content h1 {
-  font-size: 38pt;
+  font-size: 36pt;
 }
 
 .blog-content h2 {
@@ -118,11 +118,15 @@ blockquote {
 }
 
 .img-caption-include img {
-  // max-height: 860px;
   border: solid green 1px;
   background-color: rgb(107, 107, 107);
   width: 100%;
-  height: auto;
+  // height: auto;
+  overflow: hidden;
+  object-fit: cover;
+  max-height: 770px;
+  margin-bottom: 5px;
+  // width: 100%;
 }
 
 .post-content {
@@ -171,7 +175,6 @@ a, a:link {
 }
 
 .navbar-brand {
-  // position: relative;
   margin: 0px;
   padding: 5px;
   height: auto;

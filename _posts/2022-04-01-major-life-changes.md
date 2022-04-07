@@ -2,6 +2,7 @@
 layout: post
 title: "Major Life Changes"
 date: 2022-04-01 10:00:51
+edit_date: 2022-03-06 10:05:51
 
 categories: lifestyle
 
@@ -34,7 +35,7 @@ I have been watching some [Gary Vee](https://www.youtube.com/c/garyvee) on YouTu
 
 Maybe you have heard the name. I can tell he is either very smart or completely insane. Or both.
 
-If you have not heard of him, I strongly consider checking him out. I love his points about pursuing happiness over immense wealth. I do not belive the perfect job exists, and I know for a fact there is not such thing as easy money, but there are options.
+If you have not heard of him, I strongly consider checking him out. Not because I belive he is some guru, but I enjoy his points about pursuing happiness over immense wealth. I do not belive the perfect job exists, and I know for a fact there is not such thing as easy money, but there are options.
 
 His advice for people in their twenties is to take more risks while you can and figure out who you are because you only get to do that a few times in your life.
 
@@ -62,7 +63,7 @@ In contrast, an abusive situation, disease, or something horrible would justify 
 
 (Not saying that is easy, it may very well be the most difficult topic in life to change.)
 
-# Get Your Whys In Alignment With Reality
+## Getting 'Whys' In Alignment With Reality
 
 I am not happy with my current job situation, but I will always be grateful for it. It’s not a bad job by any means. I owe my entire career to this company, and the people who work there are as nice as can be.
 
@@ -84,7 +85,7 @@ I've tried to stay in touch but I suppose I am socially awkward and he's got a w
 
 So nothing in common to stay in touch over I guess.
 
-# Final Thoughts
+## Final Thoughts
 
 As a parting thought, a good analogy for what's pushing me to feel this way. Maybe even a good analogy for life, in general, would be Minecraft.
 
