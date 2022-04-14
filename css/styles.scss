@@ -121,12 +121,10 @@ blockquote {
   border: solid green 1px;
   background-color: rgb(107, 107, 107);
   width: 100%;
-  // height: auto;
   overflow: hidden;
   object-fit: cover;
   max-height: 770px;
   margin-bottom: 5px;
-  // width: 100%;
 }
 
 .post-content {
@@ -164,7 +162,7 @@ a, a:link {
   min-height: 70px;
 }
 
-.navbar-dark .nav-link {
+.nav-link {
   min-width: 90px;
   text-align: center;
   font-size: 16pt;
