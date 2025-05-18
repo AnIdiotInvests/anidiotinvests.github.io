@@ -2,7 +2,6 @@
 
 window.onload = () => {
   const postList = document.getElementById('posts');
-  const converter = new showdown.Converter();
 
   // Fetch list of posts
   fetchPosts();
