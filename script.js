@@ -15,7 +15,7 @@ window.onload = () => {
   async function getMarkdownPosts() {
     // Hardcoded list of markdown files (in a real app, this would likely come from a server or API)
     const postFiles = [
-      'posts/post1.md'
+      'post1'
     ];
 
     // Fetch and parse all posts
@@ -29,13 +29,13 @@ window.onload = () => {
     return posts;
   }
 
-  function displayPosts(posts) {
-    posts.forEach((postContent, index) => {
+function displayPosts(posts) {
+    posts.forEach((post, index) => {
       const li = document.createElement('li');
-      li.innerHTML = `
-        <h3>Post ${index + 1}</h3>
-        <div class="post-content">${postContent}</div>
-      `;
+      const link = document.createElement('a');
+      link.href = `post.html?post=${post}`;
+      link.textContent = `Post ${index + 1}`;
+      li.appendChild(link);
       postList.appendChild(li);
     });
   }
