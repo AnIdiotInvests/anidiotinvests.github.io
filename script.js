@@ -18,14 +18,6 @@ window.onload = () => {
       'post1'
     ];
 
-    // Fetch and parse all posts
-    const posts = await Promise.all(postFiles.map(async (file) => {
-      const response = await fetch(file);
-      const markdownText = await response.text();
-      const htmlContent = converter.makeHtml(markdownText); // Convert Markdown to HTML
-      return htmlContent;
-    }));
-
     return posts;
   }
 
