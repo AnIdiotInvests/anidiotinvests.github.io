@@ -7,22 +7,15 @@ window.onload = () => {
   fetchPosts();
   
   async function fetchPosts() {
-    const posts = await getMarkdownPosts();
+    const posts = [
+      "post1",
+      "post2",
+      "post3"
+    ];
 
     if (Array.isArray(posts)) {
       displayPosts(posts);
     }
-  }
-
-  async function getMarkdownPosts() {
-    // Hardcoded list of markdown files (in a real app, this would likely come from a server or API)
-    const postFiles = [
-      'post1',
-      'post2',
-      'post3'
-    ];
-
-    return posts;
   }
 
   function displayPosts(posts) {
