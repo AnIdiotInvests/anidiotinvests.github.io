@@ -2,6 +2,7 @@
 
 window.onload = () => {
   const postList = document.getElementById('posts');
+  const converter = new showdown.Converter();
 
   // Fetch list of posts
   fetchPosts();
@@ -14,16 +15,14 @@ window.onload = () => {
   async function getMarkdownPosts() {
     // Hardcoded list of markdown files (in a real app, this would likely come from a server or API)
     const postFiles = [
-      'posts/post1.md',
-      'posts/post2.md',
-      'posts/post3.md'
+      'posts/post1.md'
     ];
 
     // Fetch and parse all posts
     const posts = await Promise.all(postFiles.map(async (file) => {
       const response = await fetch(file);
       const markdownText = await response.text();
-      const htmlContent = marked(markdownText); // Convert Markdown to HTML
+      const htmlContent = converter.makeHtml(markdownText); // Convert Markdown to HTML
       return htmlContent;
     }));
 
