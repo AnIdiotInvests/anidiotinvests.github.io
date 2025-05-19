@@ -1,0 +1,21 @@
+User-agent:*
+Disallow: /search/
+Disallow: /404$
+Disallow: /404/
+Disallow: /about$
+Disallow: /about/
+Disallow: /assets$
+Disallow: /assets/
+Disallow: /assets&
+Disallow: /video/
+Disallow: /video$
+Disallow: /privacy/
+Disallow: /privacy$
+Disallow: /archive/
+Disallow: /archive$
+Disallow: /.gif$
+Disallow: /.jpg$
+Disallow: /.jpeg$
+Disallow: /page
+Disallow: /page/
+Disallow: /page$

@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beyond The Stonks</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
   <script src="/js/component-loader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
@@ -15,6 +15,7 @@
 
 <body>
   <header id="get-head"></header>
+  <script>loadComponents()</script>
 
   <main>
     <div class="container">
@@ -27,7 +28,6 @@
   <footer id="get-foot"></footer>
 
   <script>
-    loadComponents()
     const postFile = new URLSearchParams(window.location.search).get('post');
     if (postFile) {
 
