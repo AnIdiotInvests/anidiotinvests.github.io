@@ -10,7 +10,7 @@ body {
 header {
   background-color: #4CAF50;
   color: white;
-  text-align: center;
+  /* text-align: center; */
   padding: 20px;
 }
 
@@ -22,12 +22,16 @@ h2 {
   color: #333;
 }
 
-ul {
+.post-list-class {
+    list-style-type: none;
+}
+
+.post-list-class ul {
   list-style-type: none;
   padding: 0;
 }
 
-li {
+.post-list-class li {
   margin: 10px 0;
   padding: 10px;
   background-color: #fff;
@@ -43,4 +47,66 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+.site-header {
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.site-header .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  float: left;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #ffffffcc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #ffffff;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav ul li {
+    margin-bottom: 10px;
+  }
 }
