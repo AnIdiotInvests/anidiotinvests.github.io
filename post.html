@@ -28,23 +28,24 @@
   <footer id="get-foot"></footer>
 
   <script>
+
     const postFile = new URLSearchParams(window.location.search).get('post');
     if (postFile) {
 
       fetch(`/posts/${postFile}.md`)
         .then(response => response.text())
         .then(markdownText => {
+
           const converter = new showdown.Converter();
           const htmlContent = converter.makeHtml(markdownText);
           document.getElementById('post-content').innerHTML = htmlContent;
+
         })
         .catch(error => {
           document.getElementById('post-content').innerHTML = '<p>Post not found.</p>';
         });
-
-    } else {
-      document.getElementById('post-content').innerHTML = '<p>No post selected.</p>';
     }
+
   </script>
 
 </body>
