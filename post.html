@@ -2,52 +2,39 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beyond The Stonks</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
 
   <script src="/js/component-loader.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
-
+  <script src="/js/showdown.js"></script>
 </head>
 
 <body>
   <header id="get-head"></header>
-  <script>loadComponents()</script>
+  <script>loadComponents();</script>
 
-  <main>
-    <div class="container">
-      <section id="post-content">
-        <h2>Loading...</h2>
-      </section>
-    </div>
+  <main class="container">
+    <section id="post-content">Loading...</section>
   </main>
 
   <footer id="get-foot"></footer>
-
   <script>
-
     const postFile = new URLSearchParams(window.location.search).get('post');
     if (postFile) {
-
       fetch(`/posts/${postFile}.md`)
         .then(response => response.text())
         .then(markdownText => {
-
           const converter = new showdown.Converter();
           const htmlContent = converter.makeHtml(markdownText);
           document.getElementById('post-content').innerHTML = htmlContent;
-
         })
         .catch(error => {
           document.getElementById('post-content').innerHTML = '<p>Post not found.</p>';
         });
     }
-
   </script>
-
 </body>
 
 </html>
