@@ -11,7 +11,7 @@ async function loadHeadComponents() {
         ["head", "/components/head.html"]
     ]);
     for (const [key, value] of headComponents) {
-        document.getElementsByTagName(key)[0].innerHTML += await fetchHtml(value);
+        document.getElementsByTagName(key)[0].innerHTML += await fetchFile(value);
     }
 }
 
@@ -21,11 +21,11 @@ async function loadBodyComponents() {
         ["get-footer", "/components/footer.html"],
     ]);
     for (const [key, value] of bodyComponents) {
-        document.getElementById(key).innerHTML = await fetchHtml(value);
+        document.getElementById(key).innerHTML = await fetchFile(value);
     }
 }
 
-async function fetchHtml(loc) {
+async function fetchFile(loc) {
     response = await fetch(loc);
     return await response.text();
 }
