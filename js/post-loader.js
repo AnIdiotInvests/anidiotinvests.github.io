@@ -15,12 +15,18 @@ async function loadPosts() {
 
         const li = document.createElement('li');
         const link = document.createElement('a');
+        const date = document.createElement('p')
 
         link.href = `post.html?post=${post.id}`;
         link.textContent = post.title;
+        date.textContent = post.date;
+
+        li.classList.add('flexium');
 
         li.appendChild(link);
+        li.appendChild(date);
         postList.appendChild(li);
+
     });
 }
 
