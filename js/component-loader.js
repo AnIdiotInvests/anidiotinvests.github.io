@@ -1,21 +1,28 @@
 async function loadComponents() {
+    await Promise.all([
+        loadBodyComponents(),
+        loadHeadComponents(),
+        setNav()
+    ]);
+}
 
-    const tagComponents = new Map([
+async function loadHeadComponents() {
+    const headComponents = new Map([
         ["head", "/components/head.html"]
     ]);
+    for (const [key, value] of headComponents) {
+        document.getElementsByTagName(key)[0].innerHTML += await fetchHtml(value);
+    }
+}
 
-    const components = new Map([
+async function loadBodyComponents() {
+    const bodyComponents = new Map([
         ["get-header", "/components/header.html"],
         ["get-footer", "/components/footer.html"],
     ]);
-
-    for (const [key, value] of tagComponents) {
-        document.getElementsByTagName(key)[0].innerHTML += await fetchHtml(value);
-    }
-    for (const [key, value] of components) {
+    for (const [key, value] of bodyComponents) {
         document.getElementById(key).innerHTML = await fetchHtml(value);
     }
-    setNav();
 }
 
 async function fetchHtml(loc) {
