@@ -2,8 +2,8 @@
   --baseGreen: rgb(0, 153, 69);
   --hoverGreen: rgb(10, 197, 94);
 
-  --headerHeight: 60px;
-  --footerHeight: 250px;
+  --headerHeight: 55px;
+  --footerHeight: 180px;
   --contentHeight: calc(var(--headerHeight) + var(--footerHeight));
 }
 
@@ -65,12 +65,12 @@ a:hover {
   margin-left: auto;
 }
 
-#post-content {
+.content-container {
   padding-top: var(--headerHeight);
   min-height: calc(100vh - var(--contentHeight));
 }
 
-#post-content h1 {
+.content-container h1 {
   font-size: 44pt;
 }
 
@@ -138,4 +138,13 @@ footer {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+.social-footer img {
+  width: 50px;
+  padding: 5px;
+}
+
+.social-footer a {
+  text-decoration: none;
 }

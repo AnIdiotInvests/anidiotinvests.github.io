@@ -11,21 +11,31 @@ async function loadHeadComponents() {
         ["head", "/components/head.html"]
     ]);
     for (const [key, value] of headComponents) {
-        document.getElementsByTagName(key)[0].innerHTML += await fetchFile(value);
+        var data = await fetchDataFromLocation(value);
+        if (data) {
+            document.getElementsByTagName(key)[0].innerHTML += data;
+        }
     }
 }
 
 async function loadBodyComponents() {
     const bodyComponents = new Map([
         ["get-header", "/components/header.html"],
-        ["get-footer", "/components/footer.html"],
+        ["get-footer", "/components/footer.html"]
     ]);
-    for (const [key, value] of bodyComponents) {
-        document.getElementById(key).innerHTML = await fetchFile(value);
+    for (const [className, dataLocation] of bodyComponents) {
+        innnerHtmlIfExistsById(className, dataLocation);
     }
 }
 
-async function fetchFile(loc) {
+async function innnerHtmlIfExistsById(idName, dataLocation) {
+    var ele = document.getElementById(idName);
+    if (ele) {
+        ele.innerHTML = await fetchDataFromLocation(dataLocation);
+    }
+}
+
+async function fetchDataFromLocation(loc) {
     response = await fetch(loc);
     return await response.text();
 }
@@ -37,16 +47,16 @@ async function setNav() {
         const url = location.pathname;
         if (url) {
             if (url.trim() == "/") {
-                applyClass('home')
+                applyClass('home', 'active')
 
             } else if (url.trim() === '/about.html') {
-                applyClass('about')
+                applyClass('about', 'active')
             }
         }
     }
 }
 
-async function applyClass(id) {
-    aboutEle = document.getElementById(id);
-    aboutEle.classList.add('active');
+async function applyClass(idName, className) {
+    aboutEle = document.getElementById(idName);
+    aboutEle.classList.add(className);
 }
