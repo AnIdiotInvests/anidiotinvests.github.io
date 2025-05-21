@@ -2,8 +2,8 @@ async function loadComponents() {
     await Promise.all([
         loadBodyComponents(),
         loadHeadComponents(),
-        setNav()
     ]);
+    setNav();
 }
 
 async function loadHeadComponents() {
