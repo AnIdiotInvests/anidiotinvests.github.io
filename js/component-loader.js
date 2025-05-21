@@ -1,12 +1,20 @@
 async function loadComponents() {
-    const components = new Map([
-        ["get-head", "/components/header.html"],
-        ["get-foot", "/components/footer.html"],
-    ]);
-    for (const [key, value] of components) {
-        document.getElementById(key).innerHTML = await fetchHtml(value)
-    }
 
+    const tagComponents = new Map([
+        ["head", "/components/head.html"]
+    ]);
+
+    const components = new Map([
+        ["get-header", "/components/header.html"],
+        ["get-footer", "/components/footer.html"],
+    ]);
+
+    for (const [key, value] of tagComponents) {
+        document.getElementsByTagName(key)[0].innerHTML += await fetchHtml(value);
+    }
+    for (const [key, value] of components) {
+        document.getElementById(key).innerHTML = await fetchHtml(value);
+    }
     setNav();
 }
 

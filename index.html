@@ -2,18 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beyond The Stonks</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
-
   <script src="/js/component-loader.js"></script>
   <script src="/js/post-loader.js"></script>
 </head>
 
-<body>
-  <header id="get-head"></header>
-  <script>loadComponents();</script>
+<body onload="loadComponents();">
+  <header id="get-header"></header>
+  <!-- <script>loadComponents();</script> -->
 
   <main id="post-content" class="container">
     <section id="post-list" class="post-list-class">
@@ -21,7 +17,7 @@
     </section>
   </main>
 
-  <footer id="get-foot"></footer>
+  <footer id="get-footer"></footer>
   <script>loadPosts();</script>
 </body>
 
