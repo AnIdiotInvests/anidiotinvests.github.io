@@ -10,10 +10,13 @@ async function loadHeadComponents() {
     const headComponents = new Map([
         ["head", "/components/head.html"]
     ]);
-    for (const [key, value] of headComponents) {
-        var data = await fetchDataFromLocation(value);
-        if (data) {
-            document.getElementsByTagName(key)[0].innerHTML += data;
+    for (const [tagName, dataLocation] of headComponents) {
+        const element = document.getElementsByTagName(tagName)[0];
+        if (element) {
+            const component = await fetch(dataLocation);
+            if (component) {
+                element.innerHTML += await component.text();
+            }
         }
     }
 }
@@ -23,21 +26,16 @@ async function loadBodyComponents() {
         ["get-header", "/components/header.html"],
         ["get-footer", "/components/footer.html"]
     ]);
-    for (const [className, dataLocation] of bodyComponents) {
-        innnerHtmlIfExistsById(className, dataLocation);
+    for (const [idName, dataLocation] of bodyComponents) {
+        const element = document.getElementById(idName);
+        if (element) {
+            const component = await fetch(dataLocation);
+            console.log(element);
+            if (component) {
+                element.innerHTML = await component.text();
+            }
+        }
     }
-}
-
-async function innnerHtmlIfExistsById(idName, dataLocation) {
-    var ele = document.getElementById(idName);
-    if (ele) {
-        ele.innerHTML = await fetchDataFromLocation(dataLocation);
-    }
-}
-
-async function fetchDataFromLocation(loc) {
-    response = await fetch(loc);
-    return await response.text();
 }
 
 async function setNav() {
@@ -46,7 +44,7 @@ async function setNav() {
         navEle.classList.remove('active');
         const url = location.pathname;
         if (url) {
-            if (url.trim() == "/") {
+            if (url.trim() === "/") {
                 applyClass('home', 'active')
 
             } else if (url.trim() === '/about.html') {
@@ -57,6 +55,8 @@ async function setNav() {
 }
 
 async function applyClass(idName, className) {
-    aboutEle = document.getElementById(idName);
-    aboutEle.classList.add(className);
+    element = document.getElementById(idName);
+    if (element) {
+        element.classList.add(className);
+    }
 }

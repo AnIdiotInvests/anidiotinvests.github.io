@@ -2,18 +2,18 @@ async function loadPosts() {
 
     // TODO: Switch to api later...
     const postList = document.getElementById('posts');
+
     const jsonFile = await fetch("/posts/prototype-posts.json");
     const postsData = await jsonFile.json();
-
     const posts = postsData.map(post => new Post(
         post.id,
         post.title,
-        post.date
+        post.date,
+        post.type
     ));
 
     // TODO: Optimize
     posts.sort((a, b) => a.date + b.date);
-
     posts.forEach(post => {
         if (post) {
             const li = document.createElement('li');
@@ -24,20 +24,22 @@ async function loadPosts() {
             link.textContent = post.title;
 
             if (post.date) {
-                date.textContent = post.date.toLocaleDateString("en-US");
+                dateStr = post.date.toLocaleDateString("en-US");
+                date.textContent = dateStr;
             }
+
             li.appendChild(link);
             li.appendChild(date);
             postList.appendChild(li);
         }
-
     });
 }
 
 class Post {
-    constructor(id, title, date) {
+    constructor(id, title, date, type) {
         this.id = id;
         this.title = title;
         this.date = new Date(date);
+        this.type = type;
     }
 }

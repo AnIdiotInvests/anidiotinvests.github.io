@@ -45,7 +45,7 @@ a:hover {
 }
 
 .post-list {
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 .post-list ul {
@@ -63,6 +63,16 @@ a:hover {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
+}
+
+#post-content {
+  font-size: 14pt;
+  width: 100%;
+}
+
+#post-content img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .content-container {
