@@ -11,6 +11,8 @@ body {
 .container {
   margin: auto;
   max-width: 800px;
+  padding-left: 11px;
+  padding-right: 11px; 
 }
 
 .post-list-class a {

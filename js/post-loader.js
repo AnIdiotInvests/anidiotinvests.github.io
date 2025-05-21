@@ -2,7 +2,7 @@ async function loadPosts() {
     // Switch to api later...
     const postList = document.getElementById('posts');
     const postMap = new Map([
-        ["post1", "Am I A BlackRock Invested Tesla Killbot?"],
+        ["post1", "Am I A BlackRock Funded Tesla Killbot?"],
         ["post2", "Observing Solana Meme Coins In The Wild"]
     ]);
     for (const [key, value] of postMap) {

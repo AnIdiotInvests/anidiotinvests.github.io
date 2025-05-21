@@ -1,4 +1,4 @@
-## Observing Solana Meme Coins In The Wild
+# Observing Solana Meme Coins In The Wild
 
 Video: [Short](https://www.youtube.com/shorts/IAGQMsQjDSk)
 
