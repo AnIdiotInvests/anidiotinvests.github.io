@@ -1,12 +1,20 @@
 [
     {
-        "id": "5-18-2025-blackrock-tesla-killbot",
-        "title": "Am I A BlackRock Funded Tesla Killbot?",
-        "date": "5-18-2025"
+        "id": "what-is-going-on-with-btc",
+        "title": "What In The World Is Going On With BTC?",
+        "date": "2025-5-20",
+        "type": "blog"
     },
     {
-        "id": "5-18-2025-observing-solana-meme-coins",
+        "id": "blackrock-tesla-killbot",
+        "title": "Am I A BlackRock Funded Tesla Killbot?",
+        "date": "2025-5-18",
+        "type": "video"
+    },
+    {
+        "id": "observing-solana-meme-coins",
         "title": "Observing Solana Meme Coins In The Wild!",
-        "date": "5-18-2025"
+        "date": "2025-5-18",
+        "type": "video"
     }
 ]

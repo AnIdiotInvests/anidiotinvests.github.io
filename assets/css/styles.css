@@ -26,6 +26,7 @@ body {
 
 a {
   color: var(--baseGreen);
+  cursor: pointer;
 }
 
 a:hover {
@@ -34,18 +35,17 @@ a:hover {
 
 .container {
   margin: auto;
-  max-width: 800px;
-  padding-left: 11px;
-  padding-right: 11px;
+  max-width: 810px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .active {
   color: var(--hoverGreen) !important;
 }
 
-.post-list a {
-  cursor: pointer;
-  font-size: 11pt;
+.post-list {
+  font-size: 14pt;
 }
 
 .post-list ul {
