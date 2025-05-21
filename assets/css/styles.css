@@ -12,9 +12,16 @@
   color: rgb(10, 10, 10);
 }
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
+  overflow: auto;
+  height: 100%;
 }
 
 a {
@@ -123,4 +130,12 @@ footer {
 .no-format-click {
   all: unset;
   cursor: pointer;
+}
+
+.no-select {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
