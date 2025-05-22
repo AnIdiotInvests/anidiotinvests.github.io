@@ -21,13 +21,9 @@ async function searchButton(buttonId) {
 }
 
 async function runSearch(buttonId) {
-    if (buttonId === "all-btn") {
+    if (!buttonId || buttonId === "all") {
         loadPosts();
-
-    } else if (buttonId === "blogs-btn") {
-        loadPostsByType("blog");
-
-    } else if (buttonId === "podcasts-btn") {
-        loadPostsByType("podcast");
+    } else {
+        loadPostsByType(buttonId);
     }
 }
