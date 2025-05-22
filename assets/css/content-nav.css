@@ -1,0 +1,33 @@
+.content-nav {
+    text-decoration: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.content-nav ul {
+    padding: 20px;
+    margin: auto;
+}
+
+.content-nav li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.content-nav .btn {
+    min-width: 80px;
+    font-size: 12pt;
+    color: var(--baseGreen);
+    background-color: whitesmoke;
+}
+
+.content-nav .btn:hover {
+    color: var(--hoverGreen)
+}
+
+.content-search-a {
+    margin: auto;
+    display: inline;
+}

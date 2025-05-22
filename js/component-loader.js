@@ -30,7 +30,6 @@ async function loadBodyComponents() {
         const element = document.getElementById(idName);
         if (element) {
             const component = await fetch(dataLocation);
-            console.log(element);
             if (component) {
                 element.innerHTML = await component.text();
             }
