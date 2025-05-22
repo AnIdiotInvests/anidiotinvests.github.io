@@ -1,8 +1,8 @@
 :root {
-  --baseGreen: rgb(0, 153, 69);
+  --baseGreen: rgb(0, 105, 47);
   --hoverGreen: rgb(10, 197, 94);
 
-  --headerHeight: 55px;
+  --headerHeight: 60px;
   --footerHeight: 180px;
   --contentHeight: calc(var(--headerHeight) + var(--footerHeight));
 }
@@ -86,9 +86,9 @@ a:hover {
 
 header,
 footer {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   width: 100%;
-  background-color: rgb(55, 58, 55);
+  background-color: whitesmoke;
 }
 
 header {
