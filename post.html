@@ -20,20 +20,29 @@
   <footer id="get-footer"></footer>
   <script type="text/javascript">
     const postName = new URLSearchParams(window.location.search).get('post');
-    const jsonFile = await fetch("/postz/" + postName + ".md");
-    const converter = new showdown.Converter({ metadata: true });
-    if (converter) {
-      const htmlContent = converter.makeHtml(markdownText);
-      const metadata = converter.getMetadata();
-      if (metadata) {
-        if (metadata.title) {
-          document.getElementById('post-header').innerHTML = "<h1>" + metadata.title + "</h1>";
-        }
-        if (metadata.date) {
-          document.getElementById('post-header').innerHTML += "<p>Date: " + metadata.date + "</p>";
-        }
-      }
-      document.getElementById('post-content').innerHTML = htmlContent;
+    if (postName) {
+      fetch("/postz/" + postName + ".md")
+        .then(response => response.text())
+        .then(markdownText => {
+
+          const converter = new showdown.Converter({ metadata: true });
+          if (converter) {
+            const htmlContent = converter.makeHtml(markdownText);
+            const metadata = converter.getMetadata();
+            if (metadata) {
+              if (metadata.title) {
+                document.getElementById('post-header').innerHTML = "<h1>" + metadata.title + "</h1>";
+              }
+              if (metadata.date) {
+                document.getElementById('post-header').innerHTML += "<p>Date: " + metadata.date + "</p>";
+              }
+            }
+            document.getElementById('post-content').innerHTML = htmlContent;
+          }
+        })
+        .catch(error => {
+          document.getElementById('post-content').innerHTML = '<p>Post not found.</p>';
+        });
     }
   </script>
 </body>
