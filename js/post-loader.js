@@ -13,7 +13,7 @@ async function loadPosts() {
 
 async function mapPosts(searchKey) {
     // TODO: Switch to api vs static condition later...
-    const jsonFile = await fetch("/posts/posts-prototype.json");
+    const jsonFile = await fetch("/postz/posts-prototype.json");
     try {
         const postsData = await jsonFile.json();
         return await postsData.map(post => {
