@@ -3,8 +3,8 @@
 
 <head>
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <script src="/js/component-loader.js"></script>
-  <script src="/js/showdown.js"></script>
+  <script type="text/javascript" src="/js/showdown.js"></script>
+  <script type="text/javascript" src="/js/component-loader.js"></script>
 </head>
 
 <body onload="loadComponents();">
@@ -18,10 +18,10 @@
   </main>
 
   <footer id="get-footer"></footer>
-  <script>
+  <script type="text/javascript">
     const postName = new URLSearchParams(window.location.search).get('post');
     if (postName) {
-      fetch(`/posts/${postName}`)
+      fetch("/posts/" + postName + ".md")
         .then(response => response.text())
         .then(markdownText => {
 
