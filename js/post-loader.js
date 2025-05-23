@@ -17,8 +17,6 @@ async function mapPosts(searchKey) {
     try {
         const postsData = await jsonFile.json();
         return await postsData.map(post => {
-            console.log(searchKey);
-
             if (!searchKey || (searchKey && searchKey === post.postType)) {
                 return new Post(
                     post.id,
