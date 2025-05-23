@@ -21,7 +21,7 @@
   <script>
     const postName = new URLSearchParams(window.location.search).get('post');
     if (postName) {
-      fetch(`/posts/${postName}.md`)
+      fetch(`/posts/${postName}`)
         .then(response => response.text())
         .then(markdownText => {
 
