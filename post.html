@@ -3,8 +3,8 @@
 
 <head>
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <script type="text/javascript" src="/js/showdown.js"></script>
-  <script type="text/javascript" src="/js/component-loader.js"></script>
+  <script type="text/javascript" src="/assets/js/showdown.js"></script>
+  <script type="text/javascript" src="/assets/js/component-loader.js"></script>
 </head>
 
 <body onload="loadComponents();">
@@ -21,7 +21,7 @@
   <script type="text/javascript">
     const postName = new URLSearchParams(window.location.search).get('post');
     if (postName) {
-      fetch("/postz/" + postName + ".md")
+      fetch("/posts/" + postName + ".md")
         .then(response => response.text())
         .then(markdownText => {
 
