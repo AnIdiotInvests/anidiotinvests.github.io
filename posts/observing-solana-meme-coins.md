@@ -1,4 +1,8 @@
-# Observing Solana Meme Coins In The Wild
+---
+title: Observing Solana Meme Coins In The Wild!
+date: 2025-5-18
+postType: video
+---
 
 Video: [Short](https://www.youtube.com/shorts/IAGQMsQjDSk)
 

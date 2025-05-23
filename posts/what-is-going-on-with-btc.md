@@ -1,5 +1,8 @@
-
-# What In The World Is Going On With BTC?
+---
+title: What In The World Is Going On With BTC?
+date: 2025-5-20
+postType: blog
+---
 
 Bitcoin (BTC) has surged to a new all-time high, trading around $108,450 as of May 21, 2025.
 

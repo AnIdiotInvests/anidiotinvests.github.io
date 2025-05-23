@@ -1,4 +1,8 @@
-# Our First Comment Was A Friendly Bot!
+---
+title: Our First Comment Was A Friendly Bot!
+date: 2025-5-20
+postType: video
+---
 
 Podcast: [Bot Bussin Video](https://www.youtube.com/watch?v=QJosN3tYIaI)
 

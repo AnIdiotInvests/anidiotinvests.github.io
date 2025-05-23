@@ -1,4 +1,8 @@
-# Am I a BlackRock Funded Tesla Killbot?
+---
+title: Am I a BlackRock Funded Tesla Killbot?
+date: 2025-5-18
+postType: podcast
+---
 
 Podcast: [Episode One](https://www.youtube.com/watch?v=lqekqZFd3sU&list=PLmRy_uMjkNU1xzYbk_HhCu3x3P78B-jdE)
 
