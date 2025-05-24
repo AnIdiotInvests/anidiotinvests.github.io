@@ -1,24 +1,32 @@
 .content-nav {
     text-decoration: none;
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
 }
 
 .content-nav ul {
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
     padding: 20px;
     margin: auto;
 }
 
 .content-nav li {
     display: inline;
+    margin: auto;
     padding: 0;
     margin: 0;
 }
 
 .content-nav .btn {
-    min-width: 80px;
+    min-width: 83px;
     font-size: 12pt;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 3px;
     color: var(--baseGreen);
     background-color: whitesmoke;
 }
@@ -28,6 +36,8 @@
 }
 
 .content-search-a {
+    display: flex;
+    justify-content: center;
     margin: auto;
-    display: inline;
+    min-width: 300px;
 }

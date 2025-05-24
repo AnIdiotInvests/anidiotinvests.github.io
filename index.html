@@ -4,9 +4,11 @@
 <head>
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/content-nav.css">
+
   <script type="text/javascript" src="/assets/js/component-loader.js"></script>
-  <script type="text/javascript" src="/assets/js/post-loader.js"></script>
-  <script type="text/javascript" src="/assets/js/search/searching.js"></script>
+
+  <script type="module" src="/assets/js/posts.js"></script>
+
 </head>
 
 <body onload="loadComponents();">
@@ -16,14 +18,14 @@
     <section class="content-container">
       <div class="content-nav">
         <ul>
-          <li><button id="all" class="btn active-btn" onClick="searchButton(this.id);">All</button></li>
-          <li><button id="podcast" class="btn" onClick="searchButton(this.id);">Podcasts</button></li>
-          <li><button id="blog" class="btn" onClick="searchButton(this.id);">Blogs</button></li>
+          <li><button id="all" class="btn active-btn" onClick="buttonSearch(this.id);">All</button></li>
+          <li><button id="podcast" class="btn" onClick="buttonSearch(this.id);">Podcasts</button></li>
+          <li><button id="blog" class="btn" onClick="buttonSearch(this.id);">Blogs</button></li>
         </ul>
-        <!-- <div class="content-search-a">
-          <input type="search" id="gsearch" class="" name="gsearch">
-          <button onClick="textSearch(this.id);"><img src="/assets/img/search-icon.png" width="12px" /></button>
-        </div> -->
+        <div class="content-search-a">
+          <input type="search" id="content-search" name="gsearch">
+          <button onClick="inputSearch();"><img src="/assets/img/search-icon.png" width="12px" /></button>
+        </div>
       </div>
       <div class="post-list">
         <ul id="posts"></ul>
@@ -32,7 +34,6 @@
   </main>
 
   <footer id="get-footer" data-nosnippet></footer>
-  <script>loadPosts();</script>
 </body>
 
 </html>
