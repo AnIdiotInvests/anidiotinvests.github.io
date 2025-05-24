@@ -86,7 +86,6 @@ a:hover {
 
 header,
 footer {
-  /* background-color: #ffffff; */
   width: 100%;
   background-color: whitesmoke;
 }
@@ -158,7 +157,6 @@ footer {
 .social-footer a {
   text-decoration: none;
 }
-
 
 /* Button */
 
