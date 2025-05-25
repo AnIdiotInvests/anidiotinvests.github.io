@@ -1,6 +1,6 @@
 ---
 title: Our First Comment Was A Friendly Bot!
-date: 2025-5-20
+date: 2025-05-20
 postType: video
 ---
 

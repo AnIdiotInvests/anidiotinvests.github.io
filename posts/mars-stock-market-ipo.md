@@ -1,6 +1,6 @@
 ---
 title: Mars Stock Market, The First Hypothetical IPO
-date: 2025-5-25
+date: 2025-05-25
 postType: podcast
 ---
 

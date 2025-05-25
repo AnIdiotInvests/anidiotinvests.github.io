@@ -1,6 +1,6 @@
 ---
 title: Am I a BlackRock Funded Tesla Killbot?
-date: 2025-5-18
+date: 2025-05-18
 postType: podcast
 ---
 

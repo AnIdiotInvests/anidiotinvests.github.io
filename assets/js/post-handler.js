@@ -3,7 +3,7 @@ class Post {
     constructor(id, title, date, postType) {
         this.id = id;
         this.title = title;
-        if (date) this.date = new Date(date);
+        this.date = new Date(date);
         this.postType = postType;
     }
 }
@@ -38,8 +38,7 @@ class PostHandler {
 
         postListEle.innerHTML = "";
         // TODO: Optimize
-        // posts.sort((a, b) => a.date + b.date);
-        posts.sort().reverse();
+        posts.sort(function (a, b) { return a.date - b.date; }).reverse();
         posts.forEach(post => {
             if (post) {
                 const li = document.createElement('li');
