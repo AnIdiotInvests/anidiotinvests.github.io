@@ -38,7 +38,7 @@ class PostHandler {
 
         postListEle.innerHTML = "";
         // TODO: Optimize
-        // posts.sort((a, b) => a.date - b.date);
+        // posts.sort((a, b) => a.date + b.date);
         posts.sort().reverse();
         posts.forEach(post => {
             if (post) {
