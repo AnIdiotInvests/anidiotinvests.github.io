@@ -20,6 +20,9 @@
   <footer id="get-footer"></footer>
   <script type="text/javascript">
     const postName = new URLSearchParams(window.location.search).get('post');
+    const postHeader = 'post-header';
+    const postContent = 'post-content';
+
     if (postName) {
       fetch("/posts/" + postName + ".md")
         .then(response => response.text())
@@ -30,18 +33,19 @@
             const htmlContent = converter.makeHtml(markdownText);
             const metadata = converter.getMetadata();
             if (metadata) {
-              if (metadata.title) {
-                document.getElementById('post-header').innerHTML = "<h1>" + metadata.title + "</h1>";
+              postHeaderEle = document.getElementById(postHeader);
+              if (postHeaderEle && metadata.title) {
+                postHeaderEle.innerHTML = "<h1>" + metadata.title + "</h1>";
               }
-              if (metadata.date) {
-                document.getElementById('post-header').innerHTML += "<p>Date: " + metadata.date + "</p>";
+              if (postHeaderEle && metadata.date) {
+                postHeaderEle.innerHTML += "<p>" + new Date(metadata.date).toDateString() + "</p>";
               }
             }
-            document.getElementById('post-content').innerHTML = htmlContent;
+            document.getElementById(postContent).innerHTML = htmlContent;
           }
         })
         .catch(error => {
-          document.getElementById('post-content').innerHTML = '<p>Post not found.</p>';
+          document.getElementById(postContent).innerHTML = '<p>Post not found.</p>';
         });
     }
   </script>

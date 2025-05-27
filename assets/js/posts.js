@@ -13,7 +13,7 @@ const inputId = 'content-search';
     const postHandler = new PostHandler('posts', jsonPosts);
 
     // Attach global functions AFTER handler is initialized
-    window.loadPosts = () => postHandler.loadPosts();
+    // window.loadPosts = () => postHandler.loadPosts();
     
     window.buttonSearch = async (clickedBtnId) => {
         if (!clickedBtnId) return;
@@ -31,5 +31,5 @@ const inputId = 'content-search';
         if (val) postHandler.loadPosts(val);
     };
 
-    window.loadPosts();
+    postHandler.loadPostsByType('podcast');
 })();
