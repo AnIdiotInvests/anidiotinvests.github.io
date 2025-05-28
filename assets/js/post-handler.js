@@ -44,7 +44,7 @@ class PostHandler {
                 const li = document.createElement('li');
                 const link = document.createElement('a');
                 const date = document.createElement('p')
-                link.href = `post.html?post=${post.id}`;
+                link.href = `/?post=${post.id}`;
                 link.textContent = post.title;
 
                 if (post.date) {

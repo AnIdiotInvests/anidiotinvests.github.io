@@ -1,9 +1,8 @@
 async function loadComponents() {
     await Promise.all([
-        loadBodyComponents(),
         loadHeadComponents(),
+        renderContent()
     ]);
-    setNav();
 }
 
 async function loadHeadComponents() {
@@ -21,32 +20,74 @@ async function loadHeadComponents() {
     }
 }
 
-async function loadBodyComponents() {
-    const bodyComponents = new Map([
-        ["get-header", "/components/header.html"],
-        ["get-footer", "/components/footer.html"]
-    ]);
-    for (const [idName, dataLocation] of bodyComponents) {
-        const element = document.getElementById(idName);
-        if (element) {
-            const component = await fetch(dataLocation);
-            if (component) {
-                element.innerHTML = await component.text();
-            }
-        }
-    }
-}
+async function renderContent() {
+    const postName = new URLSearchParams(window.location.search).get('post');
+    const pageName = new URLSearchParams(window.location.search).get('page');
+    const url = location.pathname;
 
-async function setNav() {
+    if (!postName && !pageName && url.trim() !== "/") {
+        return;
+    }
+
+    if (postName) {
+
+        postHeader = document.createAttribute("div");
+        postContent = document.createAttribute("div");
+        contentEle = document.getElementById("dynamic-content");
+
+        fetch("/posts/" + postName + ".md")
+            .then(response => response.text())
+            .then(markdownText => {
+
+                const converter = new showdown.Converter({ metadata: true });
+                if (converter) {
+
+                    contentEle.innerHTML = "";
+                    const htmlContent = converter.makeHtml(markdownText);
+                    const metadata = converter.getMetadata();
+
+                    if (metadata) {
+                        if (postHeader && metadata.title) {
+                            postHeader.innerHTML = "<h1>" + metadata.title + "</h1>";
+                        }
+                        if (postHeader && metadata.date) {
+                            postHeader.innerHTML += "<p>" + new Date(metadata.date).toDateString() + "</p>";
+                        }
+                    }
+                    contentEle.innerHTML += postHeader.innerHTML;
+                    contentEle.innerHTML += htmlContent;
+                }
+            })
+            .catch(error => {
+                postContent.innerHTML = '<p>Post not found.</p>';
+            });
+    } else if (pageName) {
+
+        postHeader = document.createAttribute("div");
+        postContent = document.createAttribute("div");
+        contentEle = document.getElementById("dynamic-content");
+
+        fetch("/pages/" + pageName + ".md")
+            .then(response => response.text())
+            .then(pageHtml => {
+
+                contentEle.innerHTML = "";
+                contentEle.innerHTML += pageHtml;
+            })
+            .catch(error => {
+                postContent.innerHTML = '<p>Page not found</p>';
+            });
+    }
+
     const navEle = document.getElementById('get-nav');
     if (navEle) {
         navEle.classList.remove('active');
-        const url = location.pathname;
+        console.log(url);
         if (url) {
-            if (url.trim() === "/") {
+            if (url.trim() === "/" && (!pageName && !postName)) {
                 applyClass('home', 'active')
 
-            } else if (url.trim() === '/about.html') {
+            } else if (pageName === "about") {
                 applyClass('about', 'active')
             }
         }
