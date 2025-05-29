@@ -18,7 +18,7 @@ class ComponentLoader {
             if (element) {
                 const component = await fetch(dataLocation);
                 if (component) {
-                    element.innerHTML += component.text();
+                    element.innerHTML += await component.text();
                 }
             }
         }
