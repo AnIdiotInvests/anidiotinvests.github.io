@@ -65,12 +65,12 @@ a:hover {
   margin-left: auto;
 }
 
-#post-content {
+.post-content {
   font-size: 14pt;
   width: 100%;
 }
 
-#post-content img {
+.post-content img {
   width: 100%;
   border-radius: 10px;
 }

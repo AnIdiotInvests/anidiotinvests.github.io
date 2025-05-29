@@ -6,54 +6,40 @@
   <link rel="stylesheet" href="/assets/css/content-nav.css">
 
   <script type="text/javascript" src="/assets/js/showdown.js"></script>
-  <script type="text/javascript" src="/assets/js/component-loader.js"></script>
+  <!-- <script type="text/javascript" src="/assets/js/component-loader.js"></script> -->
   <script type="module" src="/assets/js/posts.js"></script>
 </head>
 
-<body onload="loadComponents();">
+<body>
 
-  <header id="get-header">
+  <header data-nosnippet>
     <div class="container no-select">
-      <a class="no-format-click" href="/" data-nosnippet>
-        <nav class="top-nav">
+      <nav class="top-nav">
+
+        <a class="no-format-click" href="/">
           <div class="logo">
             <img src="/assets/img/logo_3_sm.png" alt="Site Logo" />
           </div>
-          <ul id="get-nav">
-            <li><a id="home" href="/">HOME</a></li>
-            <li><a id="about" href="/?page=about">ABOUT</a></li>
-          </ul>
-        </nav>
-      </a>
+        </a>
+
+        <ul id="get-nav">
+          <li><a id="home" href="/">HOME</a></li>
+          <li><a id="about" href="/?page=about">ABOUT</a></li>
+        </ul>
+
+      </nav>
     </div>
   </header>
 
   <main class="container">
-    <section class="content-container">
-      <div id="dynamic-content">
-        <div class="content-nav">
-          <ul>
-            <li><button id="podcast" class="btn active-btn" onClick="buttonSearch(this.id);">Podcast</button></li>
-            <li><button id="blog" class="btn" onClick="buttonSearch(this.id);">Blog</button></li>
-          </ul>
-          <div class="content-search-a">
-            <input type="search" id="content-search" name="gsearch">
-            <button onClick="inputSearch();"><img src="/assets/img/search-icon.png" width="12px" /></button>
-          </div>
-        </div>
-        <div class="post-list">
-          <ul id="posts"></ul>
-        </div>
-        <div id="post-header"></div>
-        <div id="post-content"></div>
-      </div>
-    </section>
+    <section id="dynamic-content" class="content-container"></section>
   </main>
 
-  <footer id="get-footer" data-nosnippet>
+  <footer data-nosnippet>
     <div class="no-select footer-container">
+
       <div class="footer-content">
-        <div class="social-footer" data-nosnippet="">
+        <div class="social-footer" data-nosnippet>
           <a href="https://instagram.com/beyondthestonks/" target="_blank" rel="noopener noreferrer">
             <img src="/assets/img/social/ig-instagram-icon.svg" alt="Img Not Found" draggable="false">
           </a>
@@ -66,9 +52,10 @@
         </div>
       </div>
 
-      <div class="footer-copy" data-nosnippet="">
+      <div class="footer-copy" data-nosnippet>
         <span>© Beyond The Stonks. All Rights Reserved </span>
       </div>
+
     </div>
   </footer>
 

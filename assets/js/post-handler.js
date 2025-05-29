@@ -15,12 +15,17 @@ class PostHandler {
         this.postJson = postJson;
     }
 
+
     loadPostsByType(searchKey) {
         if (!searchKey) return
         try {
+            console.log(searchKey);
             const posts = this.#mapPostsByType(searchKey.trim());
+            console.log(posts);
             if (posts) this.#outputPosts(posts);
-        } catch (error) { }
+        } catch (error) {
+            console.error(error);
+        }
     }
 
     loadPosts(searchKey) {
@@ -31,7 +36,10 @@ class PostHandler {
     }
 
     #outputPosts(posts) {
-        const postListEle = document.getElementById(this.outputId);
+        console.log(this.outputId);
+        let postListEle = document.getElementById(this.outputId);
+        console.log(postListEle);
+
         if (!postListEle) {
             return;
         }
