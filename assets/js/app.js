@@ -10,7 +10,7 @@ const jsonPosts = await jsonFile.json();
 
 // make two different impl for a DB and api connection, then make this one the static only impl
 const postHandler = new PostHandler('posts', jsonPosts);
-const compLoader = new ComponentLoader();
+const compLoader = new ComponentLoader('dynamic-content');
 
 document.addEventListener('Loaded', () => {
     postHandler.loadPostsByType('podcast');
@@ -28,8 +28,8 @@ window.buttonSearch = async (clickedBtnId) => {
 };
 
 window.inputSearch = async () => {
-    const val = document.getElementById(inputId)?.value;
-    if (val) postHandler.loadPosts(val);
+    const searchKey = document.getElementById(inputId)?.value;
+    if (searchKey) postHandler.loadPosts(searchKey);
 };
 
 compLoader.loadComponents();

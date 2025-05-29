@@ -2,6 +2,10 @@
 
 class ComponentLoader {
 
+    constructor(dynamicLoadId) {
+        this.dynamicLoadId = dynamicLoadId;
+    }
+
     async loadComponents() {
         await Promise.all([
             this.#renderContent(),
@@ -25,7 +29,6 @@ class ComponentLoader {
     }
 
     async #renderContent() {
-
         const postName = new URLSearchParams(window.location.search).get('post');
         const pageName = new URLSearchParams(window.location.search).get('page');
         const url = location.pathname;
@@ -33,16 +36,17 @@ class ComponentLoader {
             return;
         }
 
-
+        let rendered = false;
         if (postName) {
-            await this.#renderPost(postName);
-        } else if (pageName) {
-            await this.#renderPage(pageName);
+            rendered = await this.#renderPost(postName);
         } else {
-            await this.#renderPage("home");
+            rendered = await this.#renderPage(pageName);
+        }
+        if (rendered) {
+            rendered = document.dispatchEvent(new Event('Loaded'));
         }
 
-        document.dispatchEvent(new Event('Loaded'));
+        if (!rendered) return;
 
         const navEle = document.getElementById('get-nav');
         if (navEle) {
@@ -67,23 +71,34 @@ class ComponentLoader {
 
     async #renderPage(pageName) {
 
-        const contentEle = document.getElementById("dynamic-content");
+        let rendered = false;
+        const contentEle = document.getElementById(this.dynamicLoadId);
+
+        if (!pageName || pageName.trim() === "") {
+            pageName = "home";
+        }
 
         await fetch("/pages/" + pageName + ".html")
             .then(response => response.text())
             .then(pageHtml => {
                 contentEle.innerHTML = "";
-                contentEle.innerHTML += pageHtml;
+                if (pageHtml) {
+                    contentEle.innerHTML += pageHtml;
+                    rendered = true;
+                }
             })
             .catch(error => {
                 contentEle.innerHTML = '<p>Page not found</p>';
                 console.error(error);
             });
+
+        return rendered;
     }
 
     async #renderPost(postName) {
 
-        const contentEle = document.getElementById("dynamic-content");
+        let rendered = false;
+        const contentEle = document.getElementById(this.dynamicLoadId);
 
         await fetch("/posts/" + postName + ".md")
             .then(response => response.text())
@@ -104,12 +119,14 @@ class ComponentLoader {
                         }
                     }
                     contentEle.innerHTML += "<div class=\"post-content\">" + htmlContent + "</div>";
+                    rendered = true;
                 }
             })
             .catch(error => {
                 contentEle.innerHTML = '<p>Post not found.</p>';
                 console.error(error);
             });
+        return rendered;
     }
 
 }
