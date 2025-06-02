@@ -1,6 +1,6 @@
 ---
 title: Captial One Wants Your Debt. So they bought it.
-date: 2025-05-27T09:28:42Z
+date: 2025-06-02
 postType: blog
 ---
 
