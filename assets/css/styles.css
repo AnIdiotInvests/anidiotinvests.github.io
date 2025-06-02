@@ -2,7 +2,7 @@
   --baseGreen: rgb(0, 105, 47);
   --hoverGreen: rgb(10, 197, 94);
 
-  --headerHeight: 60px;
+  --headerHeight: 66px;
   --footerHeight: 180px;
   --contentHeight: calc(var(--headerHeight) + var(--footerHeight));
 }
@@ -87,7 +87,11 @@ a:hover {
 header,
 footer {
   width: 100%;
-  background-color: whitesmoke;
+  background-color: white;
+}
+
+header {
+  box-shadow: 0 4px 2px -2px rgb(230, 230, 230);
 }
 
 header {
@@ -165,10 +169,10 @@ footer {
 }
 
 .btn {
-    background: none;
-    color: inherit;
-    border: none;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
