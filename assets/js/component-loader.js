@@ -7,25 +7,25 @@ class ComponentLoader {
     }
 
     async loadComponents() {
-        await this.#loadHeadComponents();
+        // await this.#loadHeadComponents();
         await this.#renderContent();
     }
 
     // TODO: Not sure if this should be async for dynamic post to head content to be available quick enough
-    async #loadHeadComponents() {
-        const headComponents = new Map([
-            ["head", "/components/head.html"]
-        ]);
-        for (const [tagName, dataLocation] of headComponents) {
-            const element = document.getElementsByTagName(tagName)[0];
-            if (element) {
-                const component = await fetch(dataLocation);
-                if (component) {
-                    element.innerHTML += await component.text();
-                }
-            }
-        }
-    }
+    // async #loadHeadComponents() {
+    //     const headComponents = new Map([
+    //         ["head", "/components/head.html"]
+    //     ]);
+    //     for (const [tagName, dataLocation] of headComponents) {
+    //         const element = document.getElementsByTagName(tagName)[0];
+    //         if (element) {
+    //             const component = await fetch(dataLocation);
+    //             if (component) {
+    //                 element.innerHTML += await component.text();
+    //             }
+    //         }
+    //     }
+    // }
 
     async #renderContent() {
         const postName = new URLSearchParams(window.location.search).get('post');
