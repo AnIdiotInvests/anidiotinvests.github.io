@@ -7,12 +7,11 @@ class ComponentLoader {
     }
 
     async loadComponents() {
-        await Promise.all([
-            this.#renderContent(),
-            this.#loadHeadComponents()
-        ])
+        await this.#loadHeadComponents();
+        await this.#renderContent();
     }
 
+    // TODO: Not sure if this should be async for dynamic post to head content to be available quick enough
     async #loadHeadComponents() {
         const headComponents = new Map([
             ["head", "/components/head.html"]
@@ -73,6 +72,7 @@ class ComponentLoader {
 
         let rendered = false;
         const contentEle = document.getElementById(this.dynamicLoadId);
+        if (!contentEle) return;
 
         if (!pageName || pageName.trim() === "") {
             pageName = "home";
@@ -86,19 +86,20 @@ class ComponentLoader {
                     contentEle.innerHTML += pageHtml;
                     rendered = true;
                 }
-            })
-            .catch(error => {
+            }).catch(err => {
                 contentEle.innerHTML = '<p>Page not found</p>';
-                console.error(error);
+                console.error(err);
             });
 
         return rendered;
     }
 
+    // TODO: Garbage duplicate of above.
     async #renderPost(postName) {
 
         let rendered = false;
         const contentEle = document.getElementById(this.dynamicLoadId);
+        if (!contentEle) return;
 
         await fetch("/posts/" + postName + ".md")
             .then(response => response.text())
@@ -111,24 +112,62 @@ class ComponentLoader {
                     const metadata = converter.getMetadata();
 
                     if (metadata) {
-                        if (metadata.title) {
-                            contentEle.innerHTML += "<h1>" + metadata.title + "</h1>";
-                        }
-                        if (metadata.date) {
-                            contentEle.innerHTML += "<p>" + new Date(metadata.date).toDateString() + "</p>";
-                        }
+                        this.#renderMetadata(contentEle, metadata);
                     }
                     contentEle.innerHTML += "<div class=\"post-content\">" + htmlContent + "</div>";
                     rendered = true;
                 }
-            })
-            .catch(error => {
-                contentEle.innerHTML = '<p>Post not found.</p>';
-                console.error(error);
+            }).catch(err => {
+                contentEle.innerHTML = '<p>Page not found</p>';
+                console.error(err);
             });
+
         return rendered;
     }
 
+    #renderMetadata(contentEle, metadata) {
+
+        if (metadata.title) {
+            contentEle.innerHTML += "<h1>" + metadata.title + "</h1>";
+
+            document.title = metadata.title;
+
+            var titleMetaTag = document.querySelector('meta[property="og:title"');
+            if (titleMetaTag) {
+                titleMetaTag.setAttribute("content", metadata.title);
+            }
+
+            var description = document.querySelector('meta[name="description"]');
+            if (description) {
+                if (metadata.description) {
+                    description.setAttribute("content", metadata.description);
+
+                } else {
+                    description.setAttribute("content", metadata.title);
+                }
+            }
+
+            if (metadata.image) {
+                contentEle.innerHTML += "<div class=\"post-image\"><img src=\"" + metadata.image + "\"></div>"
+
+                var ogImage = document.querySelector('meta[property="og:image"]');
+                if (ogImage) {
+                    ogImage.setAttribute("content", metadata.image);
+                }
+
+                var twitImage = document.querySelector('meta[name="twitter:image"]');
+                if (twitImage) {
+                    twitImage.setAttribute("content", metadata.image);
+                }
+            }
+            if (metadata.date) {
+                contentEle.innerHTML += "<p>" + new Date(metadata.date).toDateString() + "</p>";
+            }
+            contentEle.innerHTML += "</div>";
+        }
+
+
+    }
 }
 
 export { ComponentLoader };

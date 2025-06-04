@@ -72,7 +72,17 @@ a:hover {
 
 .post-content img {
   width: 100%;
-  border-radius: 10px;
+}
+
+.post-image {
+  width: 100%;
+  height: 530px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.post-image img {
+  width: 100%;
 }
 
 .content-container {
