@@ -152,12 +152,12 @@ class ComponentLoader {
 
                 var ogImage = document.querySelector('meta[property="og:image"]');
                 if (ogImage) {
-                    ogImage.setAttribute("content", metadata.image);
+                    ogImage.setAttribute("content", "https://beyondthestonks.com" + metadata.image);
                 }
 
                 var twitImage = document.querySelector('meta[name="twitter:image"]');
                 if (twitImage) {
-                    twitImage.setAttribute("content", metadata.image);
+                    twitImage.setAttribute("content", "https://beyondthestonks.com" + metadata.image);
                 }
             }
             if (metadata.date) {
