@@ -128,6 +128,13 @@ class ComponentLoader {
     #renderMetadata(contentEle, metadata) {
 
         if (metadata.title) {
+
+            var ogUrl = document.querySelector('meta[property="og:url"');
+            
+            if (ogUrl) {
+                ogUrl.setAttribute("content", window.location.href);
+            }
+
             contentEle.innerHTML += "<h1>" + metadata.title + "</h1>";
 
             document.title = metadata.title;
@@ -165,8 +172,6 @@ class ComponentLoader {
             }
             contentEle.innerHTML += "</div>";
         }
-
-
     }
 }
 
