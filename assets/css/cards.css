@@ -19,7 +19,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 30px;
     transition: all 0.5s ease;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .holographic-card img {
-    height: 130%;
+    height: 135%;
 }
 
 .holographic-card p {
