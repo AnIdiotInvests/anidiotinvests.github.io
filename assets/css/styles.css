@@ -2,14 +2,22 @@
   --baseGreen: rgb(0, 105, 47);
   --hoverGreen: rgb(10, 197, 94);
 
-  --headerHeight: 66px;
-  --footerHeight: 180px;
+  --backgrouncColor: rgb(24, 24, 24);
+  --backgrouncColorSec: #0d0b17;
+
+  --headerHeight: 58px;
+  --footerHeight: 80px;
   --contentHeight: calc(var(--headerHeight) + var(--footerHeight));
 }
 
 * {
   font-family: Arial, sans-serif;
-  color: rgb(10, 10, 10);
+  color: whitesmoke;
+}
+
+body,
+html {
+  background-color: var(--backgrouncColor);
 }
 
 html {
@@ -35,7 +43,7 @@ a:hover {
 
 .container {
   margin: auto;
-  max-width: 810px;
+  max-width: 800px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -97,17 +105,14 @@ a:hover {
 header,
 footer {
   width: 100%;
-  background-color: white;
-}
-
-header {
-  box-shadow: 0 4px 2px -2px rgb(230, 230, 230);
+  background-color: var(--backgrouncColor);
 }
 
 header {
   position: fixed;
   height: var(--headerHeight);
   top: 0;
+  box-shadow: 0 4px 2px -2px black;
 }
 
 footer p {
@@ -136,7 +141,7 @@ footer {
 
 .top-nav a {
   text-decoration: none;
-  font-size: 11pt;
+  font-size: 14pt;
   font-weight: bold;
 }
 
@@ -164,7 +169,7 @@ footer {
 }
 
 .social-footer img {
-  width: 50px;
+  width: 30px;
   padding: 5px;
 }
 
@@ -185,4 +190,44 @@ footer {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+/* HERO */
+
+.flexit {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexit-item {
+  display: flex;
+  height: inherit;
+  max-width: 50%;
+  min-width: 50px;
+  padding: 10px;
+  margin: auto;
+  align-items: center;
+}
+
+.flexit-item img {
+  height: 230px;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.hero-header p {
+  font-size: 18pt;
+}
+
+
+@media (max-width: 660px) {
+  .flexit-item img {
+    height: 150px;
+    margin: auto;
+  }
+
+  .hero-header p {
+    font-size: 14pt;
+  }
 }

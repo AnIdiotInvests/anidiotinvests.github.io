@@ -1,0 +1,89 @@
+/*holo cards*/
+
+.holographic-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.holographic-card {
+    /* max-width: 700px; */
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 14px;
+
+    background: var(--backgrouncColorSec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.holographic-card h2 {
+    color: var(--hoverGreen);
+    font-size: 2rem;
+    /* position: relative; */
+    background-color: transparent;
+    z-index: 2;
+}
+
+.holographic-card::before {
+    content: '';
+    position: absolute;
+    width: 310%;
+    height: 600%;
+    background: linear-gradient(0deg,
+            transparent,
+            transparent 30%,
+            var(--hoverGreen));
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.holographic-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px var(--hoverGreen);
+}
+
+.holographic-card:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+}
+
+.holographic-card a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    align-items: center;
+}
+
+.holographic-card img {
+    height: 130%;
+}
+
+.holographic-card p {
+    font-size: 18pt;
+    padding-left: 20px;
+}
+
+.holographic-card:hover p {
+    color: var(--hoverGreen) !important;
+}
+
+
+@media (max-width: 660px) {
+    .flexit-item img {
+        height: 150px;
+        margin: auto;
+    }
+
+    .holographic-card p {
+        font-size: 14pt;
+    }
+}
