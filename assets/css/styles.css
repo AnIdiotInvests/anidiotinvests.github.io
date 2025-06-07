@@ -217,9 +217,8 @@ footer {
 }
 
 .hero-header p {
-  font-size: 18pt;
+  font-size: 24pt;
 }
-
 
 @media (max-width: 660px) {
   .flexit-item img {
