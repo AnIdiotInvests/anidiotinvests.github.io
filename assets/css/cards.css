@@ -30,7 +30,7 @@
     z-index: 2;
 }
 
-.holographic-card::before {
+/* .holographic-card::before {
     content: '';
     position: absolute;
     width: 310%;
@@ -42,17 +42,17 @@
     transform: rotate(-45deg);
     transition: all 0.4s ease;
     opacity: 0;
-}
+} */
 
 .holographic-card:hover {
-    transform: scale(1.02);
+    /* transform: scale(1.02); */
     box-shadow: 0 0 20px var(--hoverGreen);
 }
 
-.holographic-card:hover::before {
+/* .holographic-card:hover::before {
     opacity: 1;
     transform: rotate(-45deg) translateY(100%);
-}
+} */
 
 .holographic-card a {
     display: flex;
@@ -64,7 +64,7 @@
 
 .holographic-card img {
     height: 110%;
-    opacity: .5;
+    /* opacity: .5; */
     border-radius: 30%;
 }
 
@@ -73,13 +73,13 @@
     padding-left: 20px;
 }
 
-.holographic-card:hover p {
+/* .holographic-card:hover p {
     color: var(--hoverGreen) !important;
 }
 
 .holographic-card:hover img {
     opacity: 1;
-}
+} */
 
 @media (max-width: 660px) {
     .flexit-item img {
