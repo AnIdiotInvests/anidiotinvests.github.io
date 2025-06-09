@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/cards.css">
+  <link rel="stylesheet" href="/assets/css/widgets.css">
 
   <meta property="og:url" content="https://beyondthestonks.com">
   <meta name="author" content="Beyond The Stonks">
@@ -47,6 +48,53 @@
       </nav>
     </div>
   </header>
+
+  <div class="ticker-container">
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+      async>
+        {
+          "symbols": [
+            {
+              "proName": "FOREXCOM:SPXUSD",
+              "title": "S&P500 Index"
+            },
+            {
+              "proName": "NASDAQ:NDX",
+              "title": "NASDAQ 100"
+            },
+            {
+              "proName": "NASDAQ:IXIC",
+              "title": "NASDAQ COMP"
+            },
+            {
+              "proName": "NASDAQ:NVDA",
+              "title": "NVDA"
+            },
+            {
+              "proName": "NASDAQ:GOOG",
+              "title": "GOOG"
+            },
+            {
+              "proName": "NASDAQ:AAPL",
+              "title": "AAPL"
+            },
+            {
+              "proName": "NASDAQ:TSLA",
+              "title": "TSLA"
+            },
+            {
+              "proName": "BITSTAMP:BTCUSD",
+              "title": "Bitcoin"
+            }
+          ],
+            "showSymbolLogo": true,
+              "isTransparent": false,
+                "displayMode": "adaptive",
+                  "colorTheme": "dark",
+                    "locale": "en"
+        }
+      </script>
+  </div>
 
   <main class="container">
     <section id="dynamic-content" class="content-container">
@@ -104,26 +152,12 @@
   </main>
 
   <footer data-nosnippet>
-    <div class="no-select footer-container">
 
-      <div class="footer-content">
-        <div class="social-footer" data-nosnippet>
-          <a href="https://instagram.com/beyondthestonks/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/img/social/ig-instagram-icon.svg" alt="Img Not Found" draggable="false">
-          </a>
-          <a href="https://x.com/beyondthestonks/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/img/social/twitter-square-icon.svg" alt="Img Not Found" draggable="false">
-          </a>
-          <a href="https://youtube.com/@beyondtheStonks" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/img/social/youtube-app-icon.svg" alt="Img Not Found" draggable="false">
-          </a>
-        </div>
-      </div>
+    <div class="no-select footer-container">
 
       <div class="footer-copy" data-nosnippet>
         <span>© Beyond The Stonks. All Rights Reserved </span>
       </div>
-
     </div>
   </footer>
 </body>
