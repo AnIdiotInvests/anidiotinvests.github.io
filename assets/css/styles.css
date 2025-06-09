@@ -7,7 +7,7 @@
 
   --headerHeight: 58px;
   --footerHeight: 80px;
-  --contentHeight: calc(var(--headerHeight) + var(--footerHeight));
+  --contentHeight: calc((var(--headerHeight) + var(--footerHeight)));
 }
 
 * {
@@ -18,6 +18,10 @@
 body,
 html {
   background-color: var(--backgrouncColor);
+}
+
+body p {
+  font-size: 15pt;
 }
 
 html {
@@ -229,4 +233,91 @@ footer {
   .hero-header p {
     font-size: 14pt;
   }
+}
+
+/* telescopic image */
+
+.canvas-tiles {
+  position: relative;
+  width: 80%;
+  padding-top: 50%;
+  margin: 2rem auto;
+}
+
+.canvas-tiles>.block {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  perspective: 1000px;
+}
+
+.canvas-tiles>.block:nth-of-type(1) {
+  height: 80%;
+  top: 10%;
+  left: 17%;
+  width: 15%;
+}
+
+.canvas-tiles>.block:nth-of-type(2) {
+  top: 0;
+  left: 35%;
+}
+
+.canvas-tiles>.block:nth-of-type(3) {
+  height: 80%;
+  top: 10%;
+  left: 64%;
+  width: 15%;
+}
+
+.canvas-tiles>.block>.side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('/assets/img/logo-5-med.png');
+  background-size: auto 100%;
+  box-shadow: -1vw 0.5vw 1vw rgba(0, 0, 0, 0.3);
+}
+
+.canvas-tiles>.block>.side.-main {
+  height: 100%;
+  width: 100%;
+  transform: rotateY(30deg);
+  transform-origin: 0 50%;
+}
+
+.canvas-tiles>.block>.side.-left {
+  height: 100%;
+  width: 20%;
+  transform-origin: 0 50%;
+  transform: rotateY(-60deg) translateX(-100%);
+  filter: brightness(40%);
+}
+
+.canvas-tiles>.block:nth-of-type(1)>.side.-main {
+  background-position: 4% 50%;
+  background-size: auto 130%;
+}
+
+.canvas-tiles>.block:nth-of-type(1)>.side.-left {
+  background-position: 0 50%;
+  background-size: auto 130%;
+}
+
+.canvas-tiles>.block:nth-of-type(2)>.side.-main {
+  background-position: 50% 0;
+}
+
+.canvas-tiles>.block:nth-of-type(2)>.side.-left {
+  background-position: 28.5% 0;
+}
+
+.canvas-tiles>.block:nth-of-type(3)>.side.-main {
+  background-position: 96% 50%;
+  background-size: auto 130%;
+}
+
+.canvas-tiles>.block:nth-of-type(3)>.side.-left {
+  background-position: 78% 50%;
+  background-size: auto 130%;
 }

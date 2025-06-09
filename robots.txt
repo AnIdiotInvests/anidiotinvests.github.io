@@ -2,7 +2,6 @@ User-agent:*
 User-agent: *
 Disallow: /search/
 Disallow: /404
-Disallow: /about
 Disallow: /assets
 Disallow: /video
 Disallow: /privacy
