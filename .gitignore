@@ -2,5 +2,9 @@
 server*
 /vscode
 .vscode
-/_posts
-_posts
+# /_posts
+posts
+/posts
+/_*
+sitemap*
+**-bk
