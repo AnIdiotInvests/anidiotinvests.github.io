@@ -5,6 +5,7 @@ Disallow: /404
 Disallow: /assets
 Disallow: /video
 Disallow: /privacy
+Disallow: /about
 Disallow: /archive
 Disallow: /page
 Disallow: /*.gif$
