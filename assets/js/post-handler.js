@@ -10,25 +10,50 @@ class Post {
 
 async function loadPosts(searchKey) {
     try {
-        const jsonFile = await fetch("/posts/data/posts.json");
-        const jsonPosts = await jsonFile.json();
-        console.log(jsonPosts);
+        const postsJsonFile = await fetch("/posts/data/posts.json");
+        const dashJsonFile = await fetch("/posts/data/dashboard.json");
+
+        let jsonPosts
+        if (postsJsonFile) jsonPosts = await postsJsonFile.json();
+
+        let jsonDash
+        if (dashJsonFile) jsonDash = await dashJsonFile.json();
+
+        const dashboard = mapToDashboard(jsonDash)
         const posts = mapPostsByAnyMatch(searchKey, jsonPosts);
+
         if (posts) outputPosts(posts);
+        if (dashboard) outputDash(dashboard);
+
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
+}
+
+function mapToDashboard(jsonDash) {
+    return jsonDash;
+}
+
+function outputDash(dashboard) {
+    let dashboardEle = document.getElementById('dashboard');
+    if (!dashboardEle) return;
+
+    const div = document.createElement('div');
+    const date = document.createElement('p');
+
+    date.textContent = new Date(new Date().setHours(0, 0, 0, 0)).toDateString()
+
+    // div.classList.add("d")
+    div.appendChild(date);
+    dashboardEle.appendChild(div);
+
 }
 
 function outputPosts(posts) {
     let postListEle = document.getElementById('posts');
-
-    if (!postListEle) {
-        return;
-    }
+    if (!postListEle) return;
 
     postListEle.innerHTML = "";
-    // TODO: Optimize
     posts.sort(function (a, b) { return a.date - b.date; }).reverse();
     posts.forEach(post => {
         if (post) {
@@ -37,7 +62,6 @@ function outputPosts(posts) {
             const date = document.createElement('p')
             link.href = `/posts/${post.id}.html`;
             link.textContent = post.title;
-
             if (post.date) {
                 var dateStr = post.date.toLocaleDateString("en-US");
                 date.textContent = dateStr;
