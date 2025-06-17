@@ -4,18 +4,14 @@
 }
 
 .holographic-card {
-    min-width: 200px;
-    height: 55px;
-    width: 90%;
-
-    margin: auto;
-    margin-top: 10px;
-
-    /* margin: 10px 0px auto auto; */
-    background: var(--backgrouncColorSec);
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 99%;
+    min-width: 200px;
+    height: 55px;
+    margin: 10px auto 0;
+    background: var(--backgroundColorSec);
     overflow: hidden;
     border-radius: 20px;
 }
@@ -26,10 +22,10 @@
 
 .holographic-card a {
     display: flex;
+    align-items: center;
     width: 100%;
     height: 100%;
     text-decoration: none;
-    align-items: center;
 }
 
 .holographic-card img {
