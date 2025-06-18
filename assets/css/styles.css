@@ -53,7 +53,7 @@ a:hover,
 }
 
 .post-content {
-  width: 820px;
+  max-width: 820px;
   margin: auto;
   align-items: center;
 }
