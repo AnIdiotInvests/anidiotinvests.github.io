@@ -6,6 +6,7 @@ Disallow: /assets
 Disallow: /video
 Disallow: /privacy
 Disallow: /about
+Disallow: /faq
 Disallow: /archive
 Disallow: /page
 Disallow: /*.gif$
