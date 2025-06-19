@@ -18,7 +18,7 @@ class Dashboard {
 
 async function loadPosts(searchKey) {
     try {
-        const postsJsonFile = await tryFetch("/posts/data/posts.json");
+        const postsJsonFile = await fetch("/posts/data/posts.json");
         if (postsJsonFile) {
             let jsonPosts = await marshalContentJson(postsJsonFile, searchKey);
             if (jsonPosts) outputPosts(jsonPosts, 'posts');
@@ -29,26 +29,22 @@ async function loadPosts(searchKey) {
             new Date().getUTCDate()
         ));
         const today = startOfDayUTC.toISOString().slice(0, 10);
-        let dashJsonFile = await tryFetch("/dashboard/" + today + "-dashboard.json");
+        let dashJsonFile;
+        try {
+            dashJsonFile = await fetch("/dashboard/" + today + "-dashboard.json");
+            if (!dashJsonFile.ok) dashJsonFile = null;
+        } catch (e) {
+            dashJsonFile = null;
+         }
         if (!dashJsonFile) {
             startOfDayUTC.setDate(startOfDayUTC.getDate() - 1);
-            dashJsonFile = await tryFetch("/dashboard/" + startOfDayUTC.toISOString().slice(0, 10) + "-dashboard.json");
+            dashJsonFile = await fetch("/dashboard/" + startOfDayUTC.toISOString().slice(0, 10) + "-dashboard.json");
         }
         if (dashJsonFile) {
             let jsonDash = await marshalDashboardJson(dashJsonFile, searchKey);
             if (jsonDash) outputDash(jsonDash, 'dashboard');
         }
     } catch (error) { }
-}
-
-async function tryFetch(path) {
-    let response;
-    try {
-        response = await fetch(path);
-        if (!response.ok) return null;
-        return response;
-    } catch (error) { }
-    return null;
 }
 
 async function marshalDashboardJson(jsonData, searchKey) {
