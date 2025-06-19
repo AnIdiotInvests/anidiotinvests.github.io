@@ -18,28 +18,37 @@ class Dashboard {
 
 async function loadPosts(searchKey) {
     try {
-        const postsJsonFile = await fetch("/posts/data/posts.json");
+        const postsJsonFile = await tryFetch("/posts/data/posts.json");
         if (postsJsonFile) {
             let jsonPosts = await marshalContentJson(postsJsonFile, searchKey);
             if (jsonPosts) outputPosts(jsonPosts, 'posts');
         }
-
-
-        const today = new Date().toISOString().slice(0, 10);
-
-        dashJsonFile = await fetch("/dashboard/" + today + "-dashboard.json");
+        const startOfDayUTC = new Date(Date.UTC(
+            new Date().getUTCFullYear(),
+            new Date().getUTCMonth(),
+            new Date().getUTCDate()
+        ));
+        const today = startOfDayUTC.toISOString().slice(0, 10);
+        let dashJsonFile = await tryFetch("/dashboard/" + today + "-dashboard.json");
         if (!dashJsonFile) {
-            const yesterday = new Date();
-            yesterday.setDate(yesterday.getDate() - 1);
-            dashJsonFile = await fetch("/dashboard/" + yesterday + "-dashboard.json");
+            startOfDayUTC.setDate(startOfDayUTC.getDate() - 1);
+            dashJsonFile = await tryFetch("/dashboard/" + startOfDayUTC.toISOString().slice(0, 10) + "-dashboard.json");
         }
         if (dashJsonFile) {
             let jsonDash = await marshalDashboardJson(dashJsonFile, searchKey);
             if (jsonDash) outputDash(jsonDash, 'dashboard');
         }
-    } catch (error) {
-        console.error(error);
-    }
+    } catch (error) { }
+}
+
+async function tryFetch(path) {
+    let response;
+    try {
+        response = await fetch(path);
+        if (!response.ok) return null;
+        return response;
+    } catch (error) { }
+    return null;
 }
 
 async function marshalDashboardJson(jsonData, searchKey) {
@@ -70,7 +79,7 @@ function outputDash(dashboard, element) {
     const ul = document.createElement('ul');
 
     outlook.textContent = dashboard.outlook;
-    dashboardTitle.textContent = new Date(new Date().setHours(0, 0, 0, 0)).toDateString() + " AI Driven Dashboard Report (Not Financial Advice)";
+    dashboardTitle.textContent = "AI Driven Dashboard Report (Not Financial Advice)";
 
     div.appendChild(dashboardTitle);
     div.appendChild(outlook);
