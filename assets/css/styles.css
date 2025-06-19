@@ -192,10 +192,9 @@ footer p {
 }
 
 #dashboard p {
-  font-size: 14pt;
-  padding-bottom: 8px;
+  font-size: 12pt;
 }
 
 #dashboard ul {
-  padding-left: 20px;
+  padding-left: 12px;
 }
