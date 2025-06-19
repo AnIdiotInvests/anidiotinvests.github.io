@@ -9,13 +9,6 @@ class Content {
     }
 }
 
-class Dashboard {
-    constructor(content, outlook) {
-        this.content = content;
-        this.outlook = outlook;
-    }
-}
-
 async function loadPosts(searchKey) {
     try {
         const postsJsonFile = await fetch("/posts/data/posts.json");
@@ -29,17 +22,14 @@ async function loadPosts(searchKey) {
             new Date().getUTCDate()
         ));
         const today = startOfDayUTC.toISOString().slice(0, 10);
-        console.log(today);
-        let dashJsonFile;
-
-        dashJsonFile = await fetch("/dashboard/" + today + "-dashboard.json");
+        let dashJsonFile = await fetch("/dashboard/" + today + "-dashboard.json");
         if (!dashJsonFile || !dashJsonFile.ok) {
             startOfDayUTC.setDate(startOfDayUTC.getDate() - 1);
             dashJsonFile = await fetch("/dashboard/" + startOfDayUTC.toISOString().slice(0, 10) + "-dashboard.json");
         }
         if (dashJsonFile) {
             let dashboard = await dashJsonFile.json();
-            if (dashboard) outputDash(dashboard, 'dashboard');
+            if (dashboard) outputDash(dashboard, 'dashboard', startOfDayUTC);
         }
     } catch (error) {
         console.log(error);
@@ -53,32 +43,34 @@ async function marshalContentJson(jsonData, searchKey) {
     return out;
 }
 
-function outputDash(dashboard, element) {
+function outputDash(dashboard, element, date) {
 
     const dashboardEle = document.getElementById(element);
     if (!dashboardEle) return;
 
     const div = document.createElement('div');
     const outlook = document.createElement('p');
-    const dashboardTitle = document.createElement('p');
+    const dashboardTitle = document.createElement('h2');
+    const faq = document.createElement('a');
     const ul = document.createElement('ul');
 
-    outlook.textContent = dashboard.outlook;
-    dashboardTitle.textContent = "AI Driven Dashboard Report (Not Financial Advice)";
+    faq.textContent = "What Is This?";
+    faq.href = "/faq.html#ai-dashboard-faq"
+
+    outlook.textContent = dashboard.outlook + " (Not Financial Advice)";
+    dashboardTitle.textContent = "AI Driven Dashboard Report " + date.toISOString().slice(0, 10);
 
     div.appendChild(dashboardTitle);
     div.appendChild(outlook);
+    div.appendChild(faq);
     div.appendChild(ul);
     dashboardEle.appendChild(div);
-
     dashboard.content.forEach(cont => {
-        if (cont) {
-            let item = document.createElement('li');
-            let title = document.createElement('p');
-            title.textContent = cont.description;
-            item.appendChild(title);
-            ul.appendChild(item);
-        }
+        let item = document.createElement('li');
+        let title = document.createElement('p');
+        title.textContent = cont.description;
+        item.appendChild(title);
+        ul.appendChild(item);
     });
 }
 
