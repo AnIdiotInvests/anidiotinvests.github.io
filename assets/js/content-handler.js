@@ -29,32 +29,21 @@ async function loadPosts(searchKey) {
             new Date().getUTCDate()
         ));
         const today = startOfDayUTC.toISOString().slice(0, 10);
+        console.log(today);
         let dashJsonFile;
-        try {
-            dashJsonFile = await fetch("/dashboard/" + today + "-dashboard.json");
-            if (!dashJsonFile.ok) dashJsonFile = null;
-        } catch (e) {
-            dashJsonFile = null;
-        }
-        if (!dashJsonFile) {
+
+        dashJsonFile = await fetch("/dashboard/" + today + "-dashboard.json");
+        if (!dashJsonFile || !dashJsonFile.ok) {
             startOfDayUTC.setDate(startOfDayUTC.getDate() - 1);
             dashJsonFile = await fetch("/dashboard/" + startOfDayUTC.toISOString().slice(0, 10) + "-dashboard.json");
         }
         if (dashJsonFile) {
-            let jsonDash = await marshalDashboardJson(dashJsonFile, searchKey);
-            if (jsonDash) outputDash(jsonDash, 'dashboard');
+            let dashboard = await dashJsonFile.json();
+            if (dashboard) outputDash(dashboard, 'dashboard');
         }
-    } catch (error) { }
-}
-
-async function marshalDashboardJson(jsonData, searchKey) {
-    let dashboard;
-    let data = await jsonData.json();
-    if (data) out = await mapPostsByAnyMatch(searchKey, data.content);
-    if (out) {
-        dashboard = new Dashboard(out, data.outlook);
+    } catch (error) {
+        console.log(error);
     }
-    return dashboard;
 }
 
 async function marshalContentJson(jsonData, searchKey) {
@@ -82,11 +71,11 @@ function outputDash(dashboard, element) {
     div.appendChild(ul);
     dashboardEle.appendChild(div);
 
-    dashboard.content.forEach(board => {
-        if (board) {
+    dashboard.content.forEach(cont => {
+        if (cont) {
             let item = document.createElement('li');
             let title = document.createElement('p');
-            title.textContent = board.description;
+            title.textContent = cont.description;
             item.appendChild(title);
             ul.appendChild(item);
         }
