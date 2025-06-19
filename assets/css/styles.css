@@ -5,6 +5,7 @@
   --backgroundColorSec: #1d1d1d;
   --headerHeight: 58px;
   --footerHeight: 80px;
+  --masterContainerWidth: 1300px;
 }
 
 * {
@@ -42,7 +43,7 @@ a:hover,
 
 .container {
   margin: auto;
-  max-width: 1260px;
+  max-width: var(--masterContainerWidth);
   padding: 0 10px;
   z-index: 1;
 }
@@ -149,52 +150,34 @@ footer p {
   }
 }
 
-@media (min-width: 2100px) {
-  .container {
-    max-width: 1300px;
-  }
-}
-
 .flex-container {
-  min-height: 50px;
   width: 100%;
+  min-height: 50px;
   display: flex;
   flex-wrap: wrap;
-  flex-shrink: 1;
 }
 
 .flex-container>* {
-  flex-shrink: 0;
-  flex: 1 1 400px;
-}
-
-.posts-feed-container {
-  display: flex;
+  margin: 5px;
+  /* This will force only one -> two per row as long as you keep the same grow ratio */
+  flex: 1 1 calc(var(--masterContainerWidth) / 3 + 1px);
+  padding: 8px;
+  border-radius: 6px;
+  background-color: var(--backgroundColorSec);
 }
 
 .quick-news-container {
-  margin: 6px;
-  padding: 4px;
-  background-color: var(--backgroundColorSec);
-  border-radius: 5px;
+  flex-grow: 1;
 }
 
-.quick-news-container p {
-  margin: 0px;
-  padding: 0px;
+#posts {
+  flex-grow: 4;
 }
 
 .post {
-  background-color: var(--backgroundColorSec);
   text-decoration: none;
-  margin: 6px;
   font-size: 15pt;
-  border-radius: 5px;
-}
-
-.post p,
-.post a {
-  padding: 4px;
+  margin-top: 5px;
 }
 
 .post p {
@@ -205,7 +188,6 @@ footer p {
 
 .post a {
   margin: auto;
-  display: inline-block;
   font-size: 16pt;
 }
 
@@ -216,8 +198,4 @@ footer p {
 
 #dashboard ul {
   padding-left: 20px;
-}
-
-#dashboard li {
-  margin-top: 12px;
 }
