@@ -35,7 +35,7 @@ async function loadPosts(searchKey) {
             if (!dashJsonFile.ok) dashJsonFile = null;
         } catch (e) {
             dashJsonFile = null;
-         }
+        }
         if (!dashJsonFile) {
             startOfDayUTC.setDate(startOfDayUTC.getDate() - 1);
             dashJsonFile = await fetch("/dashboard/" + startOfDayUTC.toISOString().slice(0, 10) + "-dashboard.json");
