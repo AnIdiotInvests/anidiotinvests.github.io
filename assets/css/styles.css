@@ -104,7 +104,6 @@ header,
 footer {
   width: 100%;
   background-color: var(--backgroundColor);
-  /* z-index: 100; */
 }
 
 header {
