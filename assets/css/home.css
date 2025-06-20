@@ -1,0 +1,49 @@
+.quick-news-container {
+  flex-grow: 1;
+}
+
+#posts {
+  flex-grow: 4;
+}
+
+.post {
+  text-decoration: none;
+  font-size: 15pt;
+  margin-top: 10px;
+}
+
+.post p {
+  margin: auto;
+  font-size: 12pt;
+  color: rgb(112, 112, 112);
+}
+
+.post a {
+  margin: auto;
+  font-size: 16pt;
+}
+
+#dashboard p {
+  font-size: 12pt;
+}
+
+#dashboard ul {
+  padding-left: 12px;
+}
+
+#recent-post img {
+  max-height: 230px;
+  width: auto;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#recent-post:hover * {
+    color: var(--hoverGreen) !important;
+    cursor: pointer;
+}
+
+.flex-full {
+    flex: 1 1 100%;
+}

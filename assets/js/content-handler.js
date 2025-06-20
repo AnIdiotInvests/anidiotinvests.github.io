@@ -1,10 +1,11 @@
 
 class Content {
-    constructor(id, title, date, description, category) {
+    constructor(id, title, date, description, image, category) {
         this.id = id;
         this.title = title;
         this.date = new Date(date);
         this.description = description;
+        this.image = image;
         this.category = category;
     }
 }
@@ -37,9 +38,7 @@ async function loadPosts(searchKey) {
             let dashboard = await dashJsonFile.json();
             if (dashboard) outputDash(dashboard, 'dashboard', startOfDayUTC);
         }
-    } catch (error) {
-        console.log(error);
-    }
+    } catch (error) { }
 }
 
 async function marshalContentJson(jsonData, searchKey) {
@@ -62,7 +61,6 @@ function outputDash(dashboard, element, date) {
 
     faq.textContent = "What Is This?";
     faq.href = "/faq.html#ai-dashboard-faq"
-
     outlook.textContent = dashboard.outlook + " (Not Financial Advice)";
     dashboardTitle.textContent = "AI Driven Dashboard Report " + date.toISOString().slice(0, 10);
 
@@ -86,31 +84,67 @@ function outputPosts(posts, element) {
     if (!postListEle) return;
 
     postListEle.innerHTML = "";
+    let feedTitle = document.createElement('h2');
+    feedTitle.textContent = "Recent Feed";
+    postListEle.appendChild(feedTitle);
     posts.sort(function (a, b) { return a.date - b.date; }).reverse();
-    posts.forEach(post => {
-        if (post) {
-            div = document.createElement('div');
-            link = document.createElement('a');
-            date = document.createElement('p')
-            link.href = `/posts/${post.id}.html`;
-            link.textContent = post.title;
+
+    let recentPostEle = document.getElementById('recent-post');
+    if (recentPostEle && posts[0]) {
+
+        let linkWrapper = document.createElement('a');
+        let title = document.createElement('h2');
+        let image = document.createElement('img');
+        let desc = document.createElement('p');
+
+        title.textContent = "Most Recent: " + posts[0].title;
+        desc.textContent = posts[0].date.toLocaleDateString("en-US") + " | " + posts[0].description + "...";
+        image.src = posts[0].image;
+
+        linkWrapper.href = `/posts/${posts[0].id}.html`;
+        linkWrapper.appendChild(title);
+        linkWrapper.appendChild(image);
+        linkWrapper.appendChild(desc);
+        recentPostEle.appendChild(linkWrapper);
+    }
+
+    var max = 7;
+    var count = 0;
+    for (var post of posts) {
+        if (!post) continue;
+        count++;
+
+        let div = document.createElement('div');
+        let link = document.createElement('a');
+        let date = document.createElement('p')
+        link.href = `/posts/${post.id}.html`;
+        link.textContent = post.title;
+        div.classList.add("post")
+        div.appendChild(link);
+
+        if (post.description) {
+            let desc = document.createElement('p')
+
+            let descStr = post.description;
+
             if (post.date) {
                 var dateStr = post.date.toLocaleDateString("en-US");
-                date.textContent = dateStr;
+                descStr = dateStr + " | " + descStr;
             }
-            div.classList.add("post")
-            div.appendChild(link);
-            div.appendChild(date);
-            postListEle.appendChild(div);
+            desc.textContent = descStr;
+            div.appendChild(desc);
         }
-    });
+        postListEle.appendChild(div);
+
+        if (count === max || count > max) break;
+    }
 }
 
 function mapPostsByAnyMatch(searchKey, postJson) {
     if (searchKey) searchKey = searchKey.trim();
     return postJson.map(post => {
         if (!searchKey || isOf(post, searchKey)) {
-            return new Content(post.id, post.title, post.date, post.description, post.category);
+            return new Content(post.id, post.title, post.date, post.description, post.image, post.category);
         }
     });
 }
