@@ -11,7 +11,10 @@ class Content {
 
 async function loadPosts(searchKey) {
     try {
-        const postsJsonFile = await fetch("/posts/data/posts.json");
+        const postsJsonFile = await fetch("/posts/data/posts.json", {
+            method: 'GET',
+            cache: 'no-store'
+        });
         if (postsJsonFile) {
             let jsonPosts = await marshalContentJson(postsJsonFile, searchKey);
             if (jsonPosts) outputPosts(jsonPosts, 'posts');
@@ -25,7 +28,10 @@ async function loadPosts(searchKey) {
         let dashJsonFile = await fetch("/dashboard/" + today + "-dashboard.json");
         if (!dashJsonFile || !dashJsonFile.ok) {
             startOfDayUTC.setDate(startOfDayUTC.getDate() - 1);
-            dashJsonFile = await fetch("/dashboard/" + startOfDayUTC.toISOString().slice(0, 10) + "-dashboard.json");
+            dashJsonFile = await fetch("/dashboard/" + startOfDayUTC.toISOString().slice(0, 10) + "-dashboard.json", {
+                method: 'GET',
+                cache: 'no-store'
+            });
         }
         if (dashJsonFile) {
             let dashboard = await dashJsonFile.json();
