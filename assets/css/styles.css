@@ -104,7 +104,7 @@ header,
 footer {
   width: 100%;
   background-color: var(--backgroundColor);
-  z-index: 100;
+  /* z-index: 100; */
 }
 
 header {
@@ -174,7 +174,68 @@ footer p {
   text-decoration: none;
 }
 
+.mobile-btn {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
 @media (max-width: 660px) {
+
+  .top-nav .mobile-btn {
+    position: absolute;
+    float: right;
+    visibility: visible;
+    
+    border: none;
+    background-color: transparent;
+    color: transparent;
+
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--backgroundColorSec);
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .top-nav ul a {
+    display: block;
+    align-items: end;
+    margin: auto;
+  }
+
+  .top-nav li {
+    display: block;
+    align-items: end;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-visible {
+    height: auto;
+    visibility: visible;
+  }
+
+  .nav-not-visible {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
   .content-container h1 {
     font-size: 30pt;
   }
