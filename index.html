@@ -74,7 +74,9 @@ async>
       <div class="quick-news-container">
         <div id="dashboard" data-nosnippet></div>
       </div>
-      <div>I have not writtent the CSS/HTML/JS for this content pane yet</div>
+      <div>
+        <div id="dashboard-feed" data-nosnippet=""></div>
+      </div>
     </div>
   </div>
   <script type="text/javascript">
@@ -104,9 +106,7 @@ async>
 </div></footer>
 <script>
 const navEle = document.getElementById('toggle-nav');
-    console.log(navEle);
 if (navEle) {
-    console.log(navEle);
     navEle.classList.remove('active');
     const url = location.pathname;
     if (url) {

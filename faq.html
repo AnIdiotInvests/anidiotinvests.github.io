@@ -52,7 +52,7 @@
 </div></header>
 <main class="container">
 <div class="content-container">
-<h1>Frequently Asked Questions</h1>
+<div>
 <h2 id="ai-dashboard-faq">What Are AI Dashboard Reports?</h2>
 <p>We collect news and sentiment data then feed as much of it as possible through an AI model trained to
 understand potential market outcomes in the short to midterm. The guy writing the code was kinda inspired by Ray Dalio maybe...</p>
@@ -64,6 +64,8 @@ snippets.</p>
 our goal is not to chase rank or mislead users. This will hopefully be a tool, we don't want another SEO junk builder.</p>
 <h2 id="dinosaur-faq">Do You Wish Dinosaurs Still Existed?</h2>
 <p>FFS Yes, absolutely. 100%.</p>
+</div>
+<h1>Frequently Asked Questions</h1>
 </div>
 </main>
 
@@ -89,9 +91,7 @@ our goal is not to chase rank or mislead users. This will hopefully be a tool, w
 </div></footer>
 <script>
 const navEle = document.getElementById('toggle-nav');
-    console.log(navEle);
 if (navEle) {
-    console.log(navEle);
     navEle.classList.remove('active');
     const url = location.pathname;
     if (url) {

@@ -12,33 +12,30 @@ class Content {
 
 async function loadPosts(searchKey) {
     try {
-        const postsJsonFile = await fetch("/posts/data/posts.json", {
-            method: 'GET',
-            cache: 'no-store'
-        });
+        const postsJsonFile = await fetch("/posts/data/posts.json", { method: 'GET', cache: 'no-store' });
         if (postsJsonFile) {
             let jsonPosts = await marshalContentJson(postsJsonFile, searchKey);
-            if (jsonPosts) outputPosts(jsonPosts, 'posts');
+            if (jsonPosts) {
+                jsonPosts.sort(function (a, b) { return a.date - b.date; }).reverse();
+                placeMostRecentPost(jsonPosts[0], '/posts')
+                outputPosts(jsonPosts, '/posts', 'posts');
+            }
         }
-        const startOfDayUTC = new Date(Date.UTC(
-            new Date().getUTCFullYear(),
-            new Date().getUTCMonth(),
-            new Date().getUTCDate()
-        ));
-        const today = startOfDayUTC.toISOString().slice(0, 10);
-        let dashJsonFile = await fetch("/dashboard/" + today + "-dashboard.json");
-        if (!dashJsonFile || !dashJsonFile.ok) {
-            startOfDayUTC.setDate(startOfDayUTC.getDate() - 1);
-            dashJsonFile = await fetch("/dashboard/" + startOfDayUTC.toISOString().slice(0, 10) + "-dashboard.json", {
-                method: 'GET',
-                cache: 'no-store'
-            });
+        const dashJsonFilez = await fetch("/dashboard/data/dashboards.json", { method: 'GET', cache: 'no-store' });
+        if (!dashJsonFilez) return;
+        let dfeed = await marshalContentJson(dashJsonFilez)
+        if (dfeed) {
+            dfeed.sort(function (a, b) { return a.date - b.date; }).reverse();
+            let dashJsonFilez = await fetch(`/dashboard/${dfeed[0].id}`, { method: 'GET', cache: 'no-store' });
+            if (dashJsonFilez && dashJsonFilez.ok) {
+                dashboardJson = await dashJsonFilez.json();
+                outputDash(dashboardJson, 'dashboard');
+                outputPosts(dfeed, '/dashboard', 'dashboard-feed');
+            }
         }
-        if (dashJsonFile) {
-            let dashboard = await dashJsonFile.json();
-            if (dashboard) outputDash(dashboard, 'dashboard', startOfDayUTC);
-        }
-    } catch (error) { }
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 async function marshalContentJson(jsonData, searchKey) {
@@ -48,7 +45,7 @@ async function marshalContentJson(jsonData, searchKey) {
     return out;
 }
 
-function outputDash(dashboard, element, date) {
+function outputDash(dashboard, element) {
 
     const dashboardEle = document.getElementById(element);
     if (!dashboardEle) return;
@@ -60,10 +57,13 @@ function outputDash(dashboard, element, date) {
     const ul = document.createElement('ul');
 
     faq.textContent = "What Is This?";
-    faq.href = "/faq.html#ai-dashboard-faq"
-    outlook.textContent = dashboard.outlook + " (Not Financial Advice)";
-    dashboardTitle.textContent = "AI Driven Dashboard Report " + date.toISOString().slice(0, 10);
+    faq.href = "/faq.html#ai-dashboard-faq";
 
+    outlook.textContent = dashboard.outlook + " (Not Financial Advice)";
+    dashboardTitle.textContent = "AI Driven Dashboard Report ";
+    if (dashboard.printDate) {
+        dashboardTitle.textContent = dashboardTitle.textContent + new Date(dashboard.printDate).toISOString().substring(0, 10);
+    }
     div.appendChild(dashboardTitle);
     div.appendChild(outlook);
     div.appendChild(faq);
@@ -76,7 +76,28 @@ function outputDash(dashboard, element, date) {
     });
 }
 
-function outputPosts(posts, element) {
+function placeMostRecentPost(post, location) {
+
+    let recentPostEle = document.getElementById('recent-post');
+    if (!recentPostEle || !post) return;
+
+    let linkWrapper = document.createElement('a');
+    let title = document.createElement('h2');
+    let image = document.createElement('img');
+    let desc = document.createElement('p');
+
+    title.textContent = "Most Recent: " + post.title;
+    desc.textContent = post.date.toLocaleDateString("en-US") + " | " + post.description + "...";
+    image.src = post.image;
+
+    linkWrapper.href = `${location}/${post.id}.html`;
+    linkWrapper.appendChild(title);
+    linkWrapper.appendChild(image);
+    linkWrapper.appendChild(desc);
+    recentPostEle.appendChild(linkWrapper);
+}
+
+function outputPosts(posts, location, element) {
 
     let postListEle = document.getElementById(element);
     if (!postListEle) return;
@@ -85,26 +106,6 @@ function outputPosts(posts, element) {
     let feedTitle = document.createElement('h2');
     feedTitle.textContent = "Recent Feed";
     postListEle.appendChild(feedTitle);
-    posts.sort(function (a, b) { return a.date - b.date; }).reverse();
-
-    let recentPostEle = document.getElementById('recent-post');
-    if (recentPostEle && posts[0]) {
-
-        let linkWrapper = document.createElement('a');
-        let title = document.createElement('h2');
-        let image = document.createElement('img');
-        let desc = document.createElement('p');
-
-        title.textContent = "Most Recent: " + posts[0].title;
-        desc.textContent = posts[0].date.toLocaleDateString("en-US") + " | " + posts[0].description + "...";
-        image.src = posts[0].image;
-
-        linkWrapper.href = `/posts/${posts[0].id}.html`;
-        linkWrapper.appendChild(title);
-        linkWrapper.appendChild(image);
-        linkWrapper.appendChild(desc);
-        recentPostEle.appendChild(linkWrapper);
-    }
 
     var max = 7;
     var count = 0;
@@ -114,17 +115,18 @@ function outputPosts(posts, element) {
 
         let div = document.createElement('div');
         let link = document.createElement('a');
-        let date = document.createElement('p')
-        link.href = `/posts/${post.id}.html`;
-        link.textContent = post.title;
+        link.href = `${location}/${post.id}`;
+        if (post.title) {
+            link.textContent = post.title;
+        } else {
+            link.textContent = post.id;
+        }
         div.classList.add("post")
         div.appendChild(link);
 
         if (post.description) {
             let desc = document.createElement('p')
-
             let descStr = post.description;
-
             if (post.date) {
                 var dateStr = post.date.toLocaleDateString("en-US");
                 descStr = dateStr + " | " + descStr;
