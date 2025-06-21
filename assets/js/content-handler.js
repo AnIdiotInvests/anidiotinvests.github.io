@@ -17,7 +17,7 @@ async function loadPosts(searchKey) {
             let jsonPosts = await marshalContentJson(postsJsonFile, searchKey);
             if (jsonPosts) {
                 jsonPosts.sort(function (a, b) { return a.date - b.date; }).reverse();
-                placeMostRecentPost(jsonPosts[0], '/posts')
+                placeMostRecentPost(jsonPosts[0], '/posts');
                 outputPosts(jsonPosts, '/posts', 'posts');
             }
         }
