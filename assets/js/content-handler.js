@@ -90,7 +90,7 @@ function placeMostRecentPost(post, location) {
     desc.textContent = post.date.toISOString().substring(0, 10) + " | " + post.description + "...";
     image.src = post.image;
 
-    linkWrapper.href = `${location}/${post.id}.html`;
+    linkWrapper.href = `${location}/${post.id}`;
     linkWrapper.appendChild(title);
     linkWrapper.appendChild(image);
     linkWrapper.appendChild(desc);
