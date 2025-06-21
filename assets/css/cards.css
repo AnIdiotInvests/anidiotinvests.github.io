@@ -11,7 +11,7 @@
     min-width: 200px;
     height: 55px;
     margin: 10px auto 0;
-    background: var(--backgroundColorSec);
+    background: var(--secColor);
     overflow: hidden;
     border-radius: 20px;
 }
@@ -33,7 +33,7 @@
     border-radius: 30%;
 }
 
-.holographic-card p {
+.holographic-card span {
     font-size: 18pt;
     padding-left: 20px;
 }
