@@ -2,32 +2,58 @@
   --baseGreen: rgb(0, 143, 64);
   --hoverGreen: rgb(10, 197, 94);
   --backgroundColor: rgb(24, 24, 24);
-  --backgroundColorSec: #1d1d1d;
+  --secColor: #1d1d1d;
+  --thrColor: #b8b8b8;
   --headerHeight: 58px;
-  --footerHeight: 80px;
+  --footerHeight: 100px;
   --masterContainerWidth: 1300px;
+  --base-font-size: 16;
+  --text-size-scale: 1;
 }
 
 * {
-  font-family: Arial, sans-serif;
+  font-family: Helvetica Neue, Helvetica, Liberation Sans, Arial, sans-serif;
   color: whitesmoke;
 }
 
 html,
 body {
+  font-size: 1rem;
   height: 100%;
   background-color: var(--backgroundColor);
   overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
 }
 
 body {
   margin: 0;
   padding: 0;
   overflow: auto;
+  font-size: calc((16 / var(--base-font-size)) * var(--text-size-scale) * 1rem);
+  letter-spacing: 0;
 }
 
 body p {
-  font-size: 14pt;
+  margin: .25em 0 .75em;
+  line-height: 1.5;
 }
 
 a {
@@ -60,23 +86,15 @@ a:hover,
   justify-content: center;
 }
 
-.post-content h1 {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
 .post-image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  max-height: 400px;
-  /* or whatever you need */
+  max-height: 380px;
   padding: 10px;
-  /* optional spacing */
   gap: 0.5rem;
-  /* space between image and text */
   box-sizing: border-box;
 }
 
@@ -94,10 +112,6 @@ a:hover,
 .spec-text {
   font-size: 11pt;
   font-style: italic;
-}
-
-.content-container h1 {
-  font-size: 44pt;
 }
 
 header,
@@ -211,7 +225,7 @@ footer p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: var(--backgroundColorSec);
+    background-color: var(--secColor);
     padding-left: 0;
     margin: 0;
   }
@@ -240,10 +254,6 @@ footer p {
     overflow: hidden;
     visibility: hidden;
   }
-
-  .content-container h1 {
-    font-size: 30pt;
-  }
 }
 
 .flex-container {
@@ -254,10 +264,10 @@ footer p {
 }
 
 .flex-container>* {
-  margin: 5px;
+  margin: 8px;
   /* This will force only one -> two per row as long as you keep the same grow ratio */
-  flex: 1 1 calc(var(--masterContainerWidth) / 3 + 1px);
-  padding: 8px;
+  flex: 1 1 calc(var(--masterContainerWidth) / 4);
+  padding: 15px;
   border-radius: 6px;
-  background-color: var(--backgroundColorSec);
+  background-color: var(--secColor);
 }

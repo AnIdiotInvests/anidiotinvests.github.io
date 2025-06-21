@@ -71,9 +71,7 @@ function outputDash(dashboard, element, date) {
     dashboardEle.appendChild(div);
     dashboard.content.forEach(cont => {
         let item = document.createElement('li');
-        let title = document.createElement('p');
-        title.textContent = cont.description;
-        item.appendChild(title);
+        item.textContent = cont.description;
         ul.appendChild(item);
     });
 }
