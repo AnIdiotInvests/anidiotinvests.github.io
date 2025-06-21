@@ -87,7 +87,7 @@ function placeMostRecentPost(post, location) {
     let desc = document.createElement('p');
 
     title.textContent = "Most Recent: " + post.title;
-    desc.textContent = post.date.toLocaleDateString("en-US") + " | " + post.description + "...";
+    desc.textContent = post.date.toISOString().substring(0, 10) + " | " + post.description + "...";
     image.src = post.image;
 
     linkWrapper.href = `${location}/${post.id}.html`;
@@ -128,7 +128,7 @@ function outputPosts(posts, location, element) {
             let desc = document.createElement('p')
             let descStr = post.description;
             if (post.date) {
-                var dateStr = post.date.toLocaleDateString("en-US");
+                var dateStr = post.date.toISOString().substring(0, 10);
                 descStr = dateStr + " | " + descStr;
             }
             desc.textContent = descStr;
