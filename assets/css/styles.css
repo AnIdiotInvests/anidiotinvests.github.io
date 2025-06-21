@@ -130,7 +130,7 @@ header,
 footer {
   width: 100%;
   background-color: var(--backgroundColor);
-  z-index: 5;
+  z-index: 100;
 }
 
 header {
@@ -290,5 +290,4 @@ footer p {
   backdrop-filter: blur(8.4px);
   -webkit-backdrop-filter: blur(8.4px);
   border-radius: 8px;
-  z-index: 1;
 }
