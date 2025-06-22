@@ -39,11 +39,11 @@ async function handleDashboardAsyncStub() {
     let dfeed = await marshalContentJson(dashJsonFilez)
     if (dfeed) {
         dfeed.sort(function (a, b) { return a.date - b.date; }).reverse();
-        let dashJsonFilez = await fetch(`/dashboard/${dfeed[0].id}`, { method: 'GET', cache: 'no-store' });
-        if (dashJsonFilez && dashJsonFilez.ok) {
-            dashboardJson = await dashJsonFilez.json();
+        let dashJsonLatestFile = await fetch(`/dashboard/${dfeed[0].id}`, { method: 'GET', cache: 'no-store' });
+        if (dashJsonLatestFile && dashJsonLatestFile.ok) {
+            dashboardJson = await dashJsonLatestFile.json();
             outputDash(dashboardJson, 'dashboard');
-            outputPosts(dfeed, '/dashboard', 'dashboard-feed');
+            outputPosts(dfeed, '/dashboard', 'dashboard-feed', true);
         }
     }
 }
@@ -55,11 +55,32 @@ async function marshalContentJson(jsonData, searchKey) {
     return out;
 }
 
+async function updateDash(dashboardFileName) {
+    const dashJsonFilez = await fetch(`/dashboard/${dashboardFileName}`, { method: 'GET', cache: 'no-store' });
+    if (dashJsonFilez) {
+        let toOut = document.getElementById(dashboardFileName);
+
+        let feed = document.getElementById('dashboard-feed');
+        let opts = feed.getElementsByTagName('div');
+        
+        for (o of opts) {
+
+            o.classList.remove('active');
+        }
+
+        toOut.classList.add('active');
+
+        const dashboard = await dashJsonFilez.json();
+        outputDash(dashboard, 'dashboard');
+    }
+}
+
 function outputDash(dashboard, element) {
 
     const dashboardEle = document.getElementById(element);
     if (!dashboardEle) return;
 
+    dashboardEle.innerHTML = "";
     const div = document.createElement('div');
     const outlook = document.createElement('p');
     const dashboardTitle = document.createElement('h2');
@@ -79,11 +100,13 @@ function outputDash(dashboard, element) {
     div.appendChild(faq);
     div.appendChild(ul);
     dashboardEle.appendChild(div);
-    dashboard.content.forEach(cont => {
-        let item = document.createElement('li');
-        item.textContent = cont.description;
-        ul.appendChild(item);
-    });
+    if (dashboard.content) {
+        dashboard.content.forEach(cont => {
+            let item = document.createElement('li');
+            item.textContent = cont.description;
+            ul.appendChild(item);
+        });
+    }
 }
 
 function placeMostRecentPost(post, location) {
@@ -107,7 +130,7 @@ function placeMostRecentPost(post, location) {
     recentPostEle.appendChild(linkWrapper);
 }
 
-function outputPosts(posts, location, element) {
+function outputPosts(posts, location, element, payload) {
 
     let postListEle = document.getElementById(element);
     if (!postListEle) return;
@@ -125,14 +148,20 @@ function outputPosts(posts, location, element) {
 
         let div = document.createElement('div');
         let link = document.createElement('a');
-        link.href = `${location}/${post.id}`;
-        if (post.title) {
-            link.textContent = post.title;
+        if (!payload) {
+            link.href = `${location}/${post.id}`;
+            if (post.title) {
+                link.textContent = post.title;
+            } else {
+                link.textContent = post.id;
+            }
+            div.appendChild(link);
         } else {
-            link.textContent = post.id;
+            let p = document.createElement('a');
+            p.textContent = post.id;
+            div.appendChild(p);
         }
         div.classList.add("post")
-        div.appendChild(link);
 
         if (post.description) {
             let desc = document.createElement('p')
@@ -144,6 +173,14 @@ function outputPosts(posts, location, element) {
             desc.textContent = descStr;
             div.appendChild(desc);
         }
+
+        if (!payload)
+            link.setAttribute("id", post.id);
+        if (payload) {
+            div.setAttribute("id", post.id);
+            div.setAttribute("onclick", `updateDash('${post.id}');`);
+        }
+
         postListEle.appendChild(div);
 
         if (count === max || count > max) break;

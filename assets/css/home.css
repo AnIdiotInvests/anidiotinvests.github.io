@@ -1,13 +1,21 @@
 .quick-news-container {
-  flex-grow: 1;
+  flex-grow: 3;
 }
 
 #posts {
   flex-grow: 4;
 }
 
+#dashboard-feed {
+  flex-grow: 1;
+}
+
 .post * {
   text-decoration: none;
+}
+
+.post:hover {
+  cursor: pointer;
 }
 
 .post {
