@@ -12,29 +12,39 @@ class Content {
 
 async function loadPosts(searchKey) {
     try {
-        const postsJsonFile = await fetch("/posts/data/posts.json", { method: 'GET', cache: 'no-store' });
-        if (postsJsonFile) {
-            let jsonPosts = await marshalContentJson(postsJsonFile, searchKey);
-            if (jsonPosts) {
-                jsonPosts.sort(function (a, b) { return a.date - b.date; }).reverse();
-                placeMostRecentPost(jsonPosts[0], '/posts');
-                outputPosts(jsonPosts, '/posts', 'posts');
-            }
-        }
-        const dashJsonFilez = await fetch("/dashboard/data/dashboards.json", { method: 'GET', cache: 'no-store' });
-        if (!dashJsonFilez) return;
-        let dfeed = await marshalContentJson(dashJsonFilez)
-        if (dfeed) {
-            dfeed.sort(function (a, b) { return a.date - b.date; }).reverse();
-            let dashJsonFilez = await fetch(`/dashboard/${dfeed[0].id}`, { method: 'GET', cache: 'no-store' });
-            if (dashJsonFilez && dashJsonFilez.ok) {
-                dashboardJson = await dashJsonFilez.json();
-                outputDash(dashboardJson, 'dashboard');
-                outputPosts(dfeed, '/dashboard', 'dashboard-feed');
-            }
-        }
+        const [result1, result2] = await Promise.all([
+            handlePostsAsyncStub(searchKey),
+            handleDashboardAsyncStub()
+        ]);
     } catch (error) {
         console.log(error);
+    }
+}
+
+async function handlePostsAsyncStub(searchKey) {
+    const postsJsonFile = await fetch("/posts/data/posts.json", { method: 'GET', cache: 'no-store' });
+    if (postsJsonFile) {
+        let jsonPosts = await marshalContentJson(postsJsonFile, searchKey);
+        if (jsonPosts) {
+            jsonPosts.sort(function (a, b) { return a.date - b.date; }).reverse();
+            placeMostRecentPost(jsonPosts[0], '/posts');
+            outputPosts(jsonPosts, '/posts', 'posts');
+        }
+    }
+}
+
+async function handleDashboardAsyncStub() {
+    const dashJsonFilez = await fetch("/dashboard/data/dashboards.json", { method: 'GET', cache: 'no-store' });
+    if (!dashJsonFilez) return;
+    let dfeed = await marshalContentJson(dashJsonFilez)
+    if (dfeed) {
+        dfeed.sort(function (a, b) { return a.date - b.date; }).reverse();
+        let dashJsonFilez = await fetch(`/dashboard/${dfeed[0].id}`, { method: 'GET', cache: 'no-store' });
+        if (dashJsonFilez && dashJsonFilez.ok) {
+            dashboardJson = await dashJsonFilez.json();
+            outputDash(dashboardJson, 'dashboard');
+            outputPosts(dfeed, '/dashboard', 'dashboard-feed');
+        }
     }
 }
 
