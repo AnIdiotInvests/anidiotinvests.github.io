@@ -47,7 +47,6 @@
       <button class="mobile-btn" onclick="navToggle('toggle-nav');"><i class="w3-xxxlarge material-icons">menu</i></button>
       <ul id="toggle-nav" class="nav-not-visible">
         <li><a id="home" href="/">HOME</a></li>
-        <li><a id="about" href="/about.html">ABOUT</a></li>
         <li class="dropdown">
           <a id="content" onclick="navToggle('content-drop')">CONTENT <i class="w3-xxxlarge material-icons">arrow_drop_down</i></a>
           <div id="content-drop" class="dropdown-content glass">
@@ -55,6 +54,7 @@
             <div><a id="reports" href="/reports.html">REPORTS</a></div>
           </div>
         </li>
+        <li><a id="about" href="/about.html">ABOUT</a></li>
         <li><a id="social" href="/social.html">SOCIAL</a></li>
       </ul>
     </nav>
@@ -63,20 +63,6 @@
 <main class="container">
   <div class="content-container">
     <div class="flex-container" data-nosnippet>
-      <div class="flex-full glass"><div class="tradingview-widget-container">
-<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-async>
-{
-    "symbols": [
-        { "proName": "BITSTAMP:BTCUSD", "title": "BTC" },
-        { "description": "SP 500", "proName": "VANTAGE:SP500" },
-        { "description": "NAS 100", "proName": "NASDAQ:NDX" },
-        { "description": "NAS COMP", "proName": "NASDAQ:IXIC" }
-    ],
-        "showSymbolLogo": true, "isTransparent": false, "displayMode": "adaptive", "colorTheme": "dark", "locale": "en"
-}
-</script>
-</div></div>
       <div id="posts-feed" class="glass" data-nosnippet></div>
     </div>
   </div>
