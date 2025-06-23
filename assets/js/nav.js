@@ -14,7 +14,7 @@ function navChange() {
     } else if (url.trim() === "/social.html") {
         updateNav(['social']);
     } else if (url.trim() === "/reports.html") {
-        updateNav(['repots', 'content']);
+        updateNav(['reports', 'content']);
     } else if (url.trim() === "/posts.html") {
         updateNav(['posts', 'content']);
     }
