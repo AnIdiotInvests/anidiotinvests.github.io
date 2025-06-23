@@ -47,8 +47,15 @@
       <ul id="toggle-nav" class="nav-not-visible">
         <li><a id="home" href="/">HOME</a></li>
         <li><a id="about" href="/about.html">ABOUT</a></li>
-        <li><a id="content" href="/content.html">CONTENT</a></li>
-        <li><a id="report" href="/report.html">REPORTS</a></li>
+        <li class="dropdown">
+          <button class="dropbtn"><a>CONTENT</a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <ul class="dropdown-content">
+            <li><a id="posts" href="/posts.html">POSTS</a></li>
+            <li><a id="report" href="/report.html">REPORTS</a></li>
+          </ul>
+        </li>
         <li><a id="social" href="/social.html">SOCIAL</a></li>
       </ul>
     </nav>
@@ -117,8 +124,8 @@ if (navEle) {
         } else if (url.trim() === "/report.html") {
             let homeEle = document.getElementById('report');
             if (homeEle) homeEle.classList.add('active');
-        }  else if (url.trim() === "/content.html") {
-            let homeEle = document.getElementById('content');
+        }  else if (url.trim() === "/posts.html") {
+            let homeEle = document.getElementById('posts');
             if (homeEle) homeEle.classList.add('active');
         }
     }

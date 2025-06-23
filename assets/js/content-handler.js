@@ -16,9 +16,7 @@ async function loadAllContent(searchKey) {
             handlePostsAsyncStub(searchKey),
             handleDashboardAsyncStub()
         ]);
-    } catch (error) {
-        console.log(error);
-    }
+    } catch (error) { }
 }
 
 async function handlePostsAsyncStub(searchKey) {
@@ -28,19 +26,22 @@ async function handlePostsAsyncStub(searchKey) {
         if (jsonPosts) {
             jsonPosts.sort(function (a, b) { return a.date - b.date; }).reverse();
             placeMostRecentPost(jsonPosts[0], '/posts');
-            outputPosts(jsonPosts, '/posts', 'posts');
+            outputPosts(jsonPosts, '/posts', 'posts-feed');
         }
     }
 }
 
 async function handleDashboardAsyncStub() {
+
     const dashJsonFilez = await fetch("/dashboard/data/dashboards.json", { method: 'GET', cache: 'no-store' });
     if (!dashJsonFilez) return;
+
     let dfeed = await marshalContentJson(dashJsonFilez)
     if (dfeed) {
         dfeed.sort(function (a, b) { return a.date - b.date; }).reverse();
         let dashJsonLatestFile = await fetch(`/dashboard/${dfeed[0].id}`, { method: 'GET', cache: 'no-store' });
         if (dashJsonLatestFile && dashJsonLatestFile.ok) {
+
             dashboardJson = await dashJsonLatestFile.json();
             outputDash(dashboardJson, 'dashboard');
             // outputPosts(dfeed, '/dashboard', 'dashboard-feed');
@@ -56,18 +57,36 @@ async function marshalContentJson(jsonData, searchKey) {
 }
 
 async function updateDash(dashboardFileName) {
+
     const dashJsonFilez = await fetch(`/dashboard/${dashboardFileName}`, { method: 'GET', cache: 'no-store' });
-    if (dashJsonFilez) {
-        let toOut = document.getElementById(dashboardFileName);
+    if (!dashJsonFilez) return;
 
-        let feed = document.getElementById('dashboard-feed');
-        let opts = feed.getElementsByTagName('div');
+    let toOut = document.getElementById(dashboardFileName);
+    let feed = document.getElementById('dashboard-feed');
+    let opts = feed.getElementsByTagName('div');
 
-        for (o of opts) o.classList.remove('active');
-        toOut.classList.add('active');
+    for (o of opts) o.classList.remove('active');
+    toOut.classList.add('active');
 
-        const dashboard = await dashJsonFilez.json();
-        outputDash(dashboard, 'dashboard');
+    const dashboard = await dashJsonFilez.json();
+    outputDash(dashboard, 'dashboard');
+}
+
+async function outputAllDash() {
+
+    const dashJsonFilez = await fetch("/dashboard/data/dashboards.json", { method: 'GET', cache: 'no-store' });
+    if (!dashJsonFilez) return;
+
+    let dfeed = await marshalContentJson(dashJsonFilez)
+    if (!dfeed) return;
+
+    dfeed.sort(function (a, b) { return a.date - b.date; }).reverse();
+    let dashJsonLatestFile = await fetch(`/dashboard/${dfeed[0].id}`, { method: 'GET', cache: 'no-store' });
+
+    if (dashJsonLatestFile && dashJsonLatestFile.ok) {
+        dashboardJson = await dashJsonLatestFile.json();
+        // outputDash(dashboardJson, 'dashboard');
+        outputPosts(dfeed, '/dashboard', 'dashboard');
     }
 }
 

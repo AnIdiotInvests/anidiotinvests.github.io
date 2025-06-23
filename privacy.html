@@ -3,7 +3,7 @@
 <!-- Copyright beyondthestonks.com All Rights Reserved -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-02P4H7D1XR"></script>
 <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-02P4H7D1XR');</script>
-<script type="text/javascript" src="/assets/js/modile-nav.js"></script>
+<script type="text/javascript" src="/assets/js/nav.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,6 +32,7 @@
 <meta name="twitter:image:width" content="600">
 <meta name="twitter:image:height" content="600">
 <link rel="stylesheet" href="/assets/css/home.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script type="text/javascript" src="/assets/js/content-handler.js"></script>
 </head>
 <body>
@@ -43,12 +44,17 @@
           <img src="/assets/img/logo-5-sm.png" alt="Site Logo" />
         </div>
       </a>
-      <button class="mobile-btn" onclick="navToggle();"><img src="/assets/img/g-burger-nav.png" /></button>
+      <button class="mobile-btn" onclick="navToggle('toggle-nav');"><i class="w3-xxxlarge material-icons">menu</i></button>
       <ul id="toggle-nav" class="nav-not-visible">
         <li><a id="home" href="/">HOME</a></li>
         <li><a id="about" href="/about.html">ABOUT</a></li>
-        <li><a id="content" href="/content.html">CONTENT</a></li>
-        <li><a id="report" href="/report.html">REPORTS</a></li>
+        <li class="dropdown">
+          <a id="content" onclick="navToggle('content-drop')">CONTENT <i class="w3-xxxlarge material-icons">arrow_drop_down</i></a>
+          <div id="content-drop" class="dropdown-content glass">
+            <div><a id="posts" href="/posts.html">POSTS</a></div>
+            <div><a id="reports" href="/reports.html">REPORTS</a></div>
+          </div>
+        </li>
         <li><a id="social" href="/social.html">SOCIAL</a></li>
       </ul>
     </nav>
@@ -131,28 +137,6 @@ the Privacy Policy in effect when the information was obtained from you.</p>
 </div>
 </div></footer>
 <script>
-const navEle = document.getElementById('toggle-nav');
-if (navEle) {
-    navEle.classList.remove('active');
-    const url = location.pathname;
-    if (url) {
-        if (url.trim() === "/") {
-            let homeEle = document.getElementById('home');
-            if (homeEle) homeEle.classList.add('active');
-        } else if (url.trim() === "/about.html") {
-            let homeEle = document.getElementById('about');
-            if (homeEle) homeEle.classList.add('active');
-        } else if (url.trim() === "/social.html") {
-            let homeEle = document.getElementById('social');
-            if (homeEle) homeEle.classList.add('active');
-        } else if (url.trim() === "/report.html") {
-            let homeEle = document.getElementById('report');
-            if (homeEle) homeEle.classList.add('active');
-        }  else if (url.trim() === "/content.html") {
-            let homeEle = document.getElementById('content');
-            if (homeEle) homeEle.classList.add('active');
-        }
-    }
-}
+    navChange();
 </script>
 </body></html>

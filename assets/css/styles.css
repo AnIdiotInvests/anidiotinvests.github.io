@@ -3,7 +3,7 @@
   --hoverGreen: rgb(10, 197, 94);
   --backgroundColor: rgb(24, 24, 24);
   --secColor: rgb(29, 29, 29);
-  --glassColor: rgba(29, 29, 29, 0.3);
+  --glassColor: rgba(29, 29, 29, 0.70);
   --thrColor: #b8b8b8;
   --headerHeight: 58px;
   --footerHeight: 80px;
@@ -177,7 +177,8 @@ footer p {
 }
 
 .top-nav li {
-  display: inline;
+  display: inline-block;
+  position: relative;
   padding: 0 10px;
 }
 
@@ -214,6 +215,74 @@ footer p {
   visibility: hidden;
 }
 
+.mobile-btn i {
+  font-size: 40px;
+  color: var(--baseGreen);
+}
+
+.flex-container {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container>* {
+  margin: 6px;
+  /* This will force only one -> two per row as long as you keep the same grow ratio */
+  flex: 1 1 calc(var(--masterContainerWidth) / 4);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.glass {
+  background: var(--glassColor);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+  border-radius: 8px;
+}
+
+.dropdown,
+.dropbtn,
+.dropdown-content {
+  font-family: inherit;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown-content,
+.dropdown-content a {
+  text-align: left;
+}
+
+.dropdown-content div {
+  padding: 12px;
+}
+
+.dropdown i {
+  font-size: 19px;
+  width: 1px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  color: var(--baseGreen);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 @media (max-width: 660px) {
 
   .top-nav .mobile-btn {
@@ -248,19 +317,22 @@ footer p {
   .top-nav ul a {
     display: block;
     align-items: end;
+    text-align: center;
     margin: auto;
   }
 
   .top-nav li {
     display: block;
     align-items: end;
-    width: 100%;
-    padding: 10px;
+    text-align: end;
+    padding: 5px;
   }
 
   .nav-visible {
     height: auto;
     visibility: visible;
+    position: relative;
+    display: block;
   }
 
   .nav-not-visible {
@@ -268,28 +340,6 @@ footer p {
     width: 0;
     overflow: hidden;
     visibility: hidden;
+    display: block;
   }
-}
-
-.flex-container {
-  width: 100%;
-  min-height: 50px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.flex-container>* {
-  margin: 6px;
-  /* This will force only one -> two per row as long as you keep the same grow ratio */
-  flex: 1 1 calc(var(--masterContainerWidth) / 4);
-  padding: 12px;
-  border-radius: 6px;
-}
-
-.glass {
-  background: var(--glassColor);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.4px);
-  -webkit-backdrop-filter: blur(8.4px);
-  border-radius: 8px;
 }
