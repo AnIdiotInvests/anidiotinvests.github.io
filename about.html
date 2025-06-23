@@ -35,21 +35,25 @@
 <script type="text/javascript" src="/assets/js/content-handler.js"></script>
 </head>
 <body>
-<header class="glass" data-nosnippet><div class="container no-select">
-<nav class="top-nav">
-  <a class="no-format-click" href="/">
-    <div class="logo">
-      <img src="/assets/img/logo-5-sm.png" alt="Site Logo" />
-    </div>
-  </a>
-  <button class="mobile-btn" onclick="navToggle();"><img src="/assets/img/g-burger-nav.png" /></button>
-  <ul id="toggle-nav" class="nav-not-visible">
-    <li><a id="home" href="/">HOME</a></li>
-    <li><a id="about" href="/about.html">ABOUT</a></li>
-    <li><a id="social" href="/social.html">SOCIAL</a></li>
-  </ul>
-</nav>
-</div></header>
+<header class="glass" data-nosnippet>
+  <div class="container no-select">
+    <nav class="top-nav">
+      <a class="no-format-click" href="/">
+        <div class="logo">
+          <img src="/assets/img/logo-5-sm.png" alt="Site Logo" />
+        </div>
+      </a>
+      <button class="mobile-btn" onclick="navToggle();"><img src="/assets/img/g-burger-nav.png" /></button>
+      <ul id="toggle-nav" class="nav-not-visible">
+        <li><a id="home" href="/">HOME</a></li>
+        <li><a id="about" href="/about.html">ABOUT</a></li>
+        <li><a id="content" href="/content.html">CONTENT</a></li>
+        <li><a id="report" href="/report.html">REPORTS</a></li>
+        <li><a id="social" href="/social.html">SOCIAL</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 <main class="container">
   <div class="content-container">
     <div class="post-content glass">
@@ -107,6 +111,12 @@ if (navEle) {
             if (homeEle) homeEle.classList.add('active');
         } else if (url.trim() === "/social.html") {
             let homeEle = document.getElementById('social');
+            if (homeEle) homeEle.classList.add('active');
+        } else if (url.trim() === "/report.html") {
+            let homeEle = document.getElementById('report');
+            if (homeEle) homeEle.classList.add('active');
+        }  else if (url.trim() === "/content.html") {
+            let homeEle = document.getElementById('content');
             if (homeEle) homeEle.classList.add('active');
         }
     }

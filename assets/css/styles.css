@@ -279,10 +279,10 @@ footer p {
 }
 
 .flex-container>* {
-  margin: 8px;
+  margin: 6px;
   /* This will force only one -> two per row as long as you keep the same grow ratio */
   flex: 1 1 calc(var(--masterContainerWidth) / 4);
-  padding: 15px;
+  padding: 12px;
   border-radius: 6px;
 }
 

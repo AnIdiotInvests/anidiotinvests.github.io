@@ -10,7 +10,7 @@ class Content {
     }
 }
 
-async function loadPosts(searchKey) {
+async function loadAllContent(searchKey) {
     try {
         const [result1, result2] = await Promise.all([
             handlePostsAsyncStub(searchKey),
@@ -43,7 +43,7 @@ async function handleDashboardAsyncStub() {
         if (dashJsonLatestFile && dashJsonLatestFile.ok) {
             dashboardJson = await dashJsonLatestFile.json();
             outputDash(dashboardJson, 'dashboard');
-            outputPosts(dfeed, '/dashboard', 'dashboard-feed', true);
+            // outputPosts(dfeed, '/dashboard', 'dashboard-feed');
         }
     }
 }
@@ -62,12 +62,8 @@ async function updateDash(dashboardFileName) {
 
         let feed = document.getElementById('dashboard-feed');
         let opts = feed.getElementsByTagName('div');
-        
-        for (o of opts) {
 
-            o.classList.remove('active');
-        }
-
+        for (o of opts) o.classList.remove('active');
         toOut.classList.add('active');
 
         const dashboard = await dashJsonFilez.json();
@@ -130,7 +126,7 @@ function placeMostRecentPost(post, location) {
     recentPostEle.appendChild(linkWrapper);
 }
 
-function outputPosts(posts, location, element, payload) {
+function outputPosts(posts, location, element) {
 
     let postListEle = document.getElementById(element);
     if (!postListEle) return;
@@ -148,19 +144,14 @@ function outputPosts(posts, location, element, payload) {
 
         let div = document.createElement('div');
         let link = document.createElement('a');
-        if (!payload) {
-            link.href = `${location}/${post.id}`;
-            if (post.title) {
-                link.textContent = post.title;
-            } else {
-                link.textContent = post.id;
-            }
-            div.appendChild(link);
+        link.href = `${location}/${post.id}`;
+        if (post.title) {
+            link.textContent = post.title;
         } else {
-            let p = document.createElement('a');
-            p.textContent = post.id;
-            div.appendChild(p);
+            link.textContent = post.id;
         }
+        div.appendChild(link);
+
         div.classList.add("post")
 
         if (post.description) {
@@ -173,14 +164,7 @@ function outputPosts(posts, location, element, payload) {
             desc.textContent = descStr;
             div.appendChild(desc);
         }
-
-        if (!payload)
-            link.setAttribute("id", post.id);
-        if (payload) {
-            div.setAttribute("id", post.id);
-            div.setAttribute("onclick", `updateDash('${post.id}');`);
-        }
-
+        link.setAttribute("id", post.id);
         postListEle.appendChild(div);
 
         if (count === max || count > max) break;
