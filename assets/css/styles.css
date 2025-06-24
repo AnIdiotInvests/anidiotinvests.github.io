@@ -225,14 +225,19 @@ footer p {
   min-height: 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .flex-container>* {
   margin: 6px;
   /* This will force only one -> two per row as long as you keep the same grow ratio */
-  flex: 1 1 calc(var(--masterContainerWidth) / 4);
+  flex: 1 1 calc(var(--masterContainerWidth) / 3 + 1px);
   padding: 12px;
   border-radius: 6px;
+}
+
+.flex-sm {
+  flex-grow: 0;
 }
 
 .glass {
@@ -240,7 +245,6 @@ footer p {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.4px);
   -webkit-backdrop-filter: blur(8.4px);
-  border-radius: 8px;
 }
 
 .dropdown,

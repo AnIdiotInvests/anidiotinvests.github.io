@@ -106,7 +106,7 @@ function outputDash(dashboard, element) {
     faq.href = "/faq.html#ai-dashboard-faq";
 
     outlook.textContent = dashboard.outlook + " (Not Financial Advice)";
-    dashboardTitle.textContent = "AI Driven Dashboard Report ";
+    dashboardTitle.textContent = "Market Dashboard Report ";
     if (dashboard.printDate) {
         dashboardTitle.textContent = dashboardTitle.textContent + new Date(dashboard.printDate).toISOString().substring(0, 10);
     }
