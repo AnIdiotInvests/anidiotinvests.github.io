@@ -158,6 +158,7 @@ footer p {
   height: var(--headerHeight);
   display: flex;
   align-items: center;
+  border-radius: 6px;
 }
 
 .top-nav {
