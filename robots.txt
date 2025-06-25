@@ -6,6 +6,7 @@ Disallow: /assets
 Disallow: /video
 Disallow: /privacy
 Disallow: /social
+Disallow: /reports
 Disallow: /about
 Disallow: /faq
 Disallow: /archive
