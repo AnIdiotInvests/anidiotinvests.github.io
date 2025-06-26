@@ -1,26 +1,21 @@
 {
     "content": [
         {
-            "date": "2025-06-26T10:31:14.09397258-05:00",
-            "description": "Walmart projects its first quarterly profit decline in three years."
-        },
-        {
-            "date": "2025-06-26T10:31:14.093963136-05:00",
-            "description": "Trump administration aims to make cruise companies pay U.S. taxes."
-        },
-        {
-            "date": "2025-06-26T10:31:14.093977582-05:00",
-            "description": "Plans to dismantle a key science agency may negatively impact chip stocks."
-        },
-        {
             "date": "2025-06-26T10:31:14.093983343-05:00",
-            "description": "Analysts question if Nvidia can beat earnings again amid Blackwell chip shortages."
+            "description": "US stocks climbed on Thursday amid growing bets on interest rate cuts as President Trump appeared to get closer to naming his replacement for Federal Reserve Chair Jerome Powell.",
+            "source": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-climb-as-trump-eyes-naming-a-replacement-for-feds-powell-233325966.html"
         },
         {
             "date": "2025-06-26T10:31:14.093989048-05:00",
-            "description": "Unemployment claims remain low despite federal worker layoffs."
+            "description": "Unemployment claims remain low despite federal worker layoffs.",
+            "source": "https://abcnews.go.com/Business/wireStory/fewer-americans-sought-unemployment-benefits-week-layoffs-remain-123226706"
+        },
+        {
+            "date": "2025-06-26T00:00:00-05:00",
+            "description": "Nvidia hits a new record high in 2025, will they keep defying chip shortages and tariffs is the big question.",
+            "source": "https://finance.yahoo.com/news/nvidia-stock-notches-fresh-record-high-in-remarkable-2025-turnaround-200401502.html"
         }
     ],
-    "outlook": "Markets react to policy shifts, with retail, tech, and labor trends under close watch; Nvidia earnings and government changes may drive volatility.",
+    "outlook": "Markets react to policy shifts, with retail, tech, and labor trends under close watch; Nvidia's strong momentum continues despite supply and trade pressures; Markets seem to belive a replacement for Jerome Powell will drive further volatility.",
     "printDate": "2025-06-26T10:31:14.094003818-05:00"
 }
