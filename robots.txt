@@ -10,9 +10,6 @@ Disallow: /reports
 Disallow: /about
 Disallow: /faq
 Disallow: /archive
-Disallow: /*.gif$
-Disallow: /*.jpg$
-Disallow: /*.jpeg$
 User-agent: grapeshot
 Disallow:
 User-agent: CCBot
