@@ -1,12 +1,13 @@
 
 class Content {
-    constructor(id, title, date, description, image, category) {
+    constructor(id, title, date, description, image, category, source) {
         this.id = id;
         this.title = title;
         this.date = new Date(date);
         this.description = description;
         this.image = image;
         this.category = category;
+        this.source = source;
     }
 }
 
@@ -24,6 +25,7 @@ async function handlePostsAsyncStub(searchKey) {
     if (postsJsonFile) {
         let jsonPosts = await marshalContentJson(postsJsonFile, searchKey);
         if (jsonPosts) {
+
             jsonPosts.sort(function (a, b) { return a.date - b.date; }).reverse();
             placeMostRecentPost(jsonPosts[0], '/posts');
             outputPosts(jsonPosts, '/posts', 'posts-feed');
@@ -42,9 +44,10 @@ async function handleDashboardAsyncStub() {
         let dashJsonLatestFile = await fetch(`/dashboard/${dfeed[0].id}`, { method: 'GET', cache: 'no-store' });
         if (dashJsonLatestFile && dashJsonLatestFile.ok) {
 
+
             dashboardJson = await dashJsonLatestFile.json();
+            console.log(dashboardJson);
             outputDash(dashboardJson, 'dashboard');
-            // outputPosts(dfeed, '/dashboard', 'dashboard-feed');
         }
     }
 }
@@ -85,7 +88,6 @@ async function outputAllDash() {
 
     if (dashJsonLatestFile && dashJsonLatestFile.ok) {
         dashboardJson = await dashJsonLatestFile.json();
-        // outputDash(dashboardJson, 'dashboard');
         outputPosts(dfeed, '/dashboard', 'dashboard');
     }
 }
@@ -115,10 +117,20 @@ function outputDash(dashboard, element) {
     div.appendChild(faq);
     div.appendChild(ul);
     dashboardEle.appendChild(div);
+
     if (dashboard.content) {
         dashboard.content.forEach(cont => {
+
             let item = document.createElement('li');
             item.textContent = cont.description;
+
+            if (cont.source) {
+                let source = document.createElement('a');
+                source.href = cont.source;
+                source.textContent = "[source]";
+                item.appendChild(source);
+            }
+
             ul.appendChild(item);
         });
     }
@@ -194,7 +206,7 @@ function mapPostsByAnyMatch(searchKey, postJson) {
     if (searchKey) searchKey = searchKey.trim();
     return postJson.map(post => {
         if (!searchKey || isOf(post, searchKey)) {
-            return new Content(post.id, post.title, post.date, post.description, post.image, post.category);
+            return new Content(post.id, post.title, post.date, post.description, post.image, post.category, post.source);
         }
     });
 }
