@@ -14,13 +14,13 @@ class Content {
 async function loadAllContent(searchKey) {
     try {
         const [result1, result2] = await Promise.all([
-            handlePostsAsyncStub(searchKey),
+            handlePostsAsyncStub(searchKey, 5),
             handleDashboardAsyncStub()
         ]);
     } catch (error) { }
 }
 
-async function handlePostsAsyncStub(searchKey) {
+async function handlePostsAsyncStub(searchKey, count) {
     const postsJsonFile = await fetch("/posts/data/posts.json", { method: 'GET', cache: 'no-store' });
     if (postsJsonFile) {
         let jsonPosts = await marshalContentJson(postsJsonFile, searchKey);
@@ -28,7 +28,7 @@ async function handlePostsAsyncStub(searchKey) {
 
             jsonPosts.sort(function (a, b) { return a.date - b.date; }).reverse();
             placeMostRecentPost(jsonPosts[0], '/posts');
-            outputPosts(jsonPosts, '/posts', 'posts-feed');
+            outputPosts(jsonPosts, '/posts', 'posts-feed', count);
         }
     }
 }
@@ -88,7 +88,7 @@ async function outputAllDash() {
 
     if (dashJsonLatestFile && dashJsonLatestFile.ok) {
         dashboardJson = await dashJsonLatestFile.json();
-        outputPosts(dfeed, '/dashboard', 'dashboard');
+        outputPosts(dfeed, '/dashboard', 'dashboard', 30);
     }
 }
 
@@ -157,7 +157,7 @@ function placeMostRecentPost(post, location) {
     recentPostEle.appendChild(linkWrapper);
 }
 
-function outputPosts(posts, location, element) {
+function outputPosts(posts, location, element, max) {
 
     let postListEle = document.getElementById(element);
     if (!postListEle) return;
@@ -167,7 +167,6 @@ function outputPosts(posts, location, element) {
     feedTitle.textContent = "Recent Feed";
     postListEle.appendChild(feedTitle);
 
-    var max = 7;
     var count = 0;
     for (var post of posts) {
         if (!post) continue;
@@ -214,6 +213,6 @@ function mapPostsByAnyMatch(searchKey, postJson) {
 function isOf(post, searchKey) {
     const upperSearchKey = searchKey.toUpperCase();
     return (post.title.toUpperCase().indexOf(upperSearchKey) !== -1
-        || post.postType.toUpperCase().indexOf(upperSearchKey) !== -1
+        || post.category.toUpperCase().indexOf(upperSearchKey) !== -1
         || post.id.toUpperCase().indexOf(upperSearchKey) !== -1);
 }
