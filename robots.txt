@@ -1,9 +1,12 @@
-# Default: block everything except posts
+# Default policy:
+# Allow crawlers to access posts only
 User-agent: *
 Disallow: /
 Allow: /posts/
 
-# AI and model-training crawlers
+
+# AI, archives, SEO, research, scraper, and data-collection crawlers:
+# Block access to the entire site
 User-agent: GPTBot
 User-agent: ChatGPT-User
 User-agent: OAI-SearchBot
@@ -27,20 +30,13 @@ User-agent: YouBot
 User-agent: AI2Bot
 User-agent: Timpibot
 User-agent: Webzio-Extended
-Disallow: /
-
-# Archives and research crawlers
 User-agent: ia_archiver
 User-agent: archive.org_bot
 User-agent: Arquivo-web-crawler
-User-agent: arquivo-web-crawler
 User-agent: Cliqzbot
 User-agent: PetalBot
 User-agent: Sogou
 User-agent: YandexBot
-Disallow: /
-
-# SEO and backlink crawlers
 User-agent: AhrefsBot
 User-agent: SemrushBot
 User-agent: SemrushBot-SA
@@ -54,9 +50,6 @@ User-agent: LinkpadBot
 User-agent: Barkrowler
 User-agent: ZoominfoBot
 User-agent: UptimeRobot
-Disallow: /
-
-# Scrapers, aggregators, and content collectors
 User-agent: omgili
 User-agent: omgilibot
 User-agent: PiplBot
@@ -67,7 +60,6 @@ User-agent: Scrapy
 User-agent: Scraper
 User-agent: Crawler
 User-agent: spider
-User-agent: crawler
 User-agent: Qwantify
 User-agent: startmebot
 User-agent: CommonCrawler
@@ -76,12 +68,17 @@ User-agent: KongBot
 User-agent: proximic
 Disallow: /
 
-# Social preview bots: allow posts only
+
+# Social-preview crawlers:
+# Allow them to access posts, but block everything else
 User-agent: Twitterbot
 User-agent: facebookexternalhit
 User-agent: Facebot
 User-agent: LinkedInBot
 User-agent: Pinterestbot
+Disallow: /
 Allow: /posts/
 
+
+# Sitemap
 Sitemap: https://beyondthestonks.com/sitemap.xml
