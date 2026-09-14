@@ -1,8 +1,9 @@
 # Default policy:
 # Allow crawlers to access posts only
 User-agent: *
-Disallow: /
+Allow: /posts
 Allow: /posts/
+Disallow: /
 
 
 # AI, archives, SEO, research, scraper, and data-collection crawlers:
@@ -76,9 +77,6 @@ User-agent: facebookexternalhit
 User-agent: Facebot
 User-agent: LinkedInBot
 User-agent: Pinterestbot
-Disallow: /
+Allow: /posts
 Allow: /posts/
-
-
-# Sitemap
-Sitemap: https://beyondthestonks.com/sitemap.xml
+Disallow: /
