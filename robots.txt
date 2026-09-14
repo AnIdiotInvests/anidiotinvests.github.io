@@ -1,58 +1,87 @@
+# Default: block everything except posts
 User-agent: *
+Disallow: /
 Allow: /posts/
-Disallow: /404
-Disallow: /js
-Disallow: /css
-Disallow: /video
-Disallow: /privacy
-Disallow: /social
-Disallow: /reports
-Disallow: /about
-Disallow: /faq
-Disallow: /archive
-User-agent: grapeshot
-Disallow:
-User-agent: CCBot
-Disallow: /
-User-agent: anthropic-ai
-Disallow: /
-User-agent: cohere-ai
-Disallow: /
-User-agent: ia_archiver
-Disallow: /
-User-Agent: omgili
-Disallow: /
-User-Agent: omgilibot
-Disallow: /
-User-agent: MJ12bot
-Disallow: /
-User-agent: PiplBot
-Disallow: /
+
+# AI and model-training crawlers
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
 User-agent: Google-Extended
-Disallow: /
-User-agent: Bytespider
-Disallow: /
 User-agent: ClaudeBot
-Disallow: /
 User-agent: Claude-Web
-Disallow: /
-User-agent: FacebookBot
-Disallow: /
-User-agent: magpie-crawler
-Disallow: /
-User-agent: NewsNow
-Disallow: /
-User-agent: news-please
-Disallow: /
+User-agent: anthropic-ai
+User-agent: CCBot
+User-agent: cohere-ai
+User-agent: Bytespider
 User-agent: PerplexityBot
-Disallow: /
 User-agent: Perplexity-ai
-Disallow: /
-User-agent: Meta-ExternalAgent
-Disallow: /
-User-agent: Meta-ExternalFetcher
-Disallow: /
 User-agent: Applebot-Extended
+User-agent: Amazonbot
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-agent: FacebookBot
+User-agent: ImagesiftBot
+User-agent: Diffbot
+User-agent: YouBot
+User-agent: AI2Bot
+User-agent: Timpibot
+User-agent: Webzio-Extended
 Disallow: /
+
+# Archives and research crawlers
+User-agent: ia_archiver
+User-agent: archive.org_bot
+User-agent: Arquivo-web-crawler
+User-agent: arquivo-web-crawler
+User-agent: Cliqzbot
+User-agent: PetalBot
+User-agent: Sogou
+User-agent: YandexBot
+Disallow: /
+
+# SEO and backlink crawlers
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: SemrushBot-SA
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: BLEXBot
+User-agent: serpstatbot
+User-agent: DataForSeoBot
+User-agent: MegaIndex.ru
+User-agent: LinkpadBot
+User-agent: Barkrowler
+User-agent: ZoominfoBot
+User-agent: UptimeRobot
+Disallow: /
+
+# Scrapers, aggregators, and content collectors
+User-agent: omgili
+User-agent: omgilibot
+User-agent: PiplBot
+User-agent: magpie-crawler
+User-agent: news-please
+User-agent: NewsNow
+User-agent: Scrapy
+User-agent: Scraper
+User-agent: Crawler
+User-agent: spider
+User-agent: crawler
+User-agent: Qwantify
+User-agent: startmebot
+User-agent: CommonCrawler
+User-agent: TurnitinBot
+User-agent: KongBot
+User-agent: proximic
+Disallow: /
+
+# Social preview bots: allow posts only
 User-agent: Twitterbot
-Allow: /
+User-agent: facebookexternalhit
+User-agent: Facebot
+User-agent: LinkedInBot
+User-agent: Pinterestbot
+Allow: /posts/
+
+Sitemap: https://beyondthestonks.com/sitemap.xml
